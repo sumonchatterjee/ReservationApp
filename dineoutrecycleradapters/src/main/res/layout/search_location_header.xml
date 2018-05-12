@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView_search_location_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_primary_faded_button_selector"
+    android:padding="@dimen/screen_padding"
+    android:textColor="@color/colorPrimary"
+    android:textSize="@dimen/font_size_14"
+    android:textStyle="bold"
+    tools:text="Search History" />

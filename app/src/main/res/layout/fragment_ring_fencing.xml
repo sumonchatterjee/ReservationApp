@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/rl_wallet_frag_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_E5"
+        android:orientation="vertical">
+
+        <!--<include
+            layout="@layout/toolbar_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_tem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center" />
+
+    <include layout="@layout/network_error_layout" />
+
+    <RelativeLayout
+        android:id="@+id/login_screen"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_fragment">
+
+        <include layout="@layout/login_screen_common"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

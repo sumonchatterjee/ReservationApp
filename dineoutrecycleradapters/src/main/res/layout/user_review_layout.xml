@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_last_booking_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageView_review_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_last_booking" />
+
+        <TextView
+            android:id="@+id/textView_review_title"
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageView_review_icon"
+            android:text="@string/text_your_last_booking_at_restaurant"
+            android:textColor="@color/grey_4D"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView_review_date_time"
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_review_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imageView_review_icon"
+            android:textColor="@color/grey_4D"
+            android:textSize="12sp"
+            tools:text="24 March, 2016 at 8:00 PM" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_last_booking_divider"
+        style="@style/DividerStyle.Short" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_your_review"
+            android:textColor="@color/grey_4D"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView_review_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_edit_primary"
+            android:drawablePadding="4dp"
+            android:text="@string/button_edit"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textView_review_rating"
+            style="@style/RatingStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView_review_edit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:textSize="18sp"
+            tools:background="@drawable/green_circle"
+            tools:text="4.8" />
+
+        <TextView
+            android:id="@+id/textView_review_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_review_rating"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/grey_4D"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Crasneclaoreet justo, ac lobortis arcu. Nunc sodtales rutrum neque vehicula auctor." />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_review_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_review_text"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/dividerColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_review_status_moderation"
+                android:textColor="@color/dark_golden"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/ViewShadow"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:id="@+id/textView_reviews"
+        style="@style/TitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_reviews" />
+
+</LinearLayout>

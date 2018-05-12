@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/wrapper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <RelativeLayout
+            android:id="@+id/title_amount_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title_text_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/earning_amount_text_tv"
+                android:layout_marginRight="25dp"
+                android:gravity="center_vertical"
+                android:text="Payment Successful at My Bar sdflsdkljflsdf fsdflsdf sd lkflks kl jklsjdklfjkls djkldjfklsdklf"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/grey_35"
+                style="@style/MyStyle"
+                android:textSize="@dimen/font_size_15" />
+
+            <TextView
+                android:id="@+id/earning_amount_text_tv"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/screen_padding_two"
+                android:layout_alignParentRight="true"
+                android:text="-2000000"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:gravity="right"
+                style="@style/MyStyle"
+                android:textColor="@color/grey_35"
+                android:textSize="@dimen/font_size_15" />
+
+            <TextView
+                android:id="@+id/sub_title_1_text_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_padding_eight"
+                android:layout_below="@+id/title_text_tv"
+                android:layout_alignRight="@+id/title_text_tv"
+                android:lineSpacingExtra="3dp"
+                android:gravity="center_vertical"
+                android:text="Sector 18 Noida fsdfjkla jdslfjlkjlkfjsdljflksdjlk fjklsdjflk jsdklfjk jsdkljfkljsdklfjklsdjfkljsdklfjlksdjfklsdfklsdjfklsd"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/grey_35"
+                android:textSize="@dimen/font_size_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <com.dineout.android.volley.toolbox.NetworkImageView
+                android:id="@+id/earning_status_icon_iv"
+                android:layout_width="@dimen/earning_history_screen_status_icon_size"
+                android:layout_height="@dimen/earning_history_screen_status_icon_size"
+                android:layout_marginTop="@dimen/screen_padding_two"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/earning_error_icon" />
+
+            <LinearLayout
+                android:id="@+id/stt_sts_expr_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/earning_status_icon_iv"
+                android:layout_toLeftOf="@+id/earning_break_up_icon_iv">
+                <TextView
+                    android:id="@+id/sub_title_2_text_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Earned on 31 May 2017, 23:33pm"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="@color/grey_35"
+                    android:textSize="@dimen/font_size_11" />
+
+                <TextView
+                    android:id="@+id/earning_status_text_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp"
+                    android:text="Worst case scenario status date and time comes here. Worst case scenario status date and time and ti sif sdf sdfa sdf asdfa s"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="@color/grey_35"
+                    android:textSize="@dimen/font_size_11" />
+
+                <TextView
+                    android:id="@+id/expire_text_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:text="Expires in 20 days"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="@color/grey_35"
+                    android:textSize="@dimen/font_size_11" />
+            </LinearLayout>
+
+            <com.dineout.android.volley.toolbox.NetworkImageView
+                android:id="@+id/earning_break_up_icon_iv"
+                android:layout_width="@dimen/earning_history_screen_break_up_icon_size"
+                android:layout_height="@dimen/earning_history_screen_break_up_icon_size"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/stt_sts_expr_wrapper"
+                android:layout_marginTop="@dimen/screen_padding_two"
+                android:layout_marginLeft="16dp"
+                android:paddingBottom="3dp"
+                android:src="@drawable/new_earning_right_arrow" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/grey_ee"
+        android:layout_below="@+id/wrapper_layout"/>
+
+</RelativeLayout>

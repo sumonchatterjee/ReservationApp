@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/screen_padding_plus_half"
+    android:layout_marginRight="@dimen/screen_padding_plus_half"
+    android:layout_marginTop="@dimen/screen_padding_plus_half"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <include
+            android:id="@+id/statusLayout"
+            layout="@layout/booking_status_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_booking_diner_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/statusLayout"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:textColor="@color/booking_detail_address_text"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold"
+            tools:text="Dinner for 2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_offer_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/grey_4D"
+            android:textSize="14sp"
+            tools:text="Tue, 10 March" />
+
+        <TextView
+            android:id="@+id/textView_offer_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/textView_offer_date"
+            android:drawableLeft="@drawable/ic_time"
+            android:drawablePadding="10dp"
+            android:textColor="@color/grey_4D"
+            android:textSize="14sp"
+            tools:text="08:00 PM" />
+
+        <TextView
+            android:id="@+id/textView_offer_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/edit"
+            android:textColor="@color/gen_primary_text_selector"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/layout_booking_status"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_booking_diner_cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Dinner for 2"
+            android:textColor="@color/booking_detail_address_text"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_book_dt_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/screen_padding_half"
+            android:text="Saturday, \n 7th March 2015 at 8:00pm"
+            android:textColor="@color/booking_detail_address_text"
+            android:textSize="@dimen/font_size_16" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/edit_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/layout_booking_status"
+        android:layout_below="@+id/layout_booking_status"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/edit"
+        android:src="@drawable/ic_edit_account"
+        android:visibility="visible" />-->
+
+</LinearLayout>

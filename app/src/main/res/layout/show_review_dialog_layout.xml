@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView_review_title"
+        style="@style/MyStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/title_review"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView_review_text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/textView_review_title">
+
+        <TextView
+            android:id="@+id/textView_review_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/grey_4D"
+            android:textSize="14sp"
+            tools:text="Testing Text" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_review_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollView_review_text"
+        android:background="@drawable/rectangle_transparent_button_selector"
+        android:paddingBottom="@dimen/screen_padding_plus_half"
+        android:paddingTop="@dimen/screen_padding_plus_half"
+        android:text="@string/button_dismiss"
+        android:textAllCaps="false"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/font_size_16" />
+
+</RelativeLayout>

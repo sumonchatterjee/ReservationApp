@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_ee"
+    android:clickable="true"
+    android:gravity="center_horizontal">
+
+    <include
+        layout="@layout/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="20dp"
+        android:drawableTop="@drawable/no_payment_ico"
+        android:gravity="center_horizontal"
+        android:text="@string/transaction_result"
+        android:textColor="#4d4d4d"
+        android:textSize="@dimen/font_size_16"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/empty"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_below="@id/toolbar_fragment"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:src="@drawable/no_payment_ico" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/label_no_transaction"-->
+    <!--android:textColor="#919191"-->
+    <!--android:textSize="20sp"-->
+    <!--android:textStyle="bold" />-->
+    <!--</LinearLayout>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/payment_history_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_fragment"
+        android:visibility="visible" />
+
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <include layout="@layout/network_error_layout" />
+
+    <RelativeLayout
+        android:id="@+id/login_screen"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_fragment">
+
+        <include layout="@layout/login_screen_common"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

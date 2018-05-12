@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/shadow_bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/bottom_dialog_shadow"/>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rating_wrapper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/shadow_bg_iv"
+        android:elevation="5dp"
+        android:paddingTop="5dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="6dp"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/screen_padding"
+            android:paddingLeft="@dimen/screen_padding"
+            android:paddingRight="@dimen/screen_padding"
+            android:paddingTop="@dimen/screen_padding">
+
+            <TextView
+                android:id="@+id/input_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:paddingBottom="@dimen/screen_padding"
+                android:paddingLeft="@dimen/screen_padding_plus_half"
+                android:paddingRight="@dimen/screen_padding_plus_half"
+                android:paddingTop="@dimen/screen_padding"
+                android:text="Submit"
+                android:textColor="@color/grey_69"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/left_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/screen_padding"
+                android:layout_marginRight="@dimen/screen_padding"
+                android:layout_weight="2"
+                android:background="@color/colorSecondary"
+                android:gravity="center"
+                android:paddingBottom="@dimen/screen_padding"
+                android:paddingLeft="@dimen/screen_padding_plus_half"
+                android:paddingRight="@dimen/screen_padding_plus_half"
+                android:paddingTop="@dimen/screen_padding"
+                android:text="Yes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/right_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:background="@drawable/ask_user_no_btn_drawable"
+                android:gravity="center"
+                android:paddingBottom="@dimen/screen_padding"
+                android:paddingLeft="@dimen/screen_padding_plus_half"
+                android:paddingRight="@dimen/screen_padding_plus_half"
+                android:paddingTop="@dimen/screen_padding"
+                android:text="No"
+                android:textColor="@color/grey_69"
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

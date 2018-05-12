@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/generic_button_height"
+                android:layout_marginBottom="@dimen/screen_padding_plus_half"
+                android:background="@color/app_primary_shade_one"
+                android:gravity="center"
+                android:text="Log In"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_20"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_full_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/screen_padding_plus_half"
+                android:gravity="center"
+                android:lineSpacingExtra="1dp"
+                android:paddingBottom="@dimen/screen_padding"
+                android:paddingLeft="@dimen/screen_padding_double"
+                android:paddingRight="@dimen/screen_padding_double"
+                android:paddingTop="@dimen/screen_padding"
+                android:textColor="@color/app_grey_shade_four"
+                android:textSize="@dimen/font_size_18" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_cancel_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_dismiss_selector"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/tv_dialog_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialog_dismiss_selector"
+                    android:gravity="center"
+                    android:text="NO"
+                    android:textColor="@color/app_grey_shade_four"
+                    android:textSize="@dimen/font_size_16" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/screen_padding_half"
+                    android:layout_marginTop="@dimen/screen_padding_half"
+                    android:background="@color/app_horizontal_divider" />
+
+                <Button
+                    android:id="@+id/tv_dialog_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialog_dismiss_selector"
+                    android:gravity="center"
+                    android:text="YES"
+                    android:textColor="@color/app_primary_shade_two"
+                    android:textSize="@dimen/font_size_16" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

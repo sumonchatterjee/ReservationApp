@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="9dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_promo_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/restaurant_header_margin"
+        android:background="@drawable/promo_restaurant_boundary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/restaurant_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/promo_margin"
+                android:paddingTop="8dp"
+                android:text="Restaurant name"
+                android:textColor="@color/activate_heading_label_color"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/cost_for_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/promo_margin"
+
+                android:text="cost for two"
+                android:textSize="@dimen/font_size_10"
+                android:textColor="@color/grey_new" />
+
+            <TextView
+                android:id="@+id/restaurant_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="@dimen/promo_margin"
+                android:drawableLeft="@drawable/ic_location_indicator_new"
+                android:gravity="center_vertical"
+                android:text="All outlets"
+                android:drawablePadding="5dp"
+                android:paddingBottom="8dp"
+                android:textSize="@dimen/font_size_10"
+                android:textColor="@color/grey_new" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#bbbbbb" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+           >
+
+            <TextView
+                android:id="@+id/cashback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="Cashback"
+                android:textColor="@color/activate_heading_label_color"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/expire_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="valid till"
+                android:gravity="left|center_vertical"
+                android:textSize="@dimen/font_size_10"
+                android:textColor="@color/grey_new" />
+
+            <TextView
+                android:id="@+id/coupon_applied_or_not"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="coupon applied"
+                android:paddingTop="7dp"
+                android:textSize="@dimen/font_size_10"
+                android:textColor="@color/green" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reserve_or_apply_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearlayout_promo_data"
+        android:layout_marginBottom="@dimen/restaurant_header_margin"
+        android:background="@drawable/ring_fencing_boundary"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/green"
+        android:textSize="@dimen/font_size_16" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/grey_E5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/button_bill_action"
+            style="@style/ButtonStyle.RoundRectangleWhitePrimaryBorderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:textColor="@color/primary_white_text_selector"
+            android:textSize="12sp"
+            tools:text="UPLOAD BILL" />
+
+        <TextView
+            android:id="@+id/textView_bill_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/button_bill_action"
+            android:textColor="@color/dark_green_1"
+            android:textSize="14sp"
+            tools:text="Upload your bill and earn 20% cashback" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_bill_section_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/divider_horizontal" />
+
+    <TextView
+        android:id="@+id/textView_bill_sub_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/grey_75"
+        android:textSize="10sp"
+        tools:text="Credit Card/Debit Card/Paytm/Mobiwick/Net-banking available" />
+
+</LinearLayout>

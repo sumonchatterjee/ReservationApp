@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_uber_detail_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView_uber_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_primary_shade_one"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/screen_padding"
+            android:text="@string/uber_dialog_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18" />
+
+        <ListView
+            android:id="@+id/lv_timing_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_uber_title" />
+
+        <Button
+            android:id="@+id/btn_dismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lv_timing_list"
+            android:background="@drawable/dialog_dismiss_selector"
+            android:text="@string/button_dismiss"
+            android:textAllCaps="true"
+            android:textColor="@color/app_primary_shade_two" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/screen_padding_plus_half">
+
+        <ProgressBar
+            android:id="@+id/progressBar_uber"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/screen_padding_double" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/progressBar_uber"
+            android:text="@string/text_fetching"
+            android:textColor="@color/grey_4D"
+            android:textSize="@dimen/font_size_14" />
+
+    </RelativeLayout>
+
+</FrameLayout>

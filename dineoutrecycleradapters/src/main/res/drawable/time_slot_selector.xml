@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/round_white_rect_with_light_grey_border" android:state_enabled="false" />
+    <item android:drawable="@drawable/round_primary_rect_shape" android:state_enabled="true" android:state_selected="true" />
+    <item android:drawable="@drawable/round_white_rect_with_primary_border" android:state_enabled="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/round_white_rect_with_grey_border" />
+
+</selector>

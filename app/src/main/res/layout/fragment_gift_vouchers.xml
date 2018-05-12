@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/parentView_gift_voucher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingBottom="24dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="24dp">
+
+        <EditText
+            android:id="@+id/editText_gift_voucher_code"
+            style="@style/EditTextVoucherStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/text_voucher_code"
+            android:inputType="number"
+            android:maxLength="16"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/editText_gift_voucher_pin"
+            style="@style/EditTextVoucherStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_gift_voucher_code"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/text_pin"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/button_gift_voucher_verify"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_gift_voucher_pin"
+            android:text="@string/button_verify" />
+
+        <TextView
+            android:id="@+id/textView_gift_voucher_link"
+            style="@style/OrangeBlackLinkStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/text_gift_voucher_link_text" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp" />
+
+    <include layout="@layout/network_error_layout" />
+
+    <RelativeLayout
+        android:id="@+id/login_screen"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:layout_below="@+id/toolbar_fragment">
+
+        <include layout="@layout/login_screen_common"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

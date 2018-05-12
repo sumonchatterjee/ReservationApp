@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/screen_padding_plus_half"
+        android:layout_marginLeft="@dimen/screen_padding_plus_half"
+        android:layout_marginRight="@dimen/screen_padding_plus_half"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/guest_count_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/screen_padding"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:paddingTop="@dimen/screen_padding"
+                android:text="@string/guest"
+                android:textColor="@color/guest_grey"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/et_guest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_padding_plus_half"
+                android:background="@null"
+                android:hint="@string/guest_hint"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/guest_grey"
+                android:textColorHint="@color/divider_grey"
+                android:textSize="@dimen/font_size_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/screen_padding_half"
+                android:background="@color/divider_grey" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingTop="@dimen/screen_padding"
+            android:text="@string/name"
+            android:textColor="@color/guest_grey"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="normal" />
+
+
+        <EditText
+            android:id="@+id/et_table_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/screen_padding"
+            android:background="@null"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text="Sumon Chatterjee"
+            android:textColor="@color/guest_grey"
+            android:textSize="@dimen/font_size_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/screen_padding_half"
+            android:background="@color/divider_grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingTop="@dimen/screen_padding_double_plus_half"
+            android:text="@string/email"
+            android:textColor="@color/guest_grey"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="normal" />
+
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/screen_padding"
+            android:background="@null"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/guest_grey"
+            android:textSize="@dimen/font_size_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/screen_padding_half"
+            android:background="@color/divider_grey" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingTop="@dimen/screen_padding_double_plus_half"
+            android:text="@string/phone"
+            android:textColor="@color/guest_grey"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="normal" />
+
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/screen_padding"
+            android:background="@null"
+            android:hint="@string/phone_number_hint"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:textColor="@color/guest_grey"
+            android:textColorHint="@color/divider_grey"
+            android:textSize="@dimen/font_size_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/screen_padding_half"
+            android:background="@color/divider_grey"
+             />
+
+        <!--<TextView-->
+            <!--android:id="@+id/spcl_rqst"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="start|center_vertical"-->
+            <!--android:paddingTop="@dimen/screen_padding_double_plus_half"-->
+            <!--android:text="@string/special_request"-->
+            <!--android:textColor="@color/guest_grey"-->
+            <!--android:textSize="@dimen/font_size_14"-->
+            <!--android:textStyle="normal" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/et_special_request"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/screen_padding"-->
+            <!--android:background="@null"-->
+            <!--android:hint="@string/special_requset_hint"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="@color/guest_grey"-->
+            <!--android:textColorHint="@color/divider_grey"-->
+            <!--android:textSize="@dimen/font_size_14" />-->
+
+        <!--<View-->
+            <!--android:id="@+id/spcl_divider"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:layout_marginTop="@dimen/screen_padding_half"-->
+            <!--android:background="@color/divider_grey" />-->
+    </LinearLayout>
+
+</LinearLayout>

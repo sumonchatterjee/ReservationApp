@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/screen_padding_plus_half"
+        android:paddingLeft="@dimen/screen_padding_plus_half"
+        android:paddingRight="@dimen/screen_padding_plus_half"
+        android:paddingTop="@dimen/screen_padding_plus_half">
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disclaimer: The estimate bill for 4 guests is based on this restaurant's Cost for Two. Actual savings may vary based on the final bill amount."
+            android:textColor="@color/grey_CE"
+            android:textSize="@dimen/font_size_13" />
+    </RelativeLayout>
+
+</LinearLayout>

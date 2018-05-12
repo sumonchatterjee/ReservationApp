@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/in_rate_layout"
+        layout="@layout/review_common_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_buttons"
+        android:layout_marginTop="@dimen/screen_padding" />
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/done"
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/screen_padding"
+            android:layout_marginRight="@dimen/screen_padding"
+            android:layout_marginTop="@dimen/screen_padding"
+            android:background="@drawable/gen_secondary_button_selector"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/white_CC"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/tv_later"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/screen_padding_plus_half"
+            android:text="Skip"
+            android:textColor="@color/app_grey_shade_six"
+            android:textSize="@dimen/font_size_14" />
+
+    </LinearLayout>
+</RelativeLayout>

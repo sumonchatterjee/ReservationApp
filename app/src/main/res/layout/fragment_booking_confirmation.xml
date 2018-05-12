@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_E5">
+
+    <include
+        android:id="@+id/toolbar_booking_confirmation"
+        layout="@layout/selected_offer_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_booking_confirmation">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_confirm_table_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_E5"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/next_one_hour_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                />
+
+            <include
+                layout="@layout/guest_details_section_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/extra_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/button_confirm_table"
+                style="@style/ButtonStyle.RectanglePrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/table_confirm_text"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <include layout="@layout/network_error_layout" />
+
+</RelativeLayout>

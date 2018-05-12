@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">dineoutrecycleradapters</string>
+
+    <string name="button_reserve">Reserve</string>
+    <string name="text_showing_results">Showing results for</string>
+    <string name="text_view_all">View All</string>
+    <string name="text_upcoming_booking">Upcoming Booking</string>
+    <string name="view_all_booking">View all Bookings</string>
+    <string name="text_history_booking">History Booking</string>
+    <string name="text_login_to_view_list">LOGIN TO VIEW\nTHE LIST</string>
+    <string name="text_create_my_list">CREATE YOUR OWN LIST\nBY ADDING RESTAURANTS</string>
+    <string name="text_fetching_list">Fetching list&#8230;</string>
+    <string name="text_fetching">Fetching&#8230;</string>
+    <string name="listing_button_reserve">RESERVE</string>
+
+    <string name="text_smartPay">smartPay</string>
+    <string name="text_recently_added">Recently Added</string>
+    <string name="container_distance">%1$s kms</string>
+    <string name="container_amount_for_2">\u20B9 %1$s/- for 2</string>
+
+    <string name="diner_count">%1$s for %2$s</string>
+    <string name="container_rupee">\u20B9 %1$s</string>
+    <string name="container_rupee_with_slash">\u20B9 %1$s/-</string>
+    <string name="container_single_guest">%1$s Guest</string>
+    <string name="container_multiple_guest">%1$s Guests</string>
+    <string name="container_quantity">Qty: %1$s</string>
+
+    <string name="all_timings">All Timings</string>
+    <string name="call_now">Call now</string>
+    <string name="title_permission_required">Permission Required</string>
+
+    <string name="text_container_deal_left">Only %1$d left</string>
+    <string name="text_container_today_timings">Today: %1$s</string>
+    <string name="text_container_cost_for_2">\u20B9 %1$d for 2</string>
+    <string name="text_container_single_offer">%1$d offer</string>
+    <string name="text_container_multiple_offer">%1$d offers</string>
+
+    <string name="text_open">OPEN</string>
+    <string name="text_closed">CLOSED</string>
+    <string name="text_select_date_time">Select a date &amp; time</string>
+    <string name="text_selected_date_time">Selected date &amp; time</string>
+    <string name="text_select_offer">Select Offer</string>
+    <string name="text_additional_offer">Additional Offer</string>
+    <string name="text_buy_any_deal">Or buy any deal</string>
+    <string name="text_your_last_booking_at_restaurant">YOUR LAST BOOKING AT THIS RESTAURANT</string>
+    <string name="text_your_review">Your review:</string>
+    <string name="text_other_details">Other Details</string>
+    <string name="text_opening_hours">Opening hours</string>
+    <string name="text_address">Address</string>
+    <string name="text_features">Features</string>
+    <string name="text_featured_tags">Featured Tags</string>
+    <string name="text_call_restaurant">Call restaurant</string>
+    <string name="text_call_dineout">Call Dineout</string>
+    <string name="text_no_reviews_yet">No reviews yet!</string>
+    <string name="text_no_earnings_yet">No Transactions Found</string>
+    <string name="text_be_first_to_review">Be the first one to review</string>
+    <string name="text_more_info">more info</string>
+    <string name="text_offer_detail">Offer Detail</string>
+
+    <string name="button_get_directions">GET DIRECTIONS</string>
+    <string name="button_pay_bill">PAY NOW</string>
+    <string name="button_paid">PAID</string>
+    <string name="button_book_now">BOOK NOW</string>
+    <string name="button_buy_now">Buy Now</string>
+    <string name="button_write_review">Write a Review</string>
+    <string name="button_leave_review">Leave a review</string>
+    <string name="button_edit">EDIT</string>
+    <string name="button_add_to_my_list">Add to my list</string>
+    <string name="button_remove_from_my_list">Remove from my list</string>
+    <string name="title_review">Review</string>
+    <string name="button_ride_with_uber">RIDE THERE WITH UBER</string>
+
+    <string name="rat_rv_title">RATING &amp; REVIEW</string>
+    <string name="view_all_reviews">view all reviews</string>
+    <string name="rate">Rate &amp; Review</string>
+    <string name="restaurant_detail_offer_count">%1$d OFFER(S) AVAILABLE</string>
+    <string name="restaurant_carlsberg_details">CARLSBERG CLUB GLASSES OFFER</string>
+    <string name="restaurant_result_offer_count_single">%1$s offer available</string>
+    <string name="restaurant_result_offer_count_multi">%1$s offers available</string>
+    <string name="text_doplus_member_offer_title">DINEOUT PLUS OFFER - EXCLUSIVELY FOR YOU</string>
+    <string name="text_doplus_non_member_offer_title">OFFER FOR DINEOUT PLUS MEMBER</string>
+    <string name="text_tap_view_details">TAP TO VIEW MORE DETAILS</string>
+    <string name="menu">MENU</string>
+    <string name="uber_dialog_title">Ride there with Uber</string>
+
+    <string name="resto_review_type_critic">CRITIC</string>
+    <string name="resto_review_type_authentic">AUTHENTIC</string>
+    <string name="resto_review_type_tripadvisor">TRIPADVISOR</string>
+
+    <string name="opening_hr">OPENING HOURS</string>
+    <string name="cuisine">CUISINES</string>
+    <string name="view_all">VIEW ALL</string>
+
+    <string name="button_ok">OK</string>
+    <string name="button_dismiss">DISMISS</string>
+
+
+    <!-- Deal confirmation and booking confirmation -->
+    <string name="guest_details">GUEST DETAILS</string>
+    <string name="edit">Edit</string>
+    <string name="name">NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="phone">PHONE</string>
+    <string name="phone_number_hint">Please enter your phone number</string>
+    <string name="special_request">SPECIAL REQUEST (if any)</string>
+    <string name="special_requset_hint">eg. Bithday Party,Please arrange cake </string>
+    <string name="selected_date_time">SELECTED DATE AND TIME</string>
+    <string name="selected_deals">SELECTED DEALS</string>
+    <string name="selected_offers">SELECTED OFFERS</string>
+
+    <string name="selected_deals_timings">Every Sunday 11:00 AM to 2:00 PM</string>
+    <string name="guest">NO OF GUESTS</string>
+    <string name="guest_hint">Please select no of guests </string>
+
+    <string name="total_amount">Total Amount</string>
+    <string name="deals_confirmation">Deals Confirmation</string>
+    <string name="booking_confirmation">Booking Confirmation</string>
+
+    <!-- Booking Detail Screen -->
+    <string name="booking_id">Your Booking ID is </string>
+    <string name="text_dineout_plus_unique_code">Dineout Plus Unique code</string>
+    <string name="reserve_again">Reserve Again</string>
+    <string name="reviewed">REVIEWED</string>
+    <string name="text_reviews">Reviews</string>
+    <string name="write_review">Write Review</string>
+    <string name="text_view_restaurant_detail_page">View restaurant detail page</string>
+    <string name="text_dineout_plus_membership_details">Dineout Plus membership details</string>
+    <string name="text_cancel_booking">Cancel booking</string>
+    <string name="diner_name">Hi %1$s,</string>
+    <string name="cancelled">CANCELLED</string>
+
+    <!-- Resturant Detail Screen -->
+    <string name="today">Today -</string>
+    <string name="default_text">Should never happen</string>
+
+    <!-- Container Strings -->
+    <string name="container_dinner_for">%1$s for %2$s</string>
+    <string name="container_deal_valid_from">Valid from: %1$s</string>
+    <string name="container_deal_validity">Validity: %1$s - %2$s</string>
+
+    <string name="dineout_copyright">dineout_copyright</string>
+    <string name="text_how_to_redeem_deal">How to redeem this deal?</string>
+    <string name="text_deal_redeemed">Deal Redeemed</string>
+    <string name="button_reserve_again">RESERVE AGAIN</string>
+    <string name="deal_limit_reached">Maximum purchase limit reached</string>
+    <string name="text_review_status_moderation">STATUS : IN MODERATION</string>
+    <string name="text_number_of_deals">Number of Deals</string>
+
+    <string name="text_selected_dining_time_error">Restaurant does not accept reservations at the selected dining time</string>
+
+    <string name="text_no_offer_title">No offers available!</string>
+    <string name="text_no_offer_sub_title">But you can still reserve a table for free</string>
+
+    <string name="text_sold_out">SOLD OUT</string>
+    <string name="text_free">FREE</string>
+    <string name="text_onwards">Onwards</string>
+
+    <string name="text_upcoming_tab">UPCOMING</string>
+    <string name="text_history_tab">HISTORY</string>
+    <string name="text_general_error_message">Some Error occurred. Please try again later</string>
+    <string name="text_promocode_not_applied">Promocode could not be applied</string>
+    <string name="text_pay_cashback">Now you can pay your bill at this restaurant through the app and get 20% cashback </string>
+    <string name="button_pay_bills">PAY BILL</string>
+    <string name="text_time_slot_error_msg">No slot available</string>
+
+    <string name="text_reserve">Reserve</string>
+    <string name="text_get_offer">Get Offer</string>
+    <string name="text_buy">Buy</string>
+    <string name="container_deal_quantity_amount">Qty %1$d * \u20B9 %2$d</string>
+    <string name="text_validity">Validity: %1$s</string>
+    <string name="text_event_details">Event Details</string>
+    <string name="text_deal_details">Deal Details</string>
+    <string name="text_price_per_ticket">\u20B9 %1$s per ticket</string>
+    <string name="text_price_per_person">\u20B9 %1$s per ticket</string>
+    <string name="text_restaurant_rules">Restaurant Rules</string>
+    <string name="restaurant_rules">Some restaurants have entry policies. Help us get you a haslefree entry</string>
+
+</resources>

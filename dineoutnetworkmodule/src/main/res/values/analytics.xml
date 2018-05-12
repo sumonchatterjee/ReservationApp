@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Enable automatic activity tracking -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!-- Enable automatic exception tracking -->
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <!-- Screen Name -->
+    <string name="ga_screen_splash">Splash</string>
+    <string name="ga_screen_first_launch">FirstLaunch</string>
+    <string name="ga_screen_home">Home</string>
+    <string name="ga_screen_you">You</string>
+    <string name="ga_screen_date_picker">DatePicker</string>
+    <string name="ga_screen_select_location">SelectLocation</string>
+    <string name="ga_screen_do_plus_enter_code">DOPlusEnterCode</string>
+    <string name="ga_screen_my_list">MyList</string>
+    <string name="ga_screen_my_list_guest">MyListGuest</string>
+    <string name="ga_screen_my_list_blank">MyListBlank</string>
+    <string name="ga_screen_wallet">Wallet</string>
+    <string name="ga_screen_redeem">Redeem</string>
+    <string name="ga_screen_manage_payment">ManagePayment</string>
+    <string name="ga_screen_payment_history">PaymentHistory</string>
+    <string name="ga_screen_booking_history">BookingHistory</string>
+    <string name="ga_screen_booking_upcoming">BookingUpcoming</string>
+    <string name="ga_screen_payment_invoice">PaymentInvoice</string>
+    <string name="ga_screen_payment_status">PaymentStatus</string>
+    <string name="ga_screen_promotions">Promotions</string>
+    <string name="ga_screen_talk_to_us">Talk To Us</string>
+    <string name="ga_screen_settings">Settings</string>
+    <string name="ga_screen_login_dialog">LoginDialog</string>
+    <string name="ga_screen_login_email">LoginEmail</string>
+    <string name="ga_screen_login_book_table">LoginBookTable</string>
+    <string name="ga_screen_sign_up">SignUp</string>
+    <string name="ga_screen_my_bookings">MyBookings</string>
+    <string name="ga_screen_write_review">WriteReview</string>
+    <string name="ga_screen_refer_earn">ReferNEarn</string>
+    <string name="ga_screen_do_plus_card">DOPlusCard</string>
+    <string name="ga_screen_my_account">MyAccount</string>
+    <string name="ga_screen_edit_my_account">EditMyAccount</string>
+    <string name="ga_screen_detail_page">DetailPage</string>
+    <string name="ga_screen_maps">Maps</string>
+    <string name="ga_screen_photo_menu">PhotoOrMenu</string>
+    <string name="ga_screen_all_reviews">AllReviews</string>
+    <string name="ga_screen_booking_details">BookingDetails</string>
+    <string name="ga_screen_deal_booking_details">DealBookingDetails</string>
+    <string name="ga_screen_event_booking_details">EventBookingDetails</string>
+    <string name="ga_screen_listing">Listing</string>
+    <string name="ga_screen_restaurant_chains">RestaurantChains</string>
+    <string name="ga_screen_search">Search</string>
+    <string name="ga_deal_screen_search">DealSearch</string>
+    <string name="ga_screen_filters">Filters</string>
+    <string name="ga_screen_confirm_booking">ConfirmBooking</string>
+    <string name="ga_screen_thankyou">ThankYouScreen</string>
+    <string name="ga_screen_wait_time">WaitTime</string>
+    <string name="ga_screen_do_plus_payment_status_successful">DOPlusPaymentStatusSuccessful</string>
+    <string name="ga_screen_paynow_payment_status_successful">PaynowPaymentStatusSuccessful</string>
+    <string name="ga_screen_do_plus_view_partner">DOPlusViewPartnerRestaurant</string>
+    <string name="ga_screen_select_localities">SelectLocalities</string>
+    <string name="ga_screen_select_cuisines">SelectCuisines</string>
+    <string name="ga_screen_do_plus_member">DOPlusMember</string>
+    <string name="ga_screen_non_do_plus_member">DOPlusNonMember</string>
+    <string name="ga_screen_do_plus_membership_enquiry_success">DOPlusMembershipEnquirySuccess</string>
+    <string name="ga_screen_do_plus_membership_enquiry">DOPlusMembershipEnquiry</string>
+    <string name="ga_screen_do_plus_membership_details">DOPlusMembershipDetails</string>
+    <string name="ga_screen_gift_vouchers">GiftVouchers</string>
+    <string name="ga_screen_select_offers">SelectOffers</string>
+    <string name="ga_screen_details_events">Details_Events</string>
+
+    <string name="ga_pay_now_bill_amount">PayNowBillAmount</string>
+    <string name="ga_pay_now_bill_summary">PayNowBillSummary</string>
+    <string name="ga_pay_now_payment_details">PaymentDetails</string>
+    <string name="ga_pay_payment_deals">PayNowBillAmount_Deals</string>
+    <string name="ga_pay_payment_events">PayNowBillAmount_Events</string>
+    <string name="ga_pay_now_select_payment">PayNowSelectPayment</string>
+    <string name="ga_pay_now_paytm_wallet">PayNowPaytmWallet</string>
+    <string name="ga_pay_now_mobikwik">PayNowMobiKwik</string>
+    <string name="ga_pay_now_saved_cards">PayNowSavedCards</string>
+    <string name="refer_n_earn">ReferNEarn</string>
+    <string name="confirm_edit_booking">ConfirmEditBooking</string>
+    <string name="ga_screen_pay_now">PayNowDialog</string>
+    <string name="ga_screen_earnings">Earnings</string>
+    <string name="ga_screen_deals">Deals</string>
+    <string name="ga_screen_deal_popup">B_DealQuantity</string>
+    <string name="ga_screen_details_reservation">Details_Reservation</string>
+
+    <string name="ga_screen_detail">Details</string>
+    <string name="ga_screen_restaurant_detail">Details_Reservation</string>
+    <string name="ga_screen_reservation">Reservation</string>
+    <string name="ga_screen_info">Details_Info</string>
+    <string name="ga_screen_reviews">Details_Reviews</string>
+    <string name="ga_screen_confirm_deal">ConfirmDeal</string>
+    <string name="ga_screen_confirm_event">ConfirmEvent</string>
+    <string name="ga_screen_view_deals_listing">DealsListing</string>
+    <string name="ga_screen_ring_fencing">Promotions</string>
+    <string name="ga_screen_deal_sort">DealsSort</string>
+    <string name="ga_screen_deal_filters">DealFilters</string>
+    <string name="ga_screen_waittime">WaitTimeScreen</string>
+    <string name="ga_screen_time_slot_selection">TimeSlotSelection</string>
+
+
+    <!-- Action Name -->
+    <string name="ga_action_tag_added">TagAdded</string>
+    <string name="ga_action_view_all_card">ViewAllCard_</string>
+    <string name="ga_action_smart_pay_card">smartPay_RestaurantCard</string>
+    <string name="ga_action_redeem_deal_confirmation_yes">RedeemConfirmationDialog_Yes</string>
+    <string name="ga_action_redeem_deal_confirmation_cancel">RedeemConfirmationDialog_Cancel</string>
+    <string name="ga_action_redeem_deal_error">RedeemErrorDialog</string>
+    <string name="ga_action_redeem_deal">RedeemDeal</string>
+    <string name="ga_action_write_reviews">WriteReview</string>
+    <string name="ga_action_edit_reviews">EditReview</string>
+    <string name="ga_action_view_reviews">ViewReview</string>
+    <string name="ga_action_reviews">Reviews</string>
+    <string name="ga_action_deals_apply_code">ApplyCode</string>
+    <string name="ga_action_deals_filters">Filters</string>
+    <string name="ga_action_deals_sort">SortBy</string>
+    <string name="ga_action_deal_card">DealsCard</string>
+    <string name="ga_action_view_booking_details">ViewBookingDetails</string>
+    <string name="ga_action_share_deals">Share</string>
+    <string name="ga_action_rate_restaurant">RateRestaurant</string>
+    <string name="ga_action_similar_cards">SimilarsCard</string>
+    <string name="ga_action_offerdetails">OfferDetails</string>
+    <string name="ga_action_view_menu">Menu</string>
+    <string name="ga_action_deal_info">DealInfo</string>
+    <string name="ga_action_selectoffer">SelectOffer</string>
+    <string name="ga_action_select_date_time">SelectDateTime</string>
+    <string name="ga_action_buy_deal">BuyDeal</string>
+    <string name="ga_action_buy_deals">Buy_Deal</string>
+    <string name="ga_action_buy_deals_girf">Buy_Deal_GIRF</string>
+    <string name="ga_action_enable_gps">EnableGPS</string>
+    <string name="ga_action_select_locality">SelectLocality</string>
+    <string name="ga_action_card">Card</string>
+    <string name="ga_action_booking_widget">BookingWidget</string>
+    <string name="ga_action_find_table">FindTable</string>
+    <string name="ga_action_restaurant_card">RestaurantCard</string>
+    <string name="ga_action_my_list_card">MyListCard</string>
+    <string name="ga_action_reserve_restaurant_card">Reserve_RestaurantCard</string>
+    <string name="ga_action_pay_bill_restaurant_card">PayBill_RestaurantCard</string>
+    <string name="ga_action_upload_bill_restaurant_card">UploadBill_RestaurantCard</string>
+    <string name="ga_action_reserve_mylist_card">Reserve_MyListCard</string>
+    <string name="ga_action_upcoming_card">UpcomingCard</string>
+    <string name="ga_action_upcoming_deals_card">UpcomingDealsCard</string>
+    <string name="ga_action_upcoming_events_card">UpcomingEventsCard</string>
+    <string name="ga_action_past_booking_card">PastBookingCard</string>
+    <string name="ga_action_past_deals_card">PastDealsCard</string>
+    <string name="ga_action_reserve_again_past_booking_card">ReserveAgain_PastBookingCard</string>
+    <string name="ga_action_write_review_past_booking_card">WriteReview_PastBookingCard</string>
+    <string name="ga_action_get_directions_upcoming_card">GetDirections_UpcomingCard</string>
+    <string name="ga_action_deals_upcoming_card">GetDirections_UpcomingDeals</string>
+    <string name="ga_action_events_upcoming_card">GetDirections_UpcomingEventsCard</string>
+    <string name="ga_action_share_upcoming_card">Share_UpcomingCard</string>
+    <string name="ga_action_share_upcoming_events_card">Share_UpcomingEventsCard</string>
+    <string name="ga_action_share_deals_upcoming_card">Share_UpcomingDealsCard</string>
+    <string name="ga_action_pay_now_upcoming_card">PayNow_UpcomingCard</string>
+    <string name="ga_action_select_location">SelectLocation</string>
+    <string name="ga_action_search">Search</string>
+    <string name="ga_action_tag">Tag</string>
+    <string name="ga_action_savings_card">SavingCard</string>
+    <string name="ga_action_magic_card">MagicCard</string>
+    <string name="ga_action_info_card">InfoCard</string>
+    <string name="ga_action_auto_detect">AutoDetect</string>
+    <string name="ga_action_do_plus_member_buy_now">BuyNow_DOPlusMember</string>
+    <string name="ga_action_do_plus_member_continue">Continue_DOPlusMember</string>
+    <string name="ga_action_continue">Continue</string>
+    <string name="ga_action_waittime_will_wait">WillWait</string>
+    <string name="ga_action_coupon_success">CouponSuccess</string>
+    <string name="ga_action_how_it_works">HowItWorks</string>
+    <string name="ga_action_activate_do_plus">ActivateDOPlus</string>
+    <string name="ga_action_verify">Verify</string>
+    <string name="ga_action_request_invite">RequestInvite</string>
+    <string name="ga_action_transfer_paytm">TransferToPaytm</string>
+    <string name="ga_action_feedback">Feedback</string>
+    <string name="ga_action_rate_our_app">RateOurApp</string>
+    <string name="ga_action_login_facebook">Login_Facebook</string>
+    <string name="ga_action_login_google">Login_Google</string>
+    <string name="ga_action_login_email">Login_Email</string>
+    <string name="ga_action_new_user">NewUser</string>
+    <string name="ga_action_sign_up">SignUp</string>
+    <string name="ga_action_login">Login</string>
+    <string name="ga_action_cancel">Cancel</string>
+    <string name="ga_action_review_under_moderation">Okay_ReviewUnderModeration</string>
+    <string name="ga_action_logout">Logout</string>
+    <string name="ga_action_share">Share</string>
+    <string name="ga_action_called">Call</string>
+    <string name="ga_action_maps">Maps</string>
+    <string name="ga_action_favourited">Favourited</string>
+    <string name="ga_action_unfavourited">Unfavourited</string>
+    <string name="ga_action_book_now">BookNow</string>
+    <string name="ga_action_menu">Menu</string>
+    <string name="ga_action_photo">Photo</string>
+    <string name="ga_action_view_all_reviews">ViewAllReviews</string>
+    <string name="ga_action_rate_review">RateReview</string>
+    <string name="ga_action_uber_ride">UberRide</string>
+    <string name="ga_action_get_directions">GetDirections</string>
+    <string name="ga_action_opening_hours">OpeningHours</string>
+    <string name="ga_action_offer_detail">OfferDetail</string>
+    <string name="ga_action_do_plus_offer_detail">DOPlusOfferDetail</string>
+    <string name="ga_action_view_review">ViewReview</string>
+    <string name="ga_action_filter">Filter</string>
+    <string name="ga_action_searched">Searched</string>
+    <string name="ga_action_quick_tag_selected">QuickTagSelected</string>
+    <string name="ga_action_quick_tag_deselected">QuickTagDeselected</string>
+    <string name="ga_action_quick_suggested_search">SuggestedSearch</string>
+    <string name="ga_action_edit">Edit</string>
+    <string name="ga_action_success">Success</string>
+    <string name="ga_action_failed">Failed</string>
+    <string name="ga_action_confirm_table">ConfirmTable</string>
+    <string name="ga_action_offer_selected">OfferSelected</string>
+    <string name="ga_action_view_status">ViewStatus</string>
+    <string name="ga_action_submit_store_rating_dialog">Submit_StoreRatingDialog</string>
+    <string name="ga_action_yes_store_rating_dialog">Yes_StoreRatingDialog</string>
+    <string name="ga_action_remind_later_store_rating_dialog">RemindLater_StoreRatingDialog</string>
+    <string name="ga_action_never_ask_again_store_rating_dialog">NeverAskAgain_StoreRatingDialog</string>
+    <string name="ga_action_will_wait">WillWait</string>
+    <string name="ga_action_cancel_booking">CancelBooking</string>
+    <string name="ga_action_reserve_again">ReserveAgain</string>
+    <string name="ga_action_write_review">WriteReview</string>
+    <string name="ga_action_view_restaurant_detail">ViewRestaurantDetail</string>
+    <string name="ga_action_pay_now">PayNow</string>
+    <string name="ga_action_cost_for_2">CostFor2</string>
+    <string name="ga_action_distance">Distance</string>
+    <string name="ga_action_ratings">Ratings</string>
+    <string name="ga_action_2_plus_ratings">2Plus_Ratings</string>
+    <string name="ga_action_3_plus_ratings">3Plus_Ratings</string>
+    <string name="ga_action_4_plus_ratings">4Plus_Ratings</string>
+    <string name="ga_action_cuisines">Cuisines</string>
+    <string name="ga_action_localities">Localities</string>
+    <string name="ga_action_clear">Clear</string>
+    <string name="ga_action_apply">Apply</string>
+    <string name="ga_action_close_filter">CloseFilter</string>
+    <string name="ga_action_locality_added">LocalityAdded</string>
+    <string name="ga_action_locality_removed">LocalityRemoved</string>
+    <string name="ga_action_cuisine_added">CuisineAdded</string>
+    <string name="ga_action_cuisine_removed">CuisineRemoved</string>
+    <string name="ga_action_view_bill_summary">ViewBillSummary</string>
+    <string name="ga_action_select_payment_option">SelectPaymentOption</string>
+    <string name="ga_action_saved_cards">SavedCards</string>
+    <string name="ga_action_card_payment">CardPayment</string>
+    <string name="ga_action_netbanking">netBanking</string>
+    <string name="ga_action_paytm">Paytm</string>
+    <string name="ga_action_mobiwik">Mobikwik</string>
+    <string name="ga_action_phonePe">phonePe</string>
+    <string name="ga_action_pay_now_card">PayNow_card</string>
+    <string name="ga_action_use_dineout_wallet">UseDineoutWallet</string>
+    <string name="ga_action_skip_intro">SkipIntro</string>
+    <string name="ga_action_edit_upcoming_card">Edit_UpcomingCard</string>
+    <string name="ga_action_edit_deals_upcoming_card">Edit_UpcomingDealsCard</string>
+    <string name="ga_action_card_banner">Card_Banner</string>
+    <string name="ga_action_edit_booking">Edit</string>
+    <string name="ga_action_refer_now">ReferNow_App</string>
+    <string name="ga_action_refer_now_dop">ReferNow_DOP</string>
+    <string name="ga_know_more_app">KnowMore_App</string>
+    <string name="ga_know_more">KnowMore_DOP</string>
+    <string name="ga_action_edit_warning">Yes_EditWarning</string>
+    <string name="ga_action_buy_now">BuyNow</string>
+    <string name="ga_action_know_more">KnowMore</string>
+    <string name="ga_action_reserve_offer">Reserve_Offer</string>
+    <string name="ga_action_buy">Buy</string>
+    <string name="ga_action_buy_event">Buy_Event</string>
+    <string name="ga_action_event_card">EventCard</string>
+    <string name="ga_action_tell_more">TellMore</string>
+    <string name="ga_action_talk_us">TalkToUs</string>
+    <string name="ga_action_smart_pay">SmartPay</string>
+    <string name="ga_action_only_on_confirmed">OnlyOnConfirmed</string>
+    <string name="ga_action_not_available_here">NotAvailableHere</string>
+    <string name="ga_action_proceed_to_payments">ProceedToPayments</string>
+    <string name="ga_action_submit">Submit</string>
+    <string name="ga_action_confirm_edit">ConfirmEdit</string>
+    <string name="ga_action_select_payment_method">SelectPaymentMethod</string>
+    <string name="ga_action_apply_do_plus_promo_code">Apply_DOPPromoCode</string>
+    <string name="ga_action_edit_deal_upcoming_card">Edit_Deal</string>
+    <string name="ga_action_sort_selected">SortSelected</string>
+    <string name="ga_action_sort">Sort</string>
+    <string name="ga_action_back">Back</string>
+    <string name="ga_action_page_scrolled">PageScrolled</string>
+    <string name="ga_action_category">Category</string>
+    <string name="ga_action_reset_all">ResetAll</string>
+    <string name="ga_action_sub_tags">SubTags</string>
+    <string name="ga_action_buy_now_deal_popup">BuyNow_DealPopup</string>
+    <string name="ga_action_plus_deal_popup">Plus_DealPopup</string>
+    <string name="ga_action_minus_deal_popup">Minus_DealPopup</string>
+    <string name="ga_action_select_slot">SelectSlot</string>
+    <string name="ga_action_select_date">SelectDate</string>
+    <string name="ga_action_expand_section">ExpandSection</string>
+    <string name="ga_action_reserve_table">ReserveTable</string>
+    <string name="ga_action_banner_girf">Banner_GIRF</string>
+    <string name="ga_action_deal_title">DealTitle</string>
+
+    <string name="ga_action_payment_gateway_used">PaymentGatewayUsed</string>
+    <string name="ga_action_dineout_wallet_used">DineoutWalletUsed</string>
+    <string name="ga_action_ringfencing_used">RingfencingUsed</string>
+
+    <string name="ga_dop_card_bought">DOPCardBought</string>
+    <string name="ga_dop_card_failure">DOPCardFailure</string>
+
+    <!-- Enter password -->
+    <string name="ga_screen_enter_password">EnterPassword</string>
+
+    <!-- Labels -->
+    <string name="ga_label_ascending">Ascending</string>
+    <string name="ga_label_descending">Descending</string>
+
+
+    <!--new login flow tracking events-->
+    <string name="ga_new_login_category_name">New_Login_Flow</string>
+
+    <string name="ga_new_login_artwork_screen_action">Log_In</string>
+    <string name="ga_new_login_artwork_screen_label">Login_Artwork</string>
+
+    <string name="ga_new_login_screen_continue_action">Continue</string>
+    <string name="ga_new_login_screen_google_login_action">GoogleLogin</string>
+    <string name="ga_new_login_screen_fb_login_action">FacebookLogin</string>
+    <string name="ga_new_login_screen_label">Login_Screen1</string>
+
+    <string name="ga_new_login_password_screen_email_login_action">Log_In</string>
+    <string name="ga_new_login_password_screen_email_reset_password_action">ResetPasswordClick</string>
+    <string name="ga_new_login_password_screen_email_label">Enter_Password_Email</string>
+
+    <string name="ga_new_login_password_screen_mobile_login_action">Log_In</string>
+    <string name="ga_new_login_password_screen_mobile_reset_password_action">Reset_Password</string>
+    <string name="ga_new_login_password_screen_mobile_login_via_otp_action">LoginViaOTP</string>
+    <string name="ga_new_login_password_screen_mobile_label">Enter_Password_Mobile</string>
+
+    <string name="ga_new_login_via_otp_screen_resend_otp_action">Resend_OTP</string>
+    <string name="ga_new_login_via_otp_screen_log_in_action">Log_In</string>
+    <string name="ga_new_login_via_otp_screen_label">Login_via_OTP</string>
+
+    <string name="ga_new_login_reset_password_screen_reset_action">Reset_Password</string>
+    <string name="ga_new_login_reset_password_screen_label">Reset_Password</string>
+
+    <string name="ga_new_login_create_account_screen_sign_up_action">Sign_Up</string>
+    <string name="ga_new_login_create_account_screen_label">Create_Account</string>
+
+    <string name="ga_new_login_sign_up_verify_mobile_verify_action">Verify</string>
+    <string name="ga_new_login_sign_up_verify_mobile_resend_action">Resend</string>
+    <string name="ga_new_login_sign_up_verify_mobile_label">Create_Account</string>
+
+    <string name="ga_new_login_my_account_screen_update_email_action">Email_Update</string>
+    <string name="ga_new_login_my_account_screen_update_mobile_action">Mobile_Update</string>
+    <string name="ga_new_login_my_account_screen_update_action">Update</string>
+    <string name="ga_new_login_my_account_screen_logout_action">Logout</string>
+    <string name="ga_new_login_my_account_screen_label">MyAccount</string>
+
+    <string name="ga_new_login_update_email_screen_send_verification_action">Send_Verification_Code_Email</string>
+    <string name="ga_new_login_update_email_screen_label">Update_Screen</string>
+
+    <string name="ga_new_login_update_mobile_screen_send_verification_action">Send_Verification_Code_Mobile</string>
+    <string name="ga_new_login_update_mobile_screen_label">Update_Screen</string>
+
+    <string name="ga_new_login_verify_email_screen_verify_email_action">Verify_Email</string>
+    <string name="ga_new_login_verify_email_screen_resend_otp_action">Resend_OTP</string>
+    <string name="ga_new_login_verify_email_screen_label">Verify_Screen</string>
+
+    <string name="ga_new_login_verify_mobile_screen_verify_mobile_action">Verify_Mobile</string>
+    <string name="ga_new_login_verify_mobile_screen_resend_otp_action">Resend_OTP</string>
+    <string name="ga_new_login_verify_mobile_screen_label">Verify_Screen</string>
+
+    <!-- Push Notification Events -->
+    <string name="push_label_restaurant_called">RestaurantCalled</string>
+    <string name="push_label_restaurant_viewed">RestaurantViewed</string>
+    <string name="push_label_restaurant_reviewed">RestaurantReviewed</string>
+    <string name="push_label_restaurant_favorited">RestaurantFavorited</string>
+    <string name="push_label_restaurant_unfavorited">RestaurantUnFavorited</string>
+    <string name="push_label_table_booked">TableBooked</string>
+    <string name="push_label_booking_initiated">BookingInitiated</string>
+    <string name="push_label_user_profile">UserProfile</string>
+
+
+    <!-- Branch Conversion Tracking -->
+    <string name="branch_table_booked">TableBooked</string>
+    <string name="branch_deal_bought">DealBought</string>
+    <string name="branch_event_bought">PaidEventBought</string>
+    <string name="branch_paid_bill">PaidBill</string>
+    <string name="branch_paid_bill_failure">PaidBillFailed</string>
+    <string name="branch_deal_bought_failure">DealBoughtFailed</string>
+    <string name="branch_table_booked_failure">TableBookedFailed</string>
+
+    <string name="deal_pay_initiated">DealPayInitiated</string>
+    <string name="deal_viewed">DealViewed</string>
+    <string name="deal_buy_initiated">DealBuyInitiated</string>
+    <string name="deal_buy_confirmation">DealBuyConfirmation</string>
+
+
+
+    <!--Rate And Review-->
+    <string name="ga_rnr_category_home">D_Home</string>
+    <string name="ga_rnr_category_app_rating">D_AppRating</string>
+    <string name="ga_rnr_category_restaurant_detail">D_RestaurantDetail</string>
+    <string name="ga_rnr_category_my_booking">D_MyBookings</string>
+    <string name="ga_rnr_category_setting">D_Settings</string>
+    <string name="ga_rnr_category_booking_detail_b">B_BookingDetail_B</string>
+    <string name="ga_rnr_category_upload_bill">D_UploadBill</string>
+
+    <string name="ga_rnr_action_recon_pop_up_yes_click">ReconPopUpYesClick</string>
+    <string name="ga_rnr_action_recon_pop_up_no_click">ReconPopUpNoClick</string>
+    <string name="ga_rnr_action_recon_sticky_yes_click">ReconStickyYesClick</string>
+    <string name="ga_rnr_action_recon_sticky_no_click">ReconStickyNoClick</string>
+
+    <string name="ga_rnr_action_restaurant_leave_a_review_click">RestaurantLeaveAReviewClick</string>
+    <string name="ga_rnr_action_restaurant_edit_review_click">RestaurantEditReviewClick</string>
+    <string name="ga_rnr_action_restaurant_review_see_more">RestaurantReviewSeeMore</string>
+    <string name="ga_rnr_action_restaurant_review_see_more_collapse">RestaurantReviewSeeMoreCollapse</string>
+
+    <string name="ga_rnr_action_rate_our_app_click">RateOurAppClick</string>
+
+    <string name="ga_rnr_action_steps_to_upload_bill_view">StepsToUploadBillView</string>
+    <string name="ga_rnr_action_steps_to_upload_bill_check_box_select">StepsToUploadBillCheckBoxSelect</string>
+    <string name="ga_rnr_action_steps_to_upload_bill_check_box_un_select">StepsToUploadBillCheckBoxUnselect</string>
+    <string name="ga_rnr_action_steps_to_upload_bill_click_bill_image_cta_click">ClickBillImageCTAClick</string>
+    <string name="ga_rnr_action_steps_to_upload_bill_use_photo_click">UsePhotoClick</string>
+
+    <string name="ga_rnr_action_app_rating_star_click">AppRatingStarClick</string>
+    <string name="ga_rnr_action_app_rating_tag_select">AppRatingTagSelect</string>
+    <string name="ga_rnr_action_app_rating_submit_click">AppRatingSubmitClick</string>
+
+    <string name="ga_rnr_action_restaurant_review_star_click">RestaurantReviewStarClick</string>
+    <string name="ga_rnr_action_restaurant_review_tag_select">RestaurantReviewTagSelect</string>
+    <string name="ga_rnr_action_restaurant_review_type">RestaurantReviewType</string>
+    <string name="ga_rnr_action_restaurant_review_submit_click">RestaurantReviewSubmitClick</string>
+
+    <!-- Countly Screen Category-->
+    <string name="countly_d_splash">D_Splash</string>
+    <string name="countly_first_launch">D_FirstLaunch</string>
+    <string name="countly_select_location">D_SelectLocation</string>
+    <string name="countly_home">D_Home</string>
+    <string name="countly_search">D_Search</string>
+    <string name="countly_listing">D_Listing</string>
+    <string name="countly_doplus">D_DOPlusMember</string>
+    <string name="countly_nondoplus">D_DOPlusNonMember</string>
+    <string name="countly_you">D_You</string>
+    <string name="countly_account">D_MyAccount</string>
+    <string name="countly_refer_n_earn">D_ReferAndEarn</string>
+    <string name="countly_your_bills">D_YourBills</string>
+    <string name="countly_smartpay">D_SmartPay</string>
+    <string name="countly_you_listing">D_MyList</string>
+    <string name="countly_booking">D_MyBookings</string>
+    <string name="countly_upcoming_booking_detail">D_UpcomingBookingDetail</string>
+    <string name="countly_earnings">D_MyEarnings</string>
+    <string name="countly_transaction">D_TransactionHistory</string>
+    <string name="countly_promotion">D_PromotionAndGiftVoucher</string>
+    <string name="countly_talk_to_us">D_TalkToUs</string>
+    <string name="countly_settings">D_Settings</string>
+    <string name="countly_phonepe">D_MyPhonePe</string>
+    <string name="countly_do_plus">D_DOPlusCard</string>
+    <string name="countly_reaturant_detail">D_RestaurantDetail</string>
+    <string name="countly_login_artwork">L_Artwork</string>
+    <string name="countly_login">L_LoginScreen</string>
+    <string name="countly_login_password">L_LoginPasswordScreen</string>
+    <string name="countly_reset_password">L_LoginResetPassword</string>
+    <string name="countly_login_via_otp">L_LoginViaOtp</string>
+    <string name="countly_sign_up">L_SignUp</string>
+    <string name="countly_update_email">L_UpdateEmail</string>
+    <string name="countly_update_mobile">L_UpdateMobile</string>
+    <string name="countly_verify_email">L_VerifyEmail</string>
+    <string name="countly_verify_mobile">L_VerifyMobile</string>
+    <string name="countly_slot_selection">B_SlotSelection</string>
+    <string name="countly_enter_mobile_number">L_EnterMobileNumber</string>
+    <string name="countly_select_offer">B_SelectOffer</string>
+    <string name="countly_booking_confirmation">B_Confirmation</string>
+    <string name="countly_select_event">B_SelectEvent</string>
+    <string name="countly_payment_details">P_PaymentDetails</string>
+
+
+    <!-- Countly Event-->
+    <string name="action_d_splash">AppLaunch</string>
+
+    <!-- Countly Action-->
+    <string name="d_skip_introclick">SkipIntroClick</string>
+    <string name="d_location_search_type">LocationSearchType</string>
+    <string name="d_auto_detect_location_type">AutoDetectLocationClick</string>
+    <string name="d_location_search_result">LocationSearchResultClick</string>
+    <string name="d_card_banner_click">CardBannerClick</string>
+    <string name="d_location_icon_click">LocationIconClick</string>
+    <string name="d_search_icon_click">SearchIconClick</string>
+    <string name="d_search_type">SearchType</string>
+    <string name="d_search_enter">SearchEnter</string>
+    <string name="d_suggested_search">SuggestedSearchClick</string>
+    <string name="d_search_results">SearchResultClick</string>
+    <string name="d_search_scroll">SearchResultScroll</string>
+    <string name="d_search_close">SearchCloseClick</string>
+    <string name="d_search_listing">ListingResultsScroll</string>
+    <string name="d_listing_image">RestaurantImageClick</string>
+    <string name="d_restaurant_click">RestaurantCTAClick</string>
+    <string name="d_smartpay_click">RestaurantSmartPayIconClick</string>
+    <string name="d_filters_click">FiltersClick</string>
+    <string name="d_sort_click">SortByClick</string>
+    <string name="d_back_button_click">ListingBackButtonClick</string>
+    <string name="d_apply_click">FilterApplyClick</string>
+    <string name="d_filter_reset_click">FilterResetClick</string>
+    <string name="d_sort_option_click">SortByClick</string>
+    <string name="d_filter_close_click">FilterCloseClick</string>
+    <string name="d_listing_results_click">ListingResultsScroll</string>
+    <string name="d_restaurant_image_click">RestaurantImageClick</string>
+    <string name="d_restaurant_offers_click">RestaurantOfferClick</string>
+    <string name="d_restaurant_buy_now_click">DO_BuyNowClick</string>
+    <string name="d_tellmemore_click">DO_TellMeMoreClick</string>
+    <string name="d_do_share_it_click">DO_ShareItClick</string>
+    <string name="d_you_view_click">YouView</string>
+    <string name="d_logout_click">LogoutClick</string>
+    <string name="d_gender">GenderSelect</string>
+    <string name="d_back_click">BackClick</string>
+    <string name="d_account_viewed">MyAccountView</string>
+    <string name="d_email_type">EmailType</string>
+    <string name="d_mobile_type">MobileType</string>
+    <string name="d_dob_select">DateOfBirthSelect</string>
+    <string name="d_update_click">UpdateClick</string>
+    <string name="d_refer_and_viewed">ReferAndEarnView</string>
+    <string name="d_refer_now_clicked">ReferNowClick</string>
+    <string name="d_refer_dop">DOPlusReferNowClick</string>
+    <string name="d_smart_pay_view">SmartPayView</string>
+    <string name="d_my_listview">MyListView</string>
+    <string name="d_listing_scroll">ListingResultsScroll</string>
+    <string name="d_upcoming">UpcomingTab</string>
+    <string name="d_history">HistoryTab</string>
+    <string name="d_upcoming_share">UpcomingBookingShare</string>
+    <string name="d_upcoming_scroll">UpcomingBookingScroll</string>
+    <string name="d_history_scroll">HistoryBookingScroll</string>
+    <string name="d_upcoming_booking">UpcomingBookingClick</string>
+    <string name="d_history_booking">HistoryBookingClick</string>
+    <string name="d_get_directions">GetDirectionsClick</string>
+    <string name="d_history_booking_write_review">HistoryBookingWriteReviewClick</string>
+    <string name="d_history_booking_rseserve_again_review">HistoryBookingReserveAgainClick</string>
+    <string name="d_earnings_viewed">MyEarningsView</string>
+    <string name="d_earning_history_viewed">EarningHistoryView</string>
+    <string name="d_earning_history_scroll">EarningHistoryScroll</string>
+    <string name="d_earning_history_back">EarningHistoryBackClick</string>
+    <string name="d_giftvoucher">GiftVoucherTab</string>
+    <string name="d_promotion">PromotionTab</string>
+    <string name="d_faq_click">GiftVoucherFAQClick</string>
+    <string name="d_verify_click">GiftVoucherVerifyClick</string>
+    <string name="d_gift_voucher_code">GiftVoucherCodeType</string>
+    <string name="d_gift_pin">GiftVoucherPinType</string>
+    <string name="d_promotion_verify">PromotionVerifyClick</string>
+    <string name="d_promotion_code_type">PromotionCodeType</string>
+    <string name="d_talk_to_us_view">ChatView</string>
+    <string name="d_settings_view">SettingsView</string>
+    <string name="d_phonepe_view">PhonePeView</string>
+    <string name="d_doplus_view">DOPlusCardView</string>
+    <string name="d_restaurant_offer_click">RestaurantOfferClick</string>
+    <string name="d_restaurant_reservation_click">RestaurantReservationTab</string>
+    <string name="d_restaurant_reservations_click">RestaurantReservationCTAClick</string>
+    <string name="d_restaurant_offerdetails_click">RestaurantOfferDetailsClick</string>
+    <string name="d_restaurant_dealdetails_click">RestaurantDealDetailsClick</string>
+    <string name="d_restaurant_offercta_click">RestaurantOfferCTAClick</string>
+    <string name="d_restaurant_dealcta_click">RestaurantDealCTAClick</string>
+    <string name="d_restaurant_eventcta_click">RestaurantEventCTAClick</string>
+    <string name="d_restaurant_event_click">RestaurantEventClick</string>
+    <string name="d_restaurant_event_share_click">RestaurantEventShareClick</string>
+    <string name="d_restaurant_map_uber_click">RestaurantMapRideWithUber</string>
+    <string name="d_restaurant_get_diretion_click">RestaurantMapGetDirectionClick</string>
+    <string name="d_add_from_my_list">RestaurantAddToMyList</string>
+    <string name="d_remove_from_my_list">RestaurantRemoveFromMyList</string>
+    <string name="d_login_click">LoginClick</string>
+    <string name="d_continue_click">ContinueClick</string>
+    <string name="d_google_click">GoogleLoginClick</string>
+    <string name="d_facebook_click">FacebookLoginClick</string>
+    <string name="d_logins_click">LoginClick</string>
+    <string name="d_mobile_click">Mobile</string>
+    <string name="d_resend_code_click">ResendCodeClick</string>
+    <string name="d_signup_click">SignUpClick</string>
+    <string name="d_date_click">DateClick</string>
+    <string name="d_offer_detail_click">OfferDetailsClick</string>
+    <string name="d_event_detail_click">EventDetailsClick</string>
+    <string name="d_offer_cta_click">OfferCTAClick</string>
+    <string name="d_event_image_click">EventImageClick</string>
+    <string name="d_event_male_click">NoOfGuestsMaleClick</string>
+    <string name="d_event_female_click">NoOfGuestsFemaleClick</string>
+    <string name="d_guest_info_click">GuestDetailsInfoIconClick</string>
+    <string name="d_edit_mobile_click">MobileEditType</string>
+    <string name="d_edit_email_click">EmailEditType</string>
+    <string name="d_edit_name_click">NameEditType</string>
+    <string name="d_edit_jpno_click">JPNumberType</string>
+    <string name="d_jp_know_more_click">JPKnowMoreClick</string>
+
+</resources>

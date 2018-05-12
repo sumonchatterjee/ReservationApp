@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reservation_cta_button_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:layout_marginBottom="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/cta_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/grey_9b"
+            android:textSize="12sp"
+            android:layout_marginLeft="@dimen/screen_padding"
+            android:layout_marginRight="@dimen/screen_padding"
+            android:layout_marginBottom="@dimen/screen_padding_eight"
+            android:background="@drawable/cta_header_background"
+            android:paddingTop="@dimen/screen_padding_half"
+            android:paddingBottom="@dimen/screen_padding_half"
+            android:paddingLeft="@dimen/screen_padding_plus_half"
+            android:paddingRight="@dimen/screen_padding_plus_half" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/screen_padding"
+            android:layout_marginRight="@dimen/screen_padding">
+
+            <LinearLayout
+                android:id="@+id/left_tvs_wrapper"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/cta_min_height"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/fragment_restaurant_detail_bottom_button_drawable"
+                >
+                <TextView
+                    android:id="@+id/left_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_15"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/left_tv_sub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="@dimen/font_size_10"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/right_tvs_wrapper"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/cta_min_height"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/fragment_restaurant_detail_bottom_button_drawable"
+                android:layout_marginLeft="@dimen/screen_padding"
+                >
+                <TextView
+                    android:id="@+id/right_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_15"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/right_tv_sub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="@dimen/font_size_10"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

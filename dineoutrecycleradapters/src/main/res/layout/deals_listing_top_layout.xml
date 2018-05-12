@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <FrameLayout
+
+        android:id="@+id/top_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <com.dineout.android.volley.toolbox.NetworkImageView
+            android:id="@+id/rest_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_list"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:background="@drawable/black_bottom_up_gradient_shape"
+            android:layout_gravity="bottom"
+            >
+
+
+            <TextView
+                android:id="@+id/location_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/white"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="7dp"
+                android:textSize="@dimen/font_size_16" />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/imageViewSearchCardLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/screen_padding_two"
+                android:layout_marginLeft="@dimen/screen_padding_three"
+                android:src="@drawable/ic_restaurant_location"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/imageViewSearchCardLocation"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_12"
+                android:visibility="gone" />
+            </RelativeLayout>
+
+            <!--<TextView-->
+                <!--android:id="@+id/distance"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:drawableLeft="@drawable/ic_restaurant_location"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:text="0.46 kms"-->
+                <!--android:paddingRight="15dp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:paddingBottom="15dp"-->
+                <!--android:textSize="@dimen/font_size_16" />-->
+
+            <TextView
+                android:id="@+id/rest_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/location_name"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="2dp"
+                android:text=""
+                android:paddingLeft="15dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/deals_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+
+    <TextView
+        android:id="@+id/btn_view_more"
+        style="@style/ButtonStyle.RectanglePrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/earnings_selector_container"
+        android:layout_marginBottom="@dimen/screen_padding"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:text="View All Deals"
+        android:drawableRight="@drawable/ic_arrow_right_red"
+        android:drawablePadding="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_size_16"
+        android:visibility="visible" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<resources>
+
+    <style name="dotext">
+        <item name="android:textColor">#5D5D5D</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="dotext.Small">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="dotext.Medium">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="DineoutSplashBackground" parent="DOAppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <!--restaurant details:end-->
+
+    <!--FILTERS-->
+    <style name="FilterSubHeader" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/app_grey_shade_seven</item>
+        <item name="android:textColor">@color/app_grey_shade_four</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">@dimen/screen_padding_double</item>
+        <item name="android:paddingTop">@dimen/screen_padding_half</item>
+        <item name="android:paddingBottom">@dimen/screen_padding_half</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+    <style name="FilterSubValue" parent="@android:style/TextAppearance.Medium">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/app_grey_shade_five</item>
+        <item name="android:padding">@dimen/screen_padding_half</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="FilterMainButtons" parent="@android:style/TextAppearance.Medium">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">@dimen/screen_padding_half</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- DialogAnimation starts here-->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/top_in</item>
+        <item name="android:windowExitAnimation">@anim/top_out</item>
+    </style>
+
+    <style name="ButtonStyle.RectangleGreyButton">
+        <item name="android:background">@drawable/gen_rectangle_dark_grey_button_selector</item>
+    </style>
+
+    <style name="ButtonStyle.WhiteBorder">
+        <item name="android:background">@drawable/rectangle_white_stroke_button_selector</item>
+    </style>
+
+    <style name="ButtonStyle.NegativeButton">
+        <item name="android:background">@drawable/gen_round_negative_button_selector</item>
+        <item name="android:textColor">@color/app_grey_shade_six</item>
+    </style>
+
+    <style name="PickerHeaderStyle">
+        <item name="android:gravity">center</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/grey_4D</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:fontFamily">@string/font_fontFamily_medium</item>
+    </style>
+
+    <style name="EditTextVoucherStyle">
+        <item name="android:background">@drawable/round_rectangle_grey_stroke_shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/grey_4D</item>
+        <item name="android:textColorHint">@color/grey_96</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="GenericLinkStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="OrangeBlackLinkStyle" parent="GenericLinkStyle">
+        <item name="android:textColor">@color/gen_primary_text_selector</item>
+    </style>
+
+    <style name="Translucent" parent="Translucent.Base"/>
+
+    <style name="Translucent.Base" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:progressBarStyle">@style/InvisibleProgress</item>
+    </style>
+
+    <style name="InvisibleProgress">
+        <item name="android:visibility">gone</item>
+    </style>
+
+
+    <style name="datepickerCustom" parent="Theme.AppCompat.Light.Dialog"/>
+
+
+    <color name="ph_colorPrimary">@color/black</color>
+    <color name="ph_colorPrimaryDark">@color/black</color>
+    <color name="ph_colorAccent">@color/colorPrimary</color>
+
+    <color name="ph_textColor">@color/white</color>
+    <color name="ph_textColorAccent">@color/white</color>
+    <string name="ph_merchantName">dineout</string>
+    <drawable name="ph_merchantIcon">@drawable/ic_notification_panel</drawable>
+    <bool name="ph_enableToolbarShadow">true</bool>
+
+    <style name="RNRStyle">
+        <item name="android:windowEnterAnimation">@anim/rnr_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/rnr_exit_anim</item>
+    </style>
+
+    <style name="filterPopupStyle">
+        <item name="android:windowEnterAnimation">@anim/filter_dialog_enter_anim</item>
+        <item name="@android:windowExitAnimation">@anim/filter_dialog_exit_anim</item>
+    </style>
+
+</resources>

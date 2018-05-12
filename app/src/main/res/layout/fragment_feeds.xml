@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_feeds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.dineout.book.widgets.RestaurantReviewAskUserFeedback
+        android:id="@+id/restaurant_review_ask_user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="gone"/>
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/restaurant_review_ask_user_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true">-->
+        <!--<include-->
+            <!--layout="@layout/restaurant_review_ask_user_layout" />-->
+    <!--</RelativeLayout>-->
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <include layout="@layout/network_error_layout" />
+
+</FrameLayout>

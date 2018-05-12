@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_diner_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/booking_detail_address_text"
+            android:textSize="@dimen/font_size_16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/booking_id"
+                android:textColor="@color/booking_detail_address_text"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/tv_booking_id"
+                style="@style/MyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textAllCaps="true"
+                android:textColor="@color/booking_detail_resto_name"
+                android:textSize="@dimen/font_size_16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutDOPlusUniqueCodeSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/text_dineout_plus_unique_code"
+                android:textColor="@color/booking_detail_address_text"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/textViewBookingDetailDOPlusUniqueCode"
+                style="@style/MyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textAllCaps="true"
+                android:textColor="@color/booking_detail_resto_name"
+                android:textSize="@dimen/font_size_16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_booking_confirmation_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/booking_detail_stroke" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/textView_booking_confirmation_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_4D"
+                android:textSize="14sp"
+                tools:text="Your Booking Status will be updated by" />
+
+            <TextView
+                android:id="@+id/textView_booking_confirmation_title_2"
+                style="@style/MyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                tools:text="8:00 PM on 16 Jun, 2016" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/booking_detail_stroke" />
+
+    </LinearLayout>
+
+</LinearLayout>

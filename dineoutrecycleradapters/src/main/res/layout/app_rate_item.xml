@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="@dimen/screen_padding_half">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_f3"
+        android:paddingLeft="@dimen/screen_padding"
+        android:paddingRight="@dimen/screen_padding"
+        android:paddingTop="@dimen/screen_padding"
+        android:layout_marginTop="17dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/header_tv"
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="How Would You Rate Your App Experience?"
+            android:textColor="@color/grey_66"
+            android:textSize="@dimen/font_size_16" />
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_below="@+id/header_tv"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:progressDrawable="@drawable/rnr_rating_bar"
+            android:layout_marginLeft="@dimen/screen_padding_plus_half"
+            android:layout_marginRight="@dimen/screen_padding_plus_half"
+            android:layout_marginTop="@dimen/screen_padding_half"
+            android:layout_marginBottom="2dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView_review_author_image"
+        android:layout_width="@dimen/user_icon_size"
+        android:layout_height="@dimen/user_icon_size"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/app_user_icon"
+        />
+</RelativeLayout>

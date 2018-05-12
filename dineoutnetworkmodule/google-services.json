@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "187748401865",
+    "project_id": "dineout-b473d"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187748401865:android:4f41b28da5b5a605",
+        "android_client_info": {
+          "package_name": "com.example.dineoutnetworkmodule"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYm9TRcwNPIUz1ZJlFXmtRNbDZLGJv928"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1,
+          "analytics_property": {
+            "tracking_id": "UA-32580312-2"
+          }
+        },
+
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

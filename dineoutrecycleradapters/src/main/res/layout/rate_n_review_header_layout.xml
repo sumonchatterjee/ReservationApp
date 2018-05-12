@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/header_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/screen_padding_double"
+        android:paddingBottom="@dimen/screen_padding_double"
+        android:paddingLeft="@dimen/screen_padding"
+        android:paddingRight="@dimen/screen_padding"
+        android:gravity="center"
+        android:textColor="@color/grey_69"
+        android:textSize="@dimen/font_size_18"/>
+</RelativeLayout>

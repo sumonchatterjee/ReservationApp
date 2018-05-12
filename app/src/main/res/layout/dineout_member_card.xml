@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dineout_plus_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/screen_padding_eighteen"
+        android:gravity="center"
+        android:text="Dineout Plus membership details"
+        android:textColor="@color/app_primary_shade_one"
+        android:textSize="@dimen/font_size_14" />
+
+    <RelativeLayout
+        android:id="@+id/dineout_plus_card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/screen_padding"
+        android:layout_marginRight="@dimen/screen_padding"
+        android:paddingBottom="@dimen/screen_padding_plus_half"
+        android:paddingTop="@dimen/screen_padding_plus_half">
+
+        <ImageView
+            android:id="@+id/image_view_card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:src="@drawable/img_dineoutplus_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view_card_title"
+            android:layout_marginTop="@dimen/screen_padding_triple"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dineout_plus_member_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="@dimen/screen_padding_plus_half"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/screen_padding_plus_two"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dineout_plus_member_card_number"
+                    style="@style/MyStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/screen_padding_plus_half"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_16" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/MyStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/screen_padding_eight"
+                        android:text="VALID TILL"
+                        android:textColor="@color/white_66"
+                        android:textSize="@dimen/font_size_10" />
+
+                    <TextView
+                        android:id="@+id/dineout_plus_member_validity"
+                        style="@style/MyStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_14" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/deselectable_radio_item"
+    android:layout_width="wrap_content"
+    android:layout_height="?android:attr/listPreferredItemHeightSmall"
+    android:layout_marginLeft="@dimen/screen_padding_double"
+    android:layout_marginRight="@dimen/screen_padding_double"
+    android:checked="true"
+    android:drawablePadding="@dimen/screen_padding_double"
+    android:paddingLeft="@dimen/screen_padding_half"
+    android:textColor="@color/grey_4D"
+    android:theme="@style/DOCheckBox"
+    tools:text="North Indian" />

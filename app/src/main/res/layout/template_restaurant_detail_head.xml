@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout_rest_detail_head"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_E5"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <FrameLayout
+            android:id="@+id/frameLayout_rest_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.dineout.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imageView_rest_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/default_list"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_40" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout_rest_rating_recency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp">
+
+            <include
+                layout="@layout/new_tag_template"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView_rest_rating"
+                style="@style/RatingStyle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                tools:background="@drawable/green_circle"
+                tools:text="4.8" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@id/frameLayout_rest_rating_recency"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_rest_name"
+                style="@style/MyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/grey_80"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="Restaurant Name" />
+
+            <TextView
+                android:id="@+id/textView_rest_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/grey_80"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:text="Hauz Khas, Delhi" />
+
+            <TextView
+                android:id="@+id/textView_rest_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@drawable/ic_small_white_location"
+                android:drawablePadding="5dp"
+                android:shadowColor="@color/grey_80"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:text="0.46 kms" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_additional_offer_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_status_confirmed"
+        android:paddingBottom="@dimen/screen_padding_eight"
+        android:paddingLeft="@dimen/screen_padding_plus_half"
+        android:paddingRight="@dimen/screen_padding_plus_half"
+        android:paddingTop="@dimen/screen_padding_eight"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView_additional_offer_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            tools:text="Use promocode CHILLIS10 to get additional 10% cashback at this restaurant" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_rest_user_earnings_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_additional_offer_message"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/progressBar_additional_offer"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView_user_earnings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:visibility="gone"
+                tools:text="You have \u20B9 425/- earnings in your wallet"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp">
+
+        <ImageView
+            android:id="@+id/imageView_dineoutplus"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/dineout_plus_tag"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/imageView_dineoutplus"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_rest_cuisine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/grey_4D"
+                android:textSize="14sp"
+                tools:text="American, Europe, Italian" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_rest_cost_for_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_rest_cost_for_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_4D"
+                    android:textSize="14sp"
+                    tools:text="\u20B9 1600 for 2 people " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/text_approx"
+                    android:textColor="@color/grey_4D"
+                    android:textSize="14sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_web_banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View style="@style/DividerStyle" />
+
+        <include
+            layout="@layout/template_web_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View style="@style/DividerStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_EF">
+
+    <include
+        layout="@layout/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/promo_code_continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/screen_padding"
+        android:layout_marginLeft="@dimen/screen_padding"
+        android:layout_marginRight="@dimen/screen_padding"
+        android:background="@drawable/round_rectangle_primary_button_selector"
+        android:text="@string/button_continue"
+        android:textSize="@dimen/font_size_16" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/promo_code_continue_btn"
+        android:layout_below="@+id/toolbar_fragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/promo_head_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/screen_padding_double">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/label_total_amount"
+                    android:textColor="@color/black_42"
+                    android:textSize="@dimen/font_size_18" />
+
+                <TextView
+                    android:id="@+id/membership_fees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_28" />
+
+                <LinearLayout
+                    android:id="@+id/applied_promo_detail_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/after_promo_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_A2"
+                        android:textSize="@dimen/font_size_20" />
+
+                    <TextView
+                        android:id="@+id/after_promo_dicsount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/font_size_20" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/middle_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/promo_head_container"
+                android:layout_marginLeft="@dimen/screen_padding"
+                android:layout_marginRight="@dimen/screen_padding"
+                android:layout_marginTop="@dimen/screen_padding_double"
+                android:background="@drawable/rect_white_bcg_rounded_no_stroke"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/promo_input_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/promo_code_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/screen_padding_half"
+                        android:layout_marginRight="@dimen/screen_padding_half"
+                        android:layout_weight="0.6"
+                        android:background="@color/transparent"
+                        android:hint="Have a Promo Code ?"
+                        android:paddingLeft="@dimen/screen_padding_half"
+                        android:singleLine="true"
+                        android:textColor="@color/grey_4D"
+                        android:textColorHint="@color/grey_A2" />
+
+                    <Button
+                        android:id="@+id/promo_code_apply"
+                        style="@style/ButtonStyle.RectanglePrimaryButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:text="Apply" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/promo_remove_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/promo_code_after_applied"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:textColor="@color/green" />
+
+                    <ImageButton
+                        android:id="@+id/promo_code_remove"
+                        style="@style/ButtonStyle.RectanglePrimaryButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@color/grey_A2"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/screen_padding"
+                        android:paddingTop="@dimen/screen_padding"
+                        android:src="@drawable/remove" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wallet_selector_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/middle_container"
+                android:layout_marginLeft="@dimen/screen_padding"
+                android:layout_marginRight="@dimen/screen_padding"
+                android:layout_marginTop="@dimen/screen_padding_double"
+                android:background="@drawable/rect_white_bcg_rounded_no_stroke"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/screen_padding_plus_half">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/wallet_opted_promocode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checkMark="@drawable/wallet_icon_selector"
+                    android:checked="false"
+                    android:text="Use Dineout Earnings"
+                    android:textColor="@color/use_wallet_text_selector"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500"
+                    android:textColor="@color/use_wallet_text_selector"
+                    android:textSize="@dimen/font_size_16" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/earnings_selector_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wallet_selector_container"
+                android:layout_marginLeft="@dimen/screen_padding"
+                android:layout_marginRight="@dimen/screen_padding"
+                android:layout_marginTop="@dimen/screen_padding_double"
+                android:background="@drawable/rect_white_bcg_rounded_no_stroke"
+                android:gravity="center_vertical"
+                android:padding="@dimen/screen_padding_plus_half">
+
+                <ImageView
+                    android:id="@+id/earnings_check_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_test" />
+
+
+                <TextView
+                    android:id="@+id/earnings_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_toRightOf="@+id/earnings_check_image"
+                    android:paddingLeft="5dp"
+                    android:text="Mamagoto Earnings applied"
+                    android:textColor="@color/use_wallet_text_selector"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/earnings_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="500"
+                    android:textColor="@color/use_wallet_text_selector"
+                    android:textSize="@dimen/font_size_16" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/deals_earnings_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/earnings_selector_container"
+                android:layout_marginLeft="@dimen/screen_padding"
+                android:layout_marginRight="@dimen/screen_padding"
+                android:layout_marginTop="@dimen/screen_padding_double"
+                android:background="@drawable/rect_white_bcg_rounded_no_stroke"
+                android:gravity="center_vertical"
+                android:padding="@dimen/screen_padding_plus_half"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/earnings_section_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/cashback_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deals_earnings_container"
+                android:layout_marginLeft="@dimen/screen_padding"
+                android:layout_marginRight="@dimen/screen_padding"
+                android:layout_marginTop="@dimen/screen_padding_double"
+                android:layout_marginBottom="@dimen/screen_padding_double"
+                android:background="@drawable/rect_white_bcg_rounded_no_stroke"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/screen_padding_plus_half"
+                android:paddingRight="@dimen/screen_padding_plus_half"
+                android:paddingTop="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/cashback_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/screen_padding"
+                    android:paddingTop="@dimen/screen_padding"
+                    android:textColor="@color/light_green"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/wrapper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/screen_padding_eighteen"
+        android:layout_marginBottom="@dimen/screen_padding_eighteen"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/title_text_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/earning_amount_text_tv"
+            android:gravity="center_vertical"
+            android:text="Payment Successful at My Bar"
+            android:textColor="@color/grey_35"
+            style="@style/MyStyle"
+            android:textSize="@dimen/font_size_15" />
+
+        <TextView
+            android:id="@+id/sub_title_1_text_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title_text_tv"
+            android:layout_toLeftOf="@+id/expire_text_tv"
+            android:layout_below="@+id/title_text_tv"
+            android:layout_marginTop="@dimen/screen_padding_seven"
+            android:lineSpacingExtra="3dp"
+            android:gravity="center_vertical"
+            android:text="Sector 18 Noida"
+            android:textColor="@color/grey_35"
+            android:textSize="@dimen/font_size_12" />
+
+        <TextView
+            android:id="@+id/sub_title_2_text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/earning_status_text_tv"
+            android:layout_below="@+id/sub_title_1_text_tv"
+            android:layout_marginTop="@dimen/screen_padding_eight"
+            android:gravity="center_vertical"
+            android:text="11 Oct 2016"
+            android:textColor="@color/grey_35"
+            android:textSize="@dimen/font_size_12" />
+
+        <com.dineout.android.volley.toolbox.NetworkImageView
+            android:id="@+id/earning_status_icon_iv"
+            android:layout_width="@dimen/earning_history_screen_status_icon_size"
+            android:layout_height="@dimen/earning_history_screen_status_icon_size"
+            android:layout_alignLeft="@+id/title_text_tv"
+            android:layout_alignTop="@+id/sub_title_2_text_tv"
+            android:layout_marginTop="@dimen/screen_padding_three"
+            android:src="@drawable/earning_error_icon" />
+
+        <TextView
+            android:id="@+id/earning_status_text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/earning_status_icon_iv"
+            android:layout_alignTop="@+id/sub_title_2_text_tv"
+            android:layout_marginLeft="@dimen/screen_padding_eight"
+            android:layout_marginRight="@dimen/screen_padding_double"
+            android:gravity="center_vertical"
+            android:text="Success"
+            android:textColor="@color/grey_35"
+            android:textSize="@dimen/font_size_12" />
+
+        <TextView
+            android:id="@+id/earning_amount_text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/earning_break_up_icon_iv"
+            android:layout_alignTop="@+id/title_text_tv"
+            android:layout_marginLeft="@dimen/screen_padding_two"
+            android:text="-200.00"
+            style="@style/MyStyle"
+            android:textColor="@color/grey_35"
+            android:textSize="@dimen/font_size_15" />
+
+        <TextView
+            android:id="@+id/expire_text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/sub_title_1_text_tv"
+            android:layout_alignRight="@+id/earning_amount_text_tv"
+            android:layout_below="@+id/earning_amount_text_tv"
+            android:layout_marginLeft="@dimen/screen_padding_double"
+            android:gravity="center_vertical"
+            android:text="Expires in 20 days"
+            android:textColor="@color/grey_35"
+            android:textSize="@dimen/font_size_12" />
+
+
+        <com.dineout.android.volley.toolbox.NetworkImageView
+            android:id="@+id/earning_break_up_icon_iv"
+            android:layout_width="@dimen/earning_history_screen_break_up_icon_size"
+            android:layout_height="@dimen/earning_history_screen_break_up_icon_size"
+            android:padding="@dimen/screen_padding_three"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/title_text_tv"
+            android:layout_marginTop="@dimen/screen_padding_two"
+            android:layout_marginLeft="@dimen/screen_padding_seven"
+            android:src="@drawable/earning_right_arrow" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/grey_ee"
+        android:layout_below="@+id/wrapper_layout"/>
+
+</RelativeLayout>

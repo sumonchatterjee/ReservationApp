@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rating_wrapper_layout"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="6dp"
+    android:layout_margin="3dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/root_padding_top"
+        android:paddingBottom="@dimen/root_padding_bottom"
+        android:paddingLeft="@dimen/root_padding_left"
+        android:paddingRight="@dimen/root_padding_right">
+
+        <TextView
+            android:id="@+id/app_rating_experience_id"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/user_name_update_text"
+            android:paddingTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/user_edit_name"
+            android:hint="@string/user_edit_name_hint"
+            android:textSize="@dimen/font_size_13"
+            android:textColor="@color/grey_4D"
+            android:textColorHint="@color/grey_E5"
+            android:layout_marginTop="25dp"
+            android:gravity="top"
+            android:maxLength="40"
+            android:textCursorDrawable="@drawable/edit_text_cursor_color"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/feedback_edit_text_boundary"
+            android:minHeight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/rating_button_layout"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="3dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                app:paddingStart="3dp"
+                app:paddingEnd="3dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:text="OK"
+                    android:id="@+id/left_button"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/transparent"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="1dp"
+                android:orientation="horizontal"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="3dp"
+                app:paddingStart="3dp"
+                app:paddingEnd="3dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/right_button"
+                    android:text="CANCEL"
+                    android:textColor="@color/grey_97"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

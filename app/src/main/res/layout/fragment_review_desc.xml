@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<layout>-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/done_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_size_14"
+            android:scaleType="centerCrop"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="46dp"/>
+
+        <EditText
+            android:id="@+id/desc_et"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="25dp"
+            android:background="@android:color/transparent"
+            android:hint="Tell us about your experience..."
+            android:imeOptions="actionGo"
+            android:imeActionLabel="Go"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="7"
+            android:minLines="2"
+            android:gravity="top"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/grey_4D"
+            android:textColorHint="@color/grey_4D"
+            android:textIsSelectable="false" />
+
+    </LinearLayout>
+<!--</layout>-->

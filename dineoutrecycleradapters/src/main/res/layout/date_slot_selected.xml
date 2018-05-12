@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view_selected_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:id="@+id/textView_day"
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:minEms="2"
+            android:textColor="@color/time_slot_text_color"
+            android:textSize="@dimen/font_size_16"
+            tools:text="Wed" />
+
+        <TextView
+            android:id="@+id/textView_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_day"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:minEms="1"
+            android:textColor="@color/time_slot_text_color"
+            android:textSize="@dimen/font_size_14"
+            tools:text="31" />
+
+        <TextView
+            android:id="@+id/textView_availability_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/deal_left_time_slot_text_color"
+            android:textSize="9sp"
+            tools:text="8 left"
+            tools:textColor="@color/grey_4D" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView_recency_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rect_green_shape"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="@dimen/screen_padding_half"
+        android:paddingLeft="@dimen/screen_padding"
+        android:paddingRight="@dimen/screen_padding"
+        android:paddingTop="@dimen/screen_padding_half"
+        android:text="@string/text_recently_added"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_10"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</FrameLayout>

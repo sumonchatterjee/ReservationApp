@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_rectangle_grey_stroke_shape">
+
+    <TextView
+        android:id="@+id/textView_submit_voucher_code_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
+        android:enabled="true"
+        android:textColor="@color/success_failure_text_color_selector"
+        android:textSize="16sp"
+        tools:text="Success" />
+
+    <TextView
+        android:id="@+id/textView_submit_voucher_code_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_submit_voucher_code_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:textColor="@color/grey_4D"
+        android:textSize="14sp"
+        tools:text="Congratulations your gift voucher has been applied! Rs. 2000 have been added to your Dineout Earnings." />
+
+    <View
+        android:id="@+id/divider_ok"
+        style="@style/DividerStyle"
+        android:layout_below="@id/textView_submit_voucher_code_message" />
+
+    <TextView
+        android:id="@+id/textView_submit_voucher_code_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_ok"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:text="@string/button_ok"
+        android:textAllCaps="true"
+        android:textColor="@color/gen_primary_text_selector"
+        android:textSize="16sp" />
+
+</RelativeLayout>

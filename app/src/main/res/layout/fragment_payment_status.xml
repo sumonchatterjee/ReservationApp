@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+
+
+            <LinearLayout
+
+                android:id="@+id/status_main_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+
+                android:visibility="gone"
+                android:clickable="true">
+
+                <include
+                    layout="@layout/payment_status_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"/>
+
+                <include
+                    layout="@layout/booking_payment_status_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/screen_padding" />
+
+                <include
+                    layout="@layout/doplus_payment_status_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    layout="@layout/payment_status_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/dineoutLoader"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorPrimary"
+                android:indeterminateTintMode="src_atop"
+                android:visibility="invisible" />
+        </FrameLayout></ScrollView>
+
+</LinearLayout>

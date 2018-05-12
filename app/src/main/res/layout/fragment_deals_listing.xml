@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <include
+                layout="@layout/toolbar_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+            <LinearLayout
+                android:id="@+id/middle_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/toolbar_fragment"
+                android:background="@color/white"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/filter_btn_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_button_selector">
+
+
+                    <ImageView
+                        android:id="@+id/filter_selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/filter_btn"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/red_circle"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/filter_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/filters"
+                        android:textColor="@color/grey_4D" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey_E5" />
+
+                <RelativeLayout
+                    android:id="@+id/sort_by_btn_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_button_selector">
+
+                    <ImageView
+                        android:id="@+id/sorting_selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/sort_by_btn"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/red_circle"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/sort_by_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sort_by"
+                        android:textColor="@color/grey_4D" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_deals"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_layout"
+        android:visibility="visible" />
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/no_deals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/no_deals_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="20dp"
+            android:drawableTop="@drawable/no_result_ico"
+            android:gravity="center_horizontal"
+            android:text="@string/button_deals_result"
+            android:textColor="#4d4d4d"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/reset_filter"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/no_deals_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@color/colorPrimary"
+            android:text="reset filter"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include layout="@layout/network_error_layout" />
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Array items for You screen -->
+    <string-array name="you_items_title">
+        <item>Refer and Earn</item>
+        <item>smartPay</item>
+        <item>My List</item>
+        <item>Bookings</item>
+        <item>Earnings</item>
+        <item>Your Bills</item>
+        <item>Promotions &amp; Gift Vouchers</item>
+        <item>Talk to us</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string-array name="you_items_icon">
+        <item>ic_you_refer</item>
+        <item>ic_you_smart_pay</item>
+        <item>ic_you_favourites</item>
+        <item>ic_you_bookings</item>
+        <item>ic_you_wallet</item>
+        <item>ic_you_your_bills</item>
+        <item>ic_you_promotions</item>
+        <item>ic_you_talk_to_us</item>
+        <item>ic_you_settings</item>
+    </string-array>
+
+    <!-- Array items for You screen Dineoutplus screen -->
+    <string-array name="you_items_title_dineout_plus">
+        <item>Dineout Plus Card</item>
+        <item>Refer and Earn</item>
+        <item>smartPay</item>
+        <item>My List</item>
+        <item>Bookings</item>
+        <item>Earnings</item>
+        <item>Your Bills</item>
+        <item>Promotions &amp; Gift Vouchers</item>
+        <item>Talk to us</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string-array name="you_items_icon_dineoutplus">
+        <item>ic_you_doplus</item>
+        <item>ic_you_refer</item>
+        <item>ic_you_smart_pay</item>
+        <item>ic_you_favourites</item>
+        <item>ic_you_bookings</item>
+        <item>ic_you_wallet</item>
+        <item>ic_you_your_bills</item>
+        <item>ic_you_promotions</item>
+        <item>ic_you_talk_to_us</item>
+        <item>ic_you_settings</item>
+    </string-array>
+
+</resources>

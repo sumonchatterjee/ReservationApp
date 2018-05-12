@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentView_login_dialog"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+
+
+
+    <include
+        layout="@layout/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="@dimen/screen_padding_triple"
+        android:paddingRight="@dimen/screen_padding_triple"
+        >
+
+    <EditText
+
+        android:id="@+id/email_edtxt"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/grey_75"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:textColorHint="#c7c8cc"
+        android:hint="Enter your Mobile or Email"
+        android:inputType="text"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittxt_border">
+        <requestFocus />
+    </EditText>
+
+        <Button
+            android:id="@+id/continue_btn"
+            android:layout_marginTop="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="@string/continue_str"
+            android:background="@drawable/round_rectangle_primary_button_selector"/>
+
+
+        <TextView
+            android:id="@+id/login_via_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="28dp"
+            android:text="@string/login_via_txt"
+            android:textColor="@color/grey_4D"
+            android:textSize="@dimen/font_size_18"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:layout_marginRight="4dp"
+
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_login_dialog_gplus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_corner_white_gplus"
+                    >
+
+
+
+                    <ImageView
+                        android:id="@+id/iv_gplus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/googleplus"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="15dp"/>
+
+                    <TextView
+                        android:id="@+id/btn_login_dialog_fb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Google"
+                        android:textColor="@color/grey_75"
+                        android:textSize="@dimen/font_size_14"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_gplus_login_in_process"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4DFFFFFF"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:indeterminateTint="@color/colorPrimary"
+                        android:indeterminateTintMode="src_atop" />
+
+                </RelativeLayout>
+
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:layout_marginLeft="4dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_login_dialog_fb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_btn_fb_intro"
+                    >
+
+
+
+                    <ImageView
+                        android:id="@+id/iv_fb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_login_facebook"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/btn_login_dialog_gplus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/facebook_txt"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_14" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_facebook_login_in_process"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#99FFFFFF"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:indeterminateTint="@color/colorPrimary"
+                        android:indeterminateTintMode="src_atop" />
+
+                </RelativeLayout>
+            </FrameLayout>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewSignupTermsCondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_75"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="@string/terms_condition"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <include layout="@layout/network_error_layout"></include>
+</RelativeLayout>

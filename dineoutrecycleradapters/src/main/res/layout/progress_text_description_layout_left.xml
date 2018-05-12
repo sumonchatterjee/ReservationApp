@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progress_text_description_left"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_gravity="center"
+    android:gravity="left"
+    android:textColor="@color/grey_92"
+    android:textSize="@dimen/font_size_10"
+    android:layout_height="wrap_content"
+
+    />

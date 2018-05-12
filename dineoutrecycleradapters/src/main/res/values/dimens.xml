@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--rate_n_review screen-->
+    <dimen name="rating_logo_bg_1_size">160dp</dimen>
+    <dimen name="rating_logo_bg_size">140dp</dimen>
+    <dimen name="rate_n_review_thank_you_logo_size">150dp</dimen>
+    <dimen name="rating_logo_size">70dp</dimen>
+    <dimen name="rate_n_review_tap_to_write_et_wrapper_layout_height">100dp</dimen>
+    <dimen name="rate_n_review_tap_to_write_et_action_button_min_height">60dp</dimen>
+
+    <dimen name="cta_min_height">49dp</dimen>
+
+    <!--earning history screen-->
+    <dimen name="earning_history_screen_header_icon_height">12dp</dimen>
+    <dimen name="earning_history_screen_filter_icon_size">12dp</dimen>
+    <dimen name="earning_history_screen_break_up_icon_size">16dp</dimen>
+    <dimen name="earning_history_screen_status_icon_size">12dp</dimen>
+</resources>

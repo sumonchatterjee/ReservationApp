@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:padding="@dimen/screen_padding_plus_half"
+    android:gravity="center"
+
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_buy_now_do_plus"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/label_buy_button_do_plus"
+        android:textColor="@color/white_CC"
+        android:textSize="@dimen/font_size_16"
+        android:paddingTop="@dimen/screen_padding"
+        android:paddingBottom="@dimen/screen_padding"
+
+        android:layout_marginRight="@dimen/screen_padding_double"
+        android:background="@drawable/rect_golden_button"/>
+
+    <Button
+        android:id="@+id/btn_tell_more_do_plus"
+
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/label_tell_button_do_plus"
+        android:textColor="@color/golden_d6"
+        android:textSize="@dimen/font_size_16"
+        android:paddingTop="@dimen/screen_padding"
+        android:paddingBottom="@dimen/screen_padding"
+
+        android:background="@drawable/rect_golden_border"/>
+
+</LinearLayout>

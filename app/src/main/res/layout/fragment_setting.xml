@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_account_settings_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:id="@+id/sv_settings_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_fragment">
+
+        <LinearLayout
+            android:id="@+id/fragment_settings_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tnc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/screen_padding_double"
+                android:text="@string/tnc"
+                android:textColor="@color/app_grey_shade_four"
+                android:textSize="@dimen/font_size_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_horizontal_divider" />
+
+            <TextView
+                android:id="@+id/privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/screen_padding_double"
+                android:text="@string/privacy_policy"
+                android:textColor="@color/app_grey_shade_four"
+                android:textSize="@dimen/font_size_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_horizontal_divider" />
+
+            <TextView
+                android:id="@+id/submit_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/screen_padding_double"
+                android:text="@string/your_feedback"
+                android:textColor="@color/app_grey_shade_four"
+                android:textSize="@dimen/font_size_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_horizontal_divider" />
+
+            <TextView
+                android:id="@+id/rate_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/screen_padding_double"
+                android:text="@string/rate_our_app"
+                android:textColor="@color/app_grey_shade_four"
+                android:textSize="@dimen/font_size_16" />
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/app_horizontal_divider" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/accessibility_setting"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="@dimen/screen_padding_double"-->
+                <!--android:text="@string/accessibility_setting"-->
+                <!--android:textColor="@color/app_grey_shade_four"-->
+                <!--android:textSize="@dimen/font_size_16" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_horizontal_divider" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/screen_padding_double"
+                android:text="@string/about"
+                android:textColor="@color/app_grey_shade_four"
+                android:textSize="@dimen/font_size_16"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

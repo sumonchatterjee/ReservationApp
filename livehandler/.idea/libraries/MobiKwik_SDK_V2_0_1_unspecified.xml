@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="MobiKwik_SDK_V2.0.1-unspecified">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../app/build/intermediates/exploded-aar/dineout_android_new/MobiKwik_SDK_V2.0.1/unspecified/res" />
+      <root url="jar://$PROJECT_DIR$/../app/build/intermediates/exploded-aar/dineout_android_new/MobiKwik_SDK_V2.0.1/unspecified/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

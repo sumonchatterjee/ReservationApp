@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/doplus_status_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividerColor"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/screen_padding_double"
+        android:layout_marginLeft="@dimen/screen_padding"
+        android:layout_marginRight="@dimen/screen_padding"/>
+
+    <TextView
+        android:id="@+id/top_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/screen_padding_double"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:text="Your Dineout Plus Membership Card"
+        android:textColor="@color/grey_4D"
+        android:textSize="@dimen/font_size_18" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_header"
+        android:layout_marginLeft="@dimen/screen_padding"
+        android:layout_marginRight="@dimen/screen_padding">
+
+        <com.dineout.android.volley.toolbox.NetworkImageView
+            android:id="@+id/do_bcg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+           />
+
+
+        <RelativeLayout
+            android:id="@+id/doplus_status_card_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/dineout_card"
+            android:layout_marginBottom="@dimen/screen_padding_double"
+            android:paddingBottom="@dimen/screen_padding_plus_half"
+            android:paddingTop="@dimen/screen_padding_plus_half">
+
+
+            <ImageView
+                android:id="@+id/image_view_card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:src="@drawable/img_dineoutplus_logo" />
+
+            <LinearLayout
+                android:layout_below="@id/image_view_card_title"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/screen_padding_triple"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/doplus_status_member_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/screen_padding_plus_half"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_16"
+                    android:fontFamily="sans-serif-light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/screen_padding_plus_two"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/doplus_status_member_card_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/screen_padding_plus_half"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_16"
+                        style="@style/MyStyle" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/screen_padding_eight"
+                            android:text="VALID TILL"
+                            android:textColor="@color/white_66"
+                            android:textSize="@dimen/font_size_10"
+                            style="@style/MyStyle" />
+
+                        <TextView
+                            android:id="@+id/doplus_status_member_validity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_14"
+                            style="@style/MyStyle" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+    
+
+</LinearLayout>

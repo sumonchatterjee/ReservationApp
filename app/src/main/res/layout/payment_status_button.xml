@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/button_container_status"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/invoice_do_plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dividerColor"/>
+
+        <TextView
+            android:id="@+id/invoice_text_doplus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Invoice"
+            android:textColor="@color/grey_4D"
+            android:textSize="@dimen/font_size_16"
+            android:paddingTop="@dimen/screen_padding"
+            android:paddingBottom="@dimen/screen_padding"
+            android:paddingLeft="@dimen/screen_padding_double"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:paddingRight="@dimen/screen_padding_double"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_done"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/screen_padding_plus_half"
+        android:layout_marginLeft="@dimen/screen_padding_plus_half"
+        android:layout_marginRight="@dimen/screen_padding_plus_half"
+        android:visibility="gone"
+        android:text="@string/button_done" />
+
+</LinearLayout>

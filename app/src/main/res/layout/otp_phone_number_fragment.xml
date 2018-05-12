@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbarLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/table_booking_toolbar_height"
+        android:background="@color/app_grey_shade_two">
+
+        <ImageView
+            android:id="@+id/iv_toolbar_back_icon"
+            android:layout_width="@dimen/table_booking_arrow_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_action_navigation_arrow_back" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            style="@style/MyStyle"
+            android:layout_toLeftOf="@+id/iv_cancel_icon"
+            android:layout_toRightOf="@+id/iv_toolbar_back_icon"
+            android:text="@string/otp_step1_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_20" />
+
+        <ImageView
+            android:id="@+id/iv_cancel_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/screen_padding"
+            android:src="@drawable/ic_action_close"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/otp_continue_button"
+        style="@style/ButtonStyle.RectanglePrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/button_confirm"
+        android:textSize="@dimen/font_size_16" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLogin"
+        android:layout_above="@id/otp_continue_button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_otp_step1_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/screen_padding_double"
+                android:gravity="center"
+                android:text="@string/otp_step1_desc"
+                android:textColor="@color/app_grey_shade_four"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/tv_phone_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/screen_padding_plus_half"
+                android:text="@string/table_mobile_number"
+                android:textColor="@color/app_horizontal_divider"
+                android:textSize="@dimen/font_size_8" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/screen_padding_plus_half"
+                android:layout_marginRight="@dimen/screen_padding_plus_half"
+                android:orientation="horizontal">
+
+                <com.dineout.book.widgets.FloatingEditText
+                    android:id="@+id/et_account_number_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:text="+91"
+                    android:textColor="@color/app_grey_shade_six" />
+
+                <com.dineout.book.widgets.FloatingEditText
+                    android:id="@+id/et_account_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textColor="@color/black_11" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/screen_padding_triple"
+                android:gravity="center"
+                android:text="@string/otp_step1_desc_2"
+                android:textColor="@color/app_grey_shade_eight"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

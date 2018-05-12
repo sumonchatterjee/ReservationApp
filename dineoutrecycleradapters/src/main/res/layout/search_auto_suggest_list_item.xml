@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_auto_suggest_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_white_primary_faded_button_selector"
+        android:paddingBottom="@dimen/screen_padding"
+        android:paddingLeft="@dimen/screen_padding_double_plus_half"
+        android:paddingRight="@dimen/screen_padding"
+        android:paddingTop="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/textView_auto_suggest_item_outlet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:textColor="@color/app_grey_shade_four"
+            android:textSize="@dimen/font_size_12"
+            tools:text="Outlet String" />
+
+        <TextView
+            android:id="@+id/textView_auto_suggest_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/screen_padding"
+            android:layout_toLeftOf="@id/textView_auto_suggest_item_outlet"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/app_grey_shade_four"
+            android:textSize="@dimen/font_size_12"
+            tools:text="Search Auto Suggest String" />
+
+        <TextView
+            android:id="@+id/textView_auto_suggest_item_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_auto_suggest_item_text"
+            android:paddingTop="@dimen/screen_padding_half"
+            android:textColor="@color/app_grey_shade_four"
+            android:textSize="@dimen/font_size_12"
+            tools:text="Search Auto Suggest Detail String" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/DividerStyle"
+        android:layout_below="@id/textView_auto_suggest_item_detail" />
+
+</LinearLayout>

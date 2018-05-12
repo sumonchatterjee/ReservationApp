@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="DOAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimaryDark">@color/black_11</item>
+        <item name="android:colorPrimary">@color/black_11</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorHint">@color/white_CC</item>
+        <item name="android:textViewStyle">@style/appTextViewStyle</item>
+        <item name="android:editTextColor">@color/white_CC</item>
+        <item name="android:editTextStyle">@style/appEditTextStyle</item>
+        <item name="android:alertDialogTheme">@style/blackTextDialogAlert</item>
+        <item name="android:dialogTheme">@style/blackTextDialog</item>
+    </style>
+
+    <style name="blackTextDialogAlert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="blackTextDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/transparent"
+    android:layerType="software"
+    android:paddingRight="@dimen/screen_padding">
+
+    <RelativeLayout
+        android:id="@+id/deals_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dashed_boundary_new"
+        android:layerType="software"
+        android:paddingBottom="@dimen/screen_padding"
+        android:paddingLeft="@dimen/screen_padding_half"
+        android:paddingRight="@dimen/screen_padding"
+        android:paddingTop="@dimen/screen_padding">
+
+        <ImageView
+            android:id="@+id/iv_deals_offer_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/ic_action_offer" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_deals_offer_icon"
+            android:orientation="vertical"
+            android:paddingLeft="2dp">
+
+            <TextView
+                android:id="@+id/tv_offer_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:maxLines="2"
+                android:textColor="@color/booking_detail_address_text"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/tv_offer_timing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:maxLines="2"
+                android:text="Mon - Sun 8:00 PM to 11:45 PM"
+                android:textColor="@color/booking_detail_address_text"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/screen_padding_half"
+                style="@style/MyStyle"
+                android:text="TAP TO VIEW MORE DETAILS"
+                android:textColor="@color/booking_detail_address_text"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

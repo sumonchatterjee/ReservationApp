@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/screen_padding_eight"
+        android:paddingLeft="@dimen/screen_padding_plus_half"
+        android:paddingRight="@dimen/screen_padding_plus_half"
+        android:paddingTop="@dimen/screen_padding_eight">
+
+        <com.dineout.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imageView_info_icon"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/textView_extra_info_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imageView_info_icon"
+            android:textColor="@color/grey_4D"
+            android:textSize="12sp"
+            tools:text="Stags not allowed" />
+    </RelativeLayout>
+
+</LinearLayout>

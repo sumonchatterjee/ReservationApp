@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">DineoutNetworkModule</string>
+
+    <string name="konotor_app_id">b7e54b04-89a3-4501-82eb-e8cfdbb49918</string>
+    <string name="konotor_app_key">ff7163c2-70de-4bbd-b685-8ed0f8094fe8</string>
+
+    <!-- Google Analytics -->
+    <!--<string name="ga_tracking_id_testing">UA-73617076-1</string> DO NOT REMOVE FOR ANZAL ONLY-->
+    <!--<string name="ga_tracking_id_testing">UA-32580312-4</string>-->
+    <!--<string name="ga_tracking_id_production">UA-32580312-2</string>-->
+    <string name="ga_tracking_id_testing">UA-73617076-1</string>
+    <string name="ga_tracking_id_production">UA-32580312-2</string>
+    <!--<string name="ga_tracking_id_testing">UA-73841072-1</string>-->
+
+    <!-- Apsalar SDK credentials -->
+    <string name="apsalar_api_key">timesinternet</string>
+    <string name="apsalar_secret_key">NmecPMtU</string>
+
+    <!-- FB Dialog -->
+    <string name="facebook_app_id">568956213159751</string>
+
+    <!-- qGraph -->
+    <string name="qgraph_app_id">db5af2230f8ca4f18e95</string>
+    <string name="gcm_sender_id">953585151264</string>
+
+    <string name="base_url_api">http://api.dineout.co.in/app_api/mobile_app_api_v7/</string>
+
+    <string name="mixpanel_product_token_dev">9f6326deffad05eff73f299ec8b519ea</string>
+
+    <string name="mixpanel_product_token">9f6326deffad05eff73f299ec8b519ea</string>
+
+
+
+
+
+    <string name="push_label_signed_in">SignedIn</string>
+    <string name="push_label_location">location</string>
+
+    <string name="account_permission_explanation_info"> We need accounts permission so that we can make
+        your experience smoother and much more personalised.</string>
+    <string name="storage_permission_explaination_info">We need storage permission to access your image on the device.</string>
+
+
+     <string name="location_permission_explaination_info">
+        We need location permission in order to give you accurate restaurant results based on your current location.</string>
+
+    <string name="phone_state_permission_explaination_info">
+         To provide you smooth experience in dineout we need permission to read your phone state which will help us in
+         identifying state of your internet connection whether it\'s working or not.
+    </string>
+
+    <string name="title_permission_required">Permission Required</string>
+    <string name="sms_permission_explaination_info">We need read sms permission so that we can verify your mobile number automatically through One Time Password.</string>
+    <string name="text_smartPay">smartPay</string>
+</resources>

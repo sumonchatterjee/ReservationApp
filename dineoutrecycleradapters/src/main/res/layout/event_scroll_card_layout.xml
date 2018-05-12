@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="256dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <com.dineout.android.volley.toolbox.NetworkImageView
+        android:id="@+id/image_view_event"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/text_view_event_price_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/grey_9b"
+            android:textSize="12sp"
+            tools:text="Onwards" />
+
+        <TextView
+            android:id="@+id/text_view_event_name"
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/text_view_event_price_tag"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true"
+            android:textColor="@color/grey_69"
+            android:textSize="14sp"
+            tools:text="Event Name" />
+
+        <TextView
+            android:id="@+id/text_view_restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_event_name"
+            android:layout_marginTop="1.5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true"
+            android:textColor="@color/grey_9b"
+            android:textSize="12sp"
+            tools:text="Restaurant Name" />
+
+        <TextView
+            android:id="@+id/text_view_event_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_restaurant_name"
+            android:layout_marginTop="2.5dp"
+            android:textColor="@color/grey_9b"
+            android:textSize="12sp"
+            tools:text="Friday, 29th April" />
+
+        <TextView
+            android:id="@+id/text_view_event_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_event_date"
+            android:layout_marginTop="2.5dp"
+            android:textColor="@color/grey_9b"
+            android:textSize="12sp"
+            tools:text="8PM Onwards" />
+    </RelativeLayout>
+
+</LinearLayout>

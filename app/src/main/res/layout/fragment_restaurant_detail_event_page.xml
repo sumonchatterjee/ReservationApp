@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_F1">
+
+    <Button
+        android:id="@+id/button_event_buy_now"
+        style="@style/ButtonStyle.RectanglePrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/button_buy_now" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_rest_detail_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_event_buy_now"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView_no_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <include
+            layout="@layout/no_offer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.NestedScrollView>
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp" />
+
+    <include layout="@layout/network_error_layout" />
+
+</RelativeLayout>

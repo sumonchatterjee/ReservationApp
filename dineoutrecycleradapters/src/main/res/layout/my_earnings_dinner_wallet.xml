@@ -1,0 +1,48 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/my_earnings_layout_margin"
+
+    app:cardBackgroundColor="@android:color/white"
+
+
+    app:cardCornerRadius="5dp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+
+        android:weightSum="3"
+        android:paddingTop="18dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="18dp"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/wallet_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.2"
+            android:layout_marginLeft="@dimen/promo_margin"
+            android:textColor="@color/activate_heading_label_color"
+            android:maxLines="1"
+            android:text="usable at..."
+            android:layout_below="@+id/toolbar_fragment"
+
+            android:textSize="@dimen/font_size_14" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textColor="@color/grey_4D"
+            android:textSize="@dimen/entity_data_text_size"
+            android:text="khvhkv"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|right"
+            android:id="@+id/wallet_amount"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout></android.support.v7.widget.CardView>

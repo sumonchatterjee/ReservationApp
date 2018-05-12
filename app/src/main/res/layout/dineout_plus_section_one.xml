@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_dineout_sec_one_title"
+        android:textSize="@dimen/font_size_24"
+        android:layout_marginLeft="@dimen/screen_padding_plus_half"
+        android:layout_marginRight="@dimen/screen_padding_plus_half"
+        android:layout_marginTop="@dimen/screen_padding_plus_half"
+        android:gravity="center"
+        android:textColor="@color/black_21"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/screen_padding_plus_half"
+        android:layout_marginLeft="@dimen/screen_padding_plus_half"
+        android:layout_marginRight="@dimen/screen_padding_plus_half"
+        android:src="@drawable/card_01_01"/>
+
+    <TextView
+        android:id="@+id/do_first_restaurant"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_dineout_section_one_desc"
+        android:textSize="@dimen/font_size_14"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:gravity="center"
+        android:maxLines="2"
+        android:layout_marginLeft="@dimen/screen_padding_plus_half"
+        android:layout_marginRight="@dimen/screen_padding_plus_half"
+        android:textColor="@color/black_42"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginTop="@dimen/screen_padding_plus_half"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/do_partner_image_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+
+    <include
+        layout="@layout/dineout_section_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

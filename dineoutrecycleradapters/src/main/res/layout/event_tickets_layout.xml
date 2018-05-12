@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/screen_padding_plus_half"
+    android:layout_marginRight="@dimen/screen_padding_plus_half"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_section_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="@dimen/screen_padding_plus_half"
+        android:textColor="@color/guest_grey"
+        android:textSize="@dimen/font_size_14"
+        android:textStyle="bold"
+        tools:text="Event Details" />
+
+    <TextView
+        android:id="@+id/textView_ticket_validity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_75"
+        android:textSize="10sp"
+        tools:text="Validity: 29 Dec 2016" />
+
+    <LinearLayout
+        android:id="@+id/tickets_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" />
+
+</LinearLayout>

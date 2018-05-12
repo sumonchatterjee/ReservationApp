@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/secondary_button_list_item"
+    style="@style/ButtonStyle.Secondary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageView_button_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="12dp"
+        android:scaleType="centerInside"
+        tools:src="@drawable/ic_blue_add" />
+
+    <TextView
+        android:id="@+id/textView_button_text"
+        style="@style/MyStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/colorSecondary"
+        android:textSize="@dimen/font_size_16"
+        tools:text="@string/button_add_to_my_list" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Livehandler</string>
+    <string name="dialog_view_negative_button_text">Not Now</string>
+    <string name="dialog_view_positive_button_text">Go Ahead</string>
+
+    <!--accessibility screen ga tracking-->
+    <string name="ga_booking_assistant">BookingAssistant</string>
+    <string name="ga_booking_assistant_go_ahead">GoAhead</string>
+    <string name="ga_booking_assistant_taken_to_acc_screen">TakenToAccessibilityScreen</string>
+    <string name="ga_booking_assistant_taken_to_draw_over_app">TakenToDrawOnAppScreen</string>
+    <string name="ga_booking_assistant_feature_already_enabled_toast">FeatureAlreadyEnabledToast</string>
+    <string name="ga_booking_assistant_feature_successfully_enabled">FeatureSuccessfullyEnabled</string>
+    <string name="ga_booking_assistant_acc_enabled">AccessibilityEnabled</string>
+    <string name="ga_booking_assistant_draw_on_app">DrawOnAppEnabled</string>
+
+    <string name="ga_booking_assistant_over_app_dialog">OverAppDialog</string>
+    <string name="ga_booking_assistant_over_app_dialog_never_true">NeverTrue</string>
+    <string name="ga_booking_assistant_over_app_dialog_never_false">NeverFalse</string>
+    <string name="ga_booking_assistant_over_app_dialog_not_now">NotNow</string>
+    <string name="ga_booking_assistant_over_app_dialog_go_ahead">Dialog_GoAhead</string>
+
+    <string name="ga_booking_assistant_setting">BookingAssistantSettings</string>
+    <string name="ga_booking_assistant_setting_toggle">BookingAssistantToggle</string>
+</resources>

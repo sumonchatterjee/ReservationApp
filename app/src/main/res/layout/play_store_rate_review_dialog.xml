@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/your_booking_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_primary_shade_one"
+            android:gravity="center"
+            android:paddingBottom="@dimen/screen_padding_plus_half"
+            android:paddingTop="@dimen/screen_padding_plus_half"
+            android:text="@string/play_store_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="@dimen/screen_padding_double"
+            android:paddingTop="@dimen/screen_padding_double"
+            android:text="@string/play_store_desc"
+            android:textColor="@color/app_grey_shade_four"
+            android:textSize="@dimen/font_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cancel_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_dismiss_selector"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btn_dialog_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_dismiss_selector"
+            android:gravity="center"
+            android:minLines="2"
+            android:padding="@dimen/screen_padding_half"
+            android:text="@string/play_store_rate_now"
+            android:textAllCaps="false"
+            android:textColor="@color/app_grey_shade_four"
+            android:textSize="@dimen/font_size_14" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/screen_padding_half"
+            android:layout_marginTop="@dimen/screen_padding_half"
+            android:background="@color/app_horizontal_divider" />
+
+        <Button
+            android:id="@+id/btn_dialog_remind_later"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_dismiss_selector"
+            android:gravity="center"
+            android:minLines="2"
+            android:padding="@dimen/screen_padding_half"
+            android:text="@string/play_store_remind_later"
+            android:textAllCaps="false"
+            android:textColor="@color/app_grey_shade_four"
+            android:textSize="@dimen/font_size_14" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/screen_padding_half"
+            android:layout_marginTop="@dimen/screen_padding_half"
+            android:background="@color/app_horizontal_divider" />
+
+        <Button
+            android:id="@+id/btn_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_dismiss_selector"
+            android:gravity="center"
+            android:minLines="2"
+            android:padding="@dimen/screen_padding_half"
+            android:text="@string/play_store_no_thanks"
+            android:textAllCaps="false"
+            android:textColor="@color/app_grey_shade_four"
+            android:textSize="@dimen/font_size_14" />
+
+    </LinearLayout>
+
+</LinearLayout>

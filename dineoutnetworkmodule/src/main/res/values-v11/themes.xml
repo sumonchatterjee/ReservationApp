@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="DOAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/black_11</item>
+        <item name="colorPrimary">@color/black_11</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorHint">@color/white_CC</item>
+        <item name="android:textViewStyle">@style/appTextViewStyle</item>
+        <item name="editTextColor">@color/white_CC</item>
+        <item name="android:editTextStyle">@style/appEditTextStyle</item>
+    </style>
+
+</resources>

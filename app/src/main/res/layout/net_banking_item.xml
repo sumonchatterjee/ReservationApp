@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/screen_padding"
+    android:paddingBottom="@dimen/screen_padding"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bank_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_A2"
+        android:paddingTop="@dimen/screen_padding"
+        android:paddingBottom="@dimen/screen_padding_half"/>
+
+</LinearLayout>

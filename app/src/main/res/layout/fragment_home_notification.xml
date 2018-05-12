@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+    <include
+        layout="@layout/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewNotificationList"
+        android:layout_below="@+id/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNotificationNoResultFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_notification" />
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/screen_padding_double"
+            android:text="@string/no_result_found_notification"
+            android:textColor="@color/app_grey_shade_six"
+            android:textSize="@dimen/font_size_18" />
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <include layout="@layout/network_error_layout" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/snackbarDOPlusTabPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:id="@+id/login_screen"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_fragment">
+
+        <include layout="@layout/login_screen_common"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_EF"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/screen_padding_plus_half"
+        android:paddingRight="@dimen/screen_padding_plus_half">
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/screen_padding_plus_half"
+            android:paddingTop="@dimen/screen_padding_double"
+            android:text="@string/label_enter_enquiry_detail"
+            android:textColor="@color/black_75"
+            android:textSize="@dimen/font_size_14" />
+
+        <EditText
+            android:id="@+id/member_enquiry_name"
+            style="@android:style/Widget.Holo.Light.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/text_name"
+            android:inputType="textPersonName"
+            android:textColor="@color/black_75"
+            android:textColorHint="@color/grey_D2"
+            android:textSize="@dimen/font_size_16" />
+
+        <EditText
+            android:id="@+id/member_enquiry_phone"
+            style="@android:style/Widget.Holo.Light.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/text_phone_number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="@color/black_75"
+            android:textColorHint="@color/grey_D2"
+            android:textSize="@dimen/font_size_16" />
+
+        <EditText
+            android:id="@+id/member_enquiry_email"
+            style="@android:style/Widget.Holo.Light.EditText"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:editable="false"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black_75"
+            android:textColorHint="@color/grey_D2"
+            android:textSize="@dimen/font_size_16" />
+
+        <Spinner
+            android:id="@+id/city_spinner"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:minHeight="40dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+
+        <Spinner
+            android:id="@+id/time_spinner"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:minHeight="40dp"
+            android:textSize="@dimen/font_size_16"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_do_member_enquiry"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/screen_padding_plus_half"
+        android:text="@string/label_btn_submit" />
+
+
+</LinearLayout>

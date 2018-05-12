@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_filter_section"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_white_button_selector"
+            android:clickable="true"
+            android:minHeight="40dp"
+            android:padding="8dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/textView_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/filters"
+                android:textColor="@color/grey_4D"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/view_filter_indicator"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/screen_padding_half"
+                android:layout_toLeftOf="@id/textView_filter"
+                android:background="@drawable/orange_indicator"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_filer_sort_divider"
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_4D"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_sort_section"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_white_button_selector"
+            android:clickable="true"
+            android:padding="8dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/textView_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="@dimen/screen_padding_half"
+                android:text="@string/sort_by"
+                android:textColor="@color/grey_4D"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_sort_option_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_sort"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp"
+                android:visibility="gone"
+                tools:text="Distance"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/grey_4D" />
+
+</LinearLayout>

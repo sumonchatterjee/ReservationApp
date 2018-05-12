@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/table_booking_toolbar_height"
+        android:background="@color/app_grey_shade_two">
+
+        <ImageView
+            android:id="@+id/iv_toolbar_back_icon"
+            android:layout_width="@dimen/table_booking_arrow_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_action_navigation_arrow_back" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            style="@style/MyStyle"
+            android:layout_toLeftOf="@+id/iv_cancel_icon"
+            android:layout_toRightOf="@+id/iv_toolbar_back_icon"
+            android:text="@string/otp_step1_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_20" />
+
+        <ImageView
+            android:id="@+id/iv_cancel_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/screen_padding"
+            android:src="@drawable/ic_action_close"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLogin"
+        android:layout_above="@+id/ll_cancel_ok">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_otp_step2_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/screen_padding_double"
+                android:text="@string/otp_step_2_title"
+                android:textColor="@color/app_grey_shade_four"
+                android:textSize="@dimen/font_size_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/screen_padding">
+
+                <EditText
+                    android:id="@+id/otp_edit_field_1"
+                    android:layout_width="@dimen/otp_edit_field_size"
+                    android:layout_height="@dimen/otp_edit_field_size"
+                    android:background="@drawable/bg_otp_edit_field"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/black_11"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/font_size_24" />
+
+                <EditText
+                    android:id="@+id/otp_edit_field_2"
+                    android:layout_width="@dimen/otp_edit_field_size"
+                    android:layout_height="@dimen/otp_edit_field_size"
+                    android:layout_marginLeft="@dimen/screen_padding"
+                    android:background="@drawable/bg_otp_edit_field"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/black_11"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/font_size_24" />
+
+                <EditText
+                    android:id="@+id/otp_edit_field_3"
+                    android:layout_width="@dimen/otp_edit_field_size"
+                    android:layout_height="@dimen/otp_edit_field_size"
+                    android:layout_marginLeft="@dimen/screen_padding"
+                    android:background="@drawable/bg_otp_edit_field"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/black_11"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/font_size_24" />
+
+                <EditText
+                    android:id="@+id/otp_edit_field_4"
+                    android:layout_width="@dimen/otp_edit_field_size"
+                    android:layout_height="@dimen/otp_edit_field_size"
+                    android:layout_marginLeft="@dimen/screen_padding"
+                    android:background="@drawable/bg_otp_edit_field"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/black_11"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/font_size_24" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_otp_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/screen_padding"
+                android:text="@string/otp_step2_error"
+                android:textColor="@color/app_status_denied"
+                android:textSize="@dimen/font_size_12"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_cancel_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_edit_phone"
+            style="@style/ButtonStyle.RectangleGreyButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/otp_step_2_edit_phone" />
+
+        <Button
+            android:id="@+id/btn_new_code"
+            style="@style/ButtonStyle.RectanglePrimaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/otp_step_2_resend_code" />
+    </LinearLayout>
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

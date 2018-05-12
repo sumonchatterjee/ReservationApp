@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_E5"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:cardBackgroundColor="@android:color/white">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/relativeLayoutSearchCardParentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_E5">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutSearchCardImageSection"
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+
+                <com.dineout.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/imageViewRectSearchCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_list" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewSearchCardFeatured"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_padding"
+                android:background="@drawable/img_featured_bg"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="@dimen/screen_padding_half"
+                android:paddingLeft="@dimen/screen_padding"
+                android:paddingRight="@dimen/screen_padding_double"
+                android:paddingTop="@dimen/screen_padding_half"
+                android:text="Featured"
+                android:textAllCaps="true"
+                android:textSize="@dimen/font_size_10" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageViewSearchCarCarlsbergLogo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/screen_padding"-->
+            <!--android:src="@drawable/img_carlsberg_listing"-->
+            <!--android:visibility="gone" />-->
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_bg_gradient"
+                    android:padding="@dimen/screen_padding"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textViewSearchCardRating"
+                        style="@style/MyStyle"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_14"
+                        tools:text="4.5" />
+                </RelativeLayout>
+
+                <include
+                    layout="@layout/new_tag_template"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutSearchCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayoutSearchCardImageSection"
+                android:background="@drawable/round_bottom_white_shape"
+                android:paddingBottom="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageViewSearchCarCarlsbergLogo"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/dineout_plus_tag" />
+
+                <TextView
+                    android:id="@+id/cost_for_two_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/screen_padding_half"
+                    android:layout_toLeftOf="@id/imageViewSearchCarCarlsbergLogo"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/grey_4D"
+                    android:textSize="@dimen/font_size_14"
+                    tools:text="Rs 1500/- for 2 approx | North Indian, America" />
+
+                <TextView
+                    android:id="@+id/textViewSearchCardRestaurant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cost_for_two_tv"
+                    android:layout_marginRight="@dimen/screen_padding_half"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/imageViewSearchCarCarlsbergLogo"
+                    android:drawableLeft="@drawable/event_calendar_symbol_copy"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/grey_4D"
+                    android:textSize="@dimen/font_size_14"
+                    tools:text="Event Date Time" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_offer_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewSearchCardRestaurant"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@color/white_EF"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textView_offers_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/screen_padding"
+                            android:layout_marginRight="@dimen/screen_padding"
+                            android:textColor="@color/black_11"
+                            android:textSize="@dimen/font_size_14"
+                            tools:text="Offers Available Title" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_rect_grey_border_button_normal"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_normal_offer_section"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="@dimen/screen_padding"
+                            android:layout_marginRight="@dimen/screen_padding"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            tools:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/textView_Normal_offer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white_3D"
+                                android:textSize="@dimen/font_size_12"
+                                tools:text="20% off on total bill"
+                                />
+
+                            <TextView
+                                android:id="@+id/textView_Normal_Other_Offer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#3595ff"
+                                android:textSize="@dimen/font_size_12"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                tools:text="+ 2 more complimentatry offers and 3 prepaid deals"
+                                tools:visibility="visible" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                        <!--<View-->
+                            <!--android:id="@+id/view_offer_divider"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0.5dp"-->
+                            <!--android:layout_marginLeft="7dp"-->
+                            <!--android:layout_marginRight="7dp"-->
+                            <!--android:layout_marginTop="@dimen/screen_padding_half"-->
+                            <!--android:background="@color/grey_97"-->
+                            <!--android:visibility="gone"-->
+                            <!--tools:visibility="visible" />-->
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout_smartPay_offer_section"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/screen_padding"
+                            android:background="@drawable/round_rect_grey_border_button_normal"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                            <include
+                                android:id="@+id/smartPay_indicator"
+                                layout="@layout/smartpay_square_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="@dimen/screen_padding" />
+
+                            <TextView
+                                android:id="@+id/textView_smartPay_offer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/screen_padding_half"
+                                android:layout_toLeftOf="@id/smartPay_indicator"
+                                android:paddingLeft="@dimen/screen_padding"
+                                android:paddingTop="13dp"
+                                android:paddingBottom="13dp"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/white_3D"
+                                android:textSize="@dimen/font_size_12"
+                                tools:text="Additional 20% cashback on bill payment through app" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/buttonSearchCardReserve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayout_offer_section"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    android:orientation="vertical" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/restaurant_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_above="@id/relativeLayoutSearchCard"
+                android:background="@drawable/black_bottom_up_gradient_shape"
+                android:paddingBottom="@dimen/screen_padding_half"
+                android:paddingLeft="@dimen/screen_padding"
+                android:paddingRight="@dimen/screen_padding">
+
+                <RelativeLayout
+                    android:id="@+id/cusine_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                    <ImageView
+                        android:id="@+id/imageViewSearchCardLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/screen_padding_two"
+                        android:layout_marginRight="@dimen/screen_padding_half"
+                        android:layout_toLeftOf="@+id/textViewSearchCardDistance"
+                        android:src="@drawable/ic_location_indicator_new"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/textViewSearchCardDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_12"
+                        android:visibility="gone"
+                        tools:text="0.5 kms"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/restaurant_location_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_14"
+                        tools:text="Restaurant Location" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/antisocial_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/cusine_layout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_15"
+                    android:textStyle="bold"
+                    tools:text="Restaurant Name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reservation_cta_button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_below="@+id/relativeLayoutSearchCard">
+                <include layout="@layout/reservation_cta_button_layout"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewSearchCardBottomDivider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/reservation_cta_button_layout"
+                android:background="@color/grey_BA" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+include ':app',
+        ':volley',
+        ':dineoutnetworkmodule',
+        ':sdkui',
+        ':analytics-android-sdk',
+        ':dineoutrecycleradapters',
+        ':MobiKwik_SDK_V2.0.1',
+        ':dineoutssl'
+
+

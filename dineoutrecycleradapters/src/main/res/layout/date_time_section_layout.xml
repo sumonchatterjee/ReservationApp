@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/text_view_datetime_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/grey_4D"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:capitalize="characters"
+        tools:text="SHOWING RESULTS FOR:" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view_top"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp" />
+
+        <View
+            android:id="@+id/view_left"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view_right"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_top"
+            android:layout_toLeftOf="@id/view_right"
+            android:layout_toRightOf="@id/view_left"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_booking_guest_count"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:drawableTop="@drawable/ic_guest"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="2 Guests"
+                    android:textColor="#bbbbbb"
+                    android:textSize="12sp" />
+
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true">
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="wrap_content"
+                        android:background="#efefef"
+                        android:layout_alignTop="@+id/text_view_booking_date"
+                        android:layout_alignBottom="@+id/text_view_booking_date"
+                        android:layout_marginRight="12dp"
+                        android:layout_alignParentLeft="true"/>
+
+                    <!--<TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/grey_E5" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/grey_E5" />-->
+
+                    <TextView
+                        android:id="@+id/text_view_booking_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:drawableTop="@drawable/ic_calendar"
+                        android:drawablePadding="5dp"
+
+                        android:gravity="center_vertical"
+                        android:text="Tue, 8 March"
+                        android:textColor="#bbbbbb"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/text_view_booking_date"
+                        android:layout_alignBottom="@id/text_view_booking_date"
+                        android:background="#efefef"
+                        android:layout_marginLeft="12dp"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_view_booking_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_time"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="8:30 pm"
+                    android:textColor="#bbbbbb"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:id="@+id/view_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/card_view_date_picker" />
+
+    </RelativeLayout>
+
+</LinearLayout>

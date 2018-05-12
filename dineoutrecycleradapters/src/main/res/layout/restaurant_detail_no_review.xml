@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/no_review_wrapper_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView_rest_detail_no_reviews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/write_review_btn_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/restaurant_detail_no_review_leave_review_border"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:id="@+id/leave_review_iv"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerInside"
+                    tools:src="@drawable/leave_review_star" />
+
+                <TextView
+                    android:id="@+id/leave_review_tv"
+                    style="@style/RobotoTextStyle"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="@dimen/font_size_15"
+                    tools:text="@string/button_leave_review" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="195dp"
+                android:layout_height="111dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="27dp"
+                android:src="@drawable/no_review_icon" />
+
+            <TextView
+                style="@style/MyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="@string/text_no_reviews_yet"
+                android:textColor="@color/grey_CE"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

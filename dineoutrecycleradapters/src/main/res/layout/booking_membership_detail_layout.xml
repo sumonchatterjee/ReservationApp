@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/uber_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginTop="@dimen/screen_padding_plus_half"
+        android:background="@color/booking_detail_stroke" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bd_view_resto_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_transparent_button_selector">
+
+        <ImageView
+            android:id="@+id/bd_iv_view_resto_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/screen_padding"
+            android:src="@drawable/ic_view_restaurant" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/bd_iv_view_resto_detail"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/screen_padding_plus_half"
+            android:paddingLeft="@dimen/screen_padding_half"
+            android:paddingTop="@dimen/screen_padding_plus_half"
+            android:text="@string/text_view_restaurant_detail_page"
+            android:textColor="@color/booking_detail_address_text"
+            android:textSize="@dimen/font_size_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/booking_confirmation"
+            android:paddingRight="@dimen/screen_padding_eight"
+            android:src="@drawable/ic_arrow_right" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewDOPlusMembershipDivider"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/booking_detail_stroke" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBookingDetailsDOPlusMembershipSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_transparent_button_selector">
+
+        <ImageView
+            android:id="@+id/imageViewBookingDetailsDOPlusIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/text_doplus_member_offer_title"
+            android:padding="@dimen/screen_padding"
+            android:src="@drawable/ic_view_membership" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imageViewBookingDetailsDOPlusIcon"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/screen_padding_plus_half"
+            android:paddingLeft="@dimen/screen_padding_half"
+            android:paddingTop="@dimen/screen_padding_plus_half"
+            android:text="@string/text_dineout_plus_membership_details"
+            android:textColor="@color/booking_detail_address_text"
+            android:textSize="@dimen/font_size_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/screen_padding_eight"
+            android:src="@drawable/ic_arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_bd_cancel_booking_stroke"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/booking_detail_stroke" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bd_cancel_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_transparent_button_selector">
+
+        <ImageView
+            android:id="@+id/bd_iv_cancel_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/screen_padding"
+            android:src="@drawable/ic_cancel_booking" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/bd_iv_cancel_booking"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/screen_padding_plus_half"
+            android:paddingLeft="@dimen/screen_padding_half"
+            android:paddingTop="@dimen/screen_padding_plus_half"
+            android:text="@string/text_cancel_booking"
+            android:textColor="@color/booking_detail_address_text"
+            android:textSize="@dimen/font_size_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/screen_padding_eight"
+            android:src="@drawable/ic_arrow_right" />
+    </RelativeLayout>
+
+</LinearLayout>

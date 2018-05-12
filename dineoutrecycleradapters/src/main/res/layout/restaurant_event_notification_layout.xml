@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout_event_notification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_E5"
+    android:paddingTop="15dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_notification_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <com.dineout.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imageView_notification_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/textView_event_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imageView_notification_icon"
+            android:textColor="@color/black_34"
+            android:textSize="12sp"
+            tools:text="There’s an event “Open Mic Night” happening from 8:30 PM for the selected date" />
+    </RelativeLayout>
+</FrameLayout>

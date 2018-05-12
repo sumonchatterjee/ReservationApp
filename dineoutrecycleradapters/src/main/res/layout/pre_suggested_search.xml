@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_pre_suggest_label"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/generic_button_height"
+        android:background="@drawable/rectangle_white_primary_faded_button_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/screen_padding_double"
+        android:textColor="@color/grey_4D"
+        android:textSize="@dimen/font_size_14"
+        tools:text="Pre Suggested Text" />
+
+    <View style="@style/DividerStyle" />
+</LinearLayout>

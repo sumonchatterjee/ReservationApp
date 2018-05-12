@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_account_frag_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_account_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_fragment"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.dineout.recycleradapters.view.widgets.RoundedImageView xmlns:abelana="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_account_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/screen_padding_plus_half"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_profile_default"
+                abelana:maskDrawable="@drawable/circle_mask" />
+
+            <TextView
+                android:id="@+id/tv_account_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/screen_padding_double"
+                android:textColor="@color/app_grey_shade_four"
+                android:textSize="@dimen/font_size_18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/screen_padding_double_plus_half"
+                android:background="@color/dividerColor" />
+
+            <TextView
+                android:id="@+id/tv_account_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/screen_padding"
+                android:layout_marginTop="@dimen/screen_padding"
+                android:drawableLeft="@drawable/ic_phone_indicator"
+                android:drawablePadding="@dimen/screen_padding"
+                android:gravity="center_vertical"
+                android:textColor="@color/app_grey_shade_four"
+                android:textSize="@dimen/font_size_18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/screen_padding"
+                android:background="@color/dividerColor" />
+
+            <TextView
+                android:id="@+id/tv_account_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/screen_padding"
+                android:layout_marginTop="@dimen/screen_padding"
+                android:drawableLeft="@drawable/ic_email_indicator"
+                android:drawablePadding="@dimen/screen_padding"
+                android:gravity="center_vertical"
+                android:textColor="@color/app_grey_shade_four"
+                android:textSize="@dimen/font_size_18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/screen_padding"
+                android:background="@color/dividerColor" />
+
+            <TextView
+                android:id="@+id/tv_account_joining_date"
+                style="@style/MyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/screen_padding_eighteen"
+                android:textColor="@color/app_primary_shade_one"
+                android:textSize="@dimen/font_size_14" />
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/screen_padding"-->
+            <!--android:background="@color/app_primary_shade_two"-->
+            <!--android:paddingBottom="@dimen/screen_padding_half"-->
+            <!--android:paddingLeft="@dimen/screen_padding_double"-->
+            <!--android:paddingTop="@dimen/screen_padding_double">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/account_saved_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="@string/till_date_saved"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/font_size_16" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_amount_saved"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/account_saved_text"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="saassaas"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/font_size_50" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_info_icon"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@+id/tv_amount_saved"-->
+            <!--android:layout_marginTop="@dimen/screen_padding_double_minus"-->
+            <!--android:src="@drawable/ic_info_indicator" />-->
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/tv_logout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/generic_button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/screen_padding_half"
+            android:layout_marginLeft="@dimen/screen_padding"
+            android:layout_marginRight="@dimen/screen_padding"
+            android:background="@drawable/gen_button_selector_grey"
+            android:gravity="center"
+            android:padding="@dimen/screen_padding"
+            android:text="@string/logout_text_button"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16" />
+
+        <Button
+            android:id="@+id/button_edit_user_details"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/generic_button_height"
+            android:layout_above="@id/tv_logout_btn"
+            android:layout_marginBottom="@dimen/screen_padding_eight"
+            android:layout_marginLeft="@dimen/screen_padding"
+            android:layout_marginRight="@dimen/screen_padding"
+            android:background="@drawable/gen_button_selector_grey"
+            android:gravity="center"
+            android:padding="@dimen/screen_padding"
+            android:text="@string/edit_user_details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <include layout="@layout/network_error_layout" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/snackbarAccountPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:id="@+id/login_screen"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_fragment">
+
+        <include layout="@layout/login_screen_common"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

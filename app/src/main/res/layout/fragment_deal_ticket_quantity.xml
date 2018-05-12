@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_deal_ticket_outer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/viewPickerTopView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="28dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_deal_title"
+                    style="@style/MyStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    tools:text="COMBO VEG MEAL for 2" />
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imageView_deal_info"-->
+                    <!--android:layout_width="28dp"-->
+                    <!--android:layout_height="28dp"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:src="@drawable/ic_info" />-->
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_deal_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/grey_75"
+                android:textSize="16sp"
+                tools:text="15 th Sep - 31st Oct\nMon - Sun | 12:00 pm - 1:00 pm" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/grey_cb" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="18dp"
+                android:paddingTop="18dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_number_of_deals"
+                        android:textColor="@color/grey_75"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView_deals_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/grey_75"
+                        android:textSize="10sp"
+                        tools:text="@string/text_container_deal_left" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/imageView_deal_ticket_minus"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/round_rectangle_primary_button_selector"
+                        android:src="@drawable/ic_remove" />
+
+                    <TextView
+                        android:id="@+id/textView_deal_ticket_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/imageView_deal_ticket_minus"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView_deal_ticket_plus"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/textView_deal_ticket_quantity"
+                        android:background="@drawable/round_rectangle_primary_button_selector"
+                        android:src="@drawable/ic_add" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_cb" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_buy_deal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/round_rectangle_primary_button_selector"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/textView_deal_buy_now"
+                style="@style/MyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/button_buy_now"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/textView_deal_buy_now"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView_deal_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="\u20B9 200" />
+
+                <TextView
+                    android:id="@+id/textView_deal_amount_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_deal_amount"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/white_99"
+                    tools:text="Qty 1 * \u20B9 200" />
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar_deal_ticket"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    signingConfigs {
+        release {
+            storeFile file("../dineout_keystore/dineout_keystore.keystore")
+            storePassword "dineout"
+            keyAlias "dineout"
+            keyPassword "dineout"
+        }
+
+        debug {
+            storeFile file("debug.keystore")
+            storePassword "dineout"
+            keyAlias "dineout"
+            keyPassword "dineout"
+        }
+
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    defaultConfig {
+        applicationId "com.dineout.book"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 50062
+        versionName "7.8.0"
+
+
+    }
+
+    buildTypes {
+        debug {
+            multiDexEnabled true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            multiDexEnabled true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':dineoutrecycleradapters')
+    compile project(':MobiKwik_SDK_V2.0.1')
+    compile project(':sdkui')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'phonepe.sdk.android.release:merchantSdk:0.4.2'
+    compile files('libs/PGSDK_v1.0.1.jar')
+}
+

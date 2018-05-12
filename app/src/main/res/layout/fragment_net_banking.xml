@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_E5">
+
+    <LinearLayout
+        android:id="@+id/net_bank_list_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/grey_E5"
+        >
+
+        <include
+            layout="@layout/toolbar_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/label_credit_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECT YOUR BANK"
+            android:textColor="@color/grey_75"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/screen_padding_double"
+            android:layout_marginBottom="@dimen/screen_padding_triple"
+            android:layout_marginLeft="@dimen/screen_padding"
+            android:layout_marginRight="@dimen/screen_padding"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/bank_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingLeft="@dimen/screen_padding"
+                android:paddingRight="@dimen/screen_padding"
+                android:layout_weight="1"/>
+        </LinearLayout></LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/selected_bank_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_EF"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/label_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECT YOUR BANK"
+            android:textColor="@color/grey_75"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/screen_padding_double"
+            android:layout_marginBottom="@dimen/screen_padding_triple"
+            android:layout_marginLeft="@dimen/screen_padding"
+            android:layout_marginRight="@dimen/screen_padding"/>
+
+
+
+        <TextView
+            android:id="@+id/selected_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_4D"
+            android:background="@drawable/rect_white_bcg_rounded"
+            android:padding="@dimen/screen_padding"
+            android:layout_below="@id/label_selected"
+            android:text="HDFC Bank"
+            android:drawableRight="@drawable/ic_dropdown_down_black"
+            android:textSize="@dimen/font_size_16"
+            android:layout_marginTop="@dimen/screen_padding_double"
+            android:layout_marginLeft="@dimen/screen_padding_double"
+            android:layout_marginRight="@dimen/screen_padding_double"
+            android:paddingLeft="@dimen/screen_padding"
+            android:paddingRight="@dimen/screen_padding"
+            android:paddingTop="@dimen/screen_padding_triple"
+            android:paddingBottom="@dimen/screen_padding_triple"/>
+
+        <Button
+            style="@style/ButtonStyle"
+
+            android:id="@+id/button_pay_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:text="Pay now" />
+    </RelativeLayout>
+
+
+
+</FrameLayout>

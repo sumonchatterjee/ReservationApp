@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp">
+
+    <ImageView
+        android:id="@+id/image_view_search"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rectangle_transparent_button_selector"
+        android:padding="16dp"
+        android:src="@drawable/ic_action_search" />
+
+    <!-- notification icon -->
+    <ImageView
+        android:id="@+id/image_button_notification"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="16dp"
+        android:src="@drawable/notification_icon"
+        android:layout_toLeftOf="@id/image_view_search"
+         />
+
+    <RelativeLayout
+        android:id="@+id/layout_location_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/image_button_notification">
+
+        <ImageView
+            android:id="@+id/imageView_location_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/screen_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:id="@+id/text_view_locality_name"
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imageView_location_icon"
+            android:drawablePadding="@dimen/screen_padding_half"
+            android:drawableRight="@drawable/ic_dropdown_down_arrow"
+            android:ellipsize="end"
+            android:minLines="1"
+            android:singleLine="true"
+            android:text="@string/tb_detecting_location"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

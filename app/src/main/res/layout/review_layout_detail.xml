@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/screen_padding"
+    android:background="@drawable/round_white_rect_with_red_border"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/screen_padding"
+    android:paddingRight="@dimen/screen_padding"
+    android:paddingTop="@dimen/screen_padding">
+
+    <RelativeLayout
+        android:id="@+id/rl_rv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.dineout.recycleradapters.view.widgets.RoundedImageView xmlns:abelana="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_rv_img"
+            android:layout_width="@dimen/rest_details_circle_tabs_size_for_review"
+            android:layout_height="@dimen/rest_details_circle_tabs_size_for_review"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/img_profile_nav_default"
+            abelana:maskDrawable="@drawable/circle_mask" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/screen_padding_plus_half"
+            android:layout_toRightOf="@+id/iv_rv_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_rv_name"
+                style="@style/MyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Diner Name"
+                android:textColor="@color/booking_detail_address_text"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_rv_post_date"
+                style="@style/MyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="6 May 2014"
+                android:textColor="@color/booking_detail_resto_name"
+                android:textSize="@dimen/font_size_10"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/rest_details_circle_tabs_size_for_review"
+            android:layout_height="@dimen/rest_details_circle_tabs_size_for_review"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/grey_circle_rating"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_rv_rating"
+                style="@style/RatingStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2.0" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_rv_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_rv_header"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:paddingBottom="@dimen/screen_padding"
+        android:textColor="@color/booking_detail_address_text"
+        android:textSize="@dimen/font_size_14" />
+
+    <View
+        android:id="@+id/resto_detail_review_stroke"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_below="@+id/tv_rv_review"
+        android:background="@color/booking_detail_stroke" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_review_type_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resto_detail_review_stroke"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/tv_review_type"
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/screen_padding_half"
+            android:paddingLeft="@dimen/screen_padding"
+            android:paddingRight="@dimen/screen_padding"
+            android:paddingTop="@dimen/screen_padding_half"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_10" />
+
+        <com.dineout.android.volley.toolbox.NetworkImageView
+            android:id="@+id/iv_review_source_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/screen_padding" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/your_booking_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_primary_shade_one"
+        android:gravity="center"
+        android:padding="@dimen/screen_padding"
+        android:text="@string/wallet_info_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_18" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/screen_padding">
+
+        <View
+            android:id="@+id/bullet_one"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="@dimen/screen_padding_half"
+            android:background="@drawable/primary_circle" />
+
+        <TextView
+            android:id="@+id/tv_more_msg_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/screen_padding"
+            android:layout_toRightOf="@+id/bullet_one"
+            android:text="@string/wallet_info_popup_one"
+            android:textColor="@color/black_11" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:background="@color/app_horizontal_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:padding="@dimen/screen_padding">
+
+        <View
+            android:id="@+id/bullet_two"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="@dimen/screen_padding_half"
+            android:background="@drawable/primary_circle" />
+
+        <TextView
+            android:id="@+id/tv_more_msg_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/screen_padding"
+            android:layout_toRightOf="@+id/bullet_two"
+            android:text="@string/wallet_info_popup_two"
+            android:textColor="@color/black_11" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:background="@color/app_horizontal_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:padding="@dimen/screen_padding">
+
+        <View
+            android:id="@+id/bullet_three"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="@dimen/screen_padding_half"
+            android:background="@drawable/primary_circle" />
+
+        <TextView
+            android:id="@+id/tv_more_msg_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/screen_padding"
+            android:layout_toRightOf="@+id/bullet_three"
+            android:text="@string/wallet_info_popup_three"
+            android:textColor="@color/black_11" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:background="@drawable/dialog_dismiss_selector"
+        android:text="@string/button_dismiss"
+        android:textAllCaps="true"
+        android:textColor="@color/app_primary_shade_two" />
+</LinearLayout>

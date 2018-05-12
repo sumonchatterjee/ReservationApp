@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_info_opening_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_white_button_selector"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:id="@+id/textView_info_open_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="2dp"
+                android:text="@string/text_view_all"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView_info_opening_hours_title"
+                style="@style/MyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_opening_hours"
+                android:textColor="@color/grey_4D"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView_info_rest_opening_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_info_opening_hours_title"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/grey_75"
+                android:textSize="13sp"
+                tools:text="Today: 11:00 AM to 12:00 PM" />
+
+            <TextView
+                android:id="@+id/textView_rest_opening_status"
+                style="@style/MyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_info_opening_hours_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/textView_info_rest_opening_date_time"
+                android:enabled="true"
+                android:textColor="@color/restaurant_opening_status_text_color_selector"
+                android:textSize="13sp"
+                tools:text="OPEN" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_e1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.dineout.android.volley.toolbox.NetworkImageView
+                android:id="@+id/rest_location_map_tile"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_address_tile_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/rest_location_map_tile"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="12dp">
+
+                <TextView
+                    android:id="@+id/textView_info_address_title"
+                    style="@style/MyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_address"
+                    android:textColor="@color/grey_4D"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView_info_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/grey_75"
+                    android:textSize="13sp"
+                    tools:text="4, CDRv Complex, Near HDFC Bank, Sector 18, Noida" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_e1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_info_feature_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:id="@+id/textView_info_features_title"
+                style="@style/MyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_features"
+                android:textColor="@color/grey_4D"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_info_feature_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_e1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_info_featured_tags_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:id="@+id/textView_info_featured_tags_title"
+                style="@style/MyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_featured_tags"
+                android:textColor="@color/grey_4D"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView_info_featured_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/grey_75"
+                android:textSize="13sp"
+                tools:text="Romantic, Roof Top, Fine Dine" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_e1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_info_call_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_info_call"
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_white_button_selector"
+            android:drawableLeft="@drawable/ic_call"
+            android:drawablePadding="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="12dp"
+            android:text="@string/text_call_restaurant"
+            android:textColor="@color/grey_4D"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_e1" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_42" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/screen_padding"
+        android:paddingTop="@dimen/screen_padding_plus_half"
+        android:text="@string/text_how_it_works"
+        android:textColor="@color/black_42"
+        android:textSize="@dimen/font_size_28" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDOPlusStepSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <include
+        layout="@layout/dineout_section_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

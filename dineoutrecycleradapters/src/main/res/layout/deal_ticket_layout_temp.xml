@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_e7"
+        android:paddingBottom="@dimen/screen_padding_plus_half"
+        android:paddingLeft="@dimen/screen_padding_plus_half"
+        android:paddingRight="@dimen/screen_padding_plus_half"
+        android:paddingTop="@dimen/screen_padding_plus_half">
+
+        <TextView
+            android:id="@+id/title_2"
+            android:layout_toLeftOf="@+id/title_4"
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textColor="@color/grey_4D"
+            android:textSize="@dimen/font_size_16"/>
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:visibility="visible"
+            android:layout_below="@+id/title_2"
+            android:layout_alignRight="@+id/title_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/grey_4D"
+            android:textSize="@dimen/font_size_14"/>
+
+        <TextView
+            android:id="@+id/title_4"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_4D"
+            android:textSize="@dimen/font_size_16"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_9b" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/screen_padding_plus_half"
+        android:paddingLeft="@dimen/screen_padding_plus_half"
+        android:paddingRight="@dimen/screen_padding_plus_half"
+        android:paddingTop="@dimen/screen_padding_plus_half">
+
+        <TextView
+            android:id="@+id/deal_quantity_field"
+            android:layout_toLeftOf="@+id/deal_quantity_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textColor="@color/grey_5E"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/deal_quantity_value"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_5E"
+            android:textSize="@dimen/font_size_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_9b" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/screen_padding_plus_half"
+        android:paddingLeft="@dimen/screen_padding_plus_half"
+        android:paddingRight="@dimen/screen_padding_plus_half"
+        android:paddingTop="@dimen/screen_padding_plus_half">
+
+        <TextView
+            android:id="@+id/total_price_field"
+            android:layout_toLeftOf="@+id/total_price_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total price"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/font_size_16" />
+
+
+        <TextView
+            android:id="@+id/total_price_value"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/font_size_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_9b" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/screen_padding_plus_half"
+        android:paddingLeft="@dimen/screen_padding_plus_half"
+        android:paddingRight="@dimen/screen_padding_plus_half"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/save_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/grey_5E"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/know_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/save_price"
+            android:layout_marginTop="13dp"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:text="(Know More)"
+            android:textColor="@color/gen_dark_text_selector"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_9b" />
+</LinearLayout>

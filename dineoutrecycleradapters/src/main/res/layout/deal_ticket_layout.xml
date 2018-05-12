@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="14dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_deal_title"
+            style="@style/MyStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true"
+            android:textColor="@color/grey_5E"
+            android:textSize="15sp"
+            tools:text="50% off on Food Bill" />
+
+        <TextView
+            android:id="@+id/textView_deal_quantity"
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_5E"
+            android:textSize="15sp"
+            tools:text="x3" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_deal_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/grey_75"
+        android:textSize="10sp"
+        tools:text="\u20B9 100 per Person" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rect_grey97_shape"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_savings_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout="@layout/deal_ticket_savings_1_layout" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_97" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_savings_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout="@layout/deal_ticket_savings_2_layout" />
+
+        <TextView
+            android:id="@+id/textView_disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/grey_5E"
+            android:textSize="8sp"
+            tools:text="Disclaimer : This is just an estimate. Actual savings may varry based on total bill amount" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/grey_97" />
+
+        <TextView
+            android:id="@+id/textView_deal_extra_info"
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/grey_5E"
+            android:textSize="10sp"
+            tools:text="Additional cashback of Rs. 60 will be added to your Dineout Earnings." />
+
+    </LinearLayout>
+
+</LinearLayout>

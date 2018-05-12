@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_rest_cost_for_two"
+        style="@style/RestDetailSection">
+
+        <TextView
+            android:id="@+id/tv_cost_for_two_header"
+            style="@style/RestDetailsFieldTitleV2"
+            android:text="COST FOR 2"/>
+
+        <TextView
+            android:id="@+id/tv_rest_cost_for_two"
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cost_for_two_header"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#4D4D4D"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_rest_opening_time"
+        style="@style/RestDetailSection">
+
+        <TextView
+            android:id="@+id/tv_opening_time_header"
+            style="@style/RestDetailsFieldTitleV2"
+            android:layout_toLeftOf="@+id/tv_view_all_timings"
+            android:text="@string/opening_hr"/>
+
+        <TextView
+            android:id="@+id/tv_rest_opening_timings"
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_opening_time_header"
+            android:layout_toLeftOf="@+id/tv_view_all_timings"
+            android:text="No timings available"
+            android:textColor="#4D4D4D"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_view_all_timings"
+            style="@style/MyStyle"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_rect_primary_border_button_selector"
+            android:gravity="center"
+            android:paddingBottom="@dimen/screen_padding_half"
+            android:paddingTop="@dimen/screen_padding_half"
+            android:text="@string/view_all"
+            android:textColor="#4D4D4D"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_rest_cuisines"
+        style="@style/RestDetailSection">
+
+        <TextView
+            android:id="@+id/tv_cuisines_header"
+            style="@style/RestDetailsFieldTitleV2"
+            android:text="@string/cuisine"/>
+
+        <TextView
+            android:id="@+id/tv_rest_cuisines"
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cuisines_header"
+            android:text="No cuisines available"
+            android:textColor="#4D4D4D"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

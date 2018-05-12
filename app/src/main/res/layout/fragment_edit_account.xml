@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout_edit_account_parent"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+    <include layout="@layout/network_error_layout"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_fragment"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/screen_padding_triple">
+
+            <com.dineout.recycleradapters.view.widgets.RoundedImageView xmlns:abelana="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_edit_account_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                abelana:maskDrawable="@drawable/circle_mask" />
+
+            <ImageView
+                android:id="@+id/iv_edit_account_edit_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_edit_profile" />
+        </RelativeLayout>
+
+        <com.dineout.book.widgets.FloatingEditText
+            android:id="@+id/et_account_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/screen_padding_plus_half"
+            android:layout_marginRight="@dimen/screen_padding_plus_half"
+            android:layout_marginTop="@dimen/screen_padding_tetra_plus_half"
+            android:hint="@string/sign_name"
+            android:singleLine="true"
+            android:textColor="@color/black_11" />
+
+        <TextView
+            android:id="@+id/tv_phone_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/screen_padding_plus_half"
+            android:text="@string/table_mobile_number"
+            android:textColor="@color/app_horizontal_divider"
+            android:textSize="@dimen/font_size_10" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/screen_padding_plus_half"
+            android:layout_marginRight="@dimen/screen_padding_plus_half"
+            android:orientation="horizontal">
+
+            <com.dineout.book.widgets.FloatingEditText
+                android:id="@+id/et_account_number_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="+91"
+                android:textColor="@color/black_11" />
+
+            <com.dineout.book.widgets.FloatingEditText
+                android:id="@+id/et_account_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:singleLine="true"
+                android:enabled="false"
+                android:textColor="@color/black_11" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tv_edit_account_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/generic_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/screen_padding"
+        android:background="@drawable/gen_button_selector_rounded"
+        android:gravity="center"
+        android:text="Save Details"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_16" />
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/snackbarEditAccountPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

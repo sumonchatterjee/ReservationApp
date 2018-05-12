@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/call_now"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <ListView
+        android:id="@+id/lv_phone_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_dismiss_selector"
+        android:text="@string/button_dismiss"
+        android:textAllCaps="true"
+        android:textColor="#21b9c7" />
+
+</LinearLayout>

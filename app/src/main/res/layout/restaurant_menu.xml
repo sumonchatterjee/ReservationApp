@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_fullScreenView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_layout_top_image"
+        android:background="@android:color/black">
+
+        <ImageButton
+            android:id="@+id/ib_menu_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/screen_padding"
+            android:background="@drawable/ic_action_navigation_arrow_back" />
+
+        <TextView
+            android:id="@+id/tv_showing_menu_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/screen_padding"
+            android:paddingRight="@dimen/screen_padding_double"
+            android:text="Showing image"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagerFullScreen"
+        android:layout_width="match_parent"
+        android:layout_below="@id/rel_layout_top_image"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Endpoint Config"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Enter PHP BASE API URL:"
+            android:textColor="@color/blue_00b"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText_debug_php_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Default URL will be used if not provided"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_80"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_debug_set_php_url"
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_4D"
+            android:textIsSelectable="true"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Enter NODE BASE API URL:"
+            android:textColor="@color/blue_00b"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText_debug_node_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Default URL will be used if not provided"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_80"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_debug_set_node_url"
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_4D"
+            android:textIsSelectable="true"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Enter PHP Version URL:"
+            android:textColor="@color/blue_00b"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText_php_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Default URL will be used if not provided"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_80"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_set_php_url"
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_4D"
+            android:textIsSelectable="true"
+            android:textSize="14sp" />
+
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Enter NODE Version URL:"
+            android:textColor="@color/blue_00b"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText_node_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Default URL will be used if not provided"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_80"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_set_node_url"
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_4D"
+            android:textIsSelectable="true"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/button_debug"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Crash App to Save Details" />
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="GCM Token:"
+            android:textColor="@color/blue_00b" />
+
+        <TextView
+            android:id="@+id/textView_debug_gcm_token"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_4D"
+            android:textIsSelectable="true"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Google AD ID:"
+            android:textColor="@color/blue_00b" />
+
+        <TextView
+            android:id="@+id/textView_debug_google_ad_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_4D"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Device ID:"
+            android:textColor="@color/blue_00b" />
+
+        <TextView
+            android:id="@+id/textView_debug_device_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_4D"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Diner ID:"
+            android:textColor="@color/blue_00b" />
+
+        <TextView
+            android:id="@+id/textView_debug_dinner_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_4D"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

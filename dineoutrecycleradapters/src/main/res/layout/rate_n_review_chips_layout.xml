@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/rating_chips_layout_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/grey_69"
+        android:textSize="@dimen/font_size_15"
+        android:paddingTop="@dimen/screen_padding_double"
+        android:paddingBottom="@dimen/screen_padding"
+        android:paddingLeft="@dimen/screen_padding"
+        android:paddingRight="@dimen/screen_padding"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chips_rv"
+        android:overScrollMode="never"
+        android:layout_below="@+id/rating_chips_layout_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/chips_rv"
+        android:layout_marginTop="@dimen/screen_padding_double"
+        android:background="@color/grey_D2"/>
+</RelativeLayout>

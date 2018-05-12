@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="10dp">
+
+        <View
+            android:id="@+id/viewPickerTopView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutPickerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/imageButtonPickerClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rectangle_transparent_button_selector"
+                android:clickable="true"
+                android:src="@drawable/ic_cross_grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/imageButtonPickerClose"
+                android:text="@string/text_select_preferences"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutPickerHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayoutPickerTitle"
+            android:background="@color/grey_F0"
+            android:paddingBottom="15dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                style="@style/PickerHeaderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/text_day" />
+
+            <TextView
+                style="@style/PickerHeaderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:text="@string/text_time" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutPickerBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayoutPickerHeader"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <NumberPicker
+                android:id="@+id/datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:descendantFocusability="blocksDescendants" />
+
+            <NumberPicker
+                android:id="@+id/am_pm_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:clickable="false"
+                android:descendantFocusability="blocksDescendants" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@id/am_pm_picker"
+                android:layout_toRightOf="@id/datepicker">
+
+                <NumberPicker
+                    android:id="@+id/timepicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:clickable="false"
+                    android:descendantFocusability="blocksDescendants" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/mdoneButton"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/relativeLayoutPickerBody"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="0dp"
+            android:text="@string/button_done" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#939393"
+    tools:context=".view.fragment.myaccount.MyEarningsFragment">
+
+
+    <LinearLayout
+        android:id="@+id/rl_wallet_frag_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_E5"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/earning_recycler"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/no_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/font_size_16"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="#4d4d4d"
+        android:gravity="center_horizontal"
+        android:drawablePadding="20dp"
+        android:drawableTop="@drawable/no_payment_ico"
+        android:text="@string/no_earnings_result"/>
+
+
+
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+    <include layout="@layout/network_error_layout"/>
+
+</FrameLayout>

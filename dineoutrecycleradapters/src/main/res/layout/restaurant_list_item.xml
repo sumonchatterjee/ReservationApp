@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutSearchCardParentLayout"
+    android:layout_width="match_parent"
+    android:background="@color/grey_E5"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutSearchCardImageSection"
+        android:layout_width="match_parent"
+        android:layout_height="145dp">
+
+        <com.dineout.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imageViewRectSearchCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_list" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewSearchCardFeatured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:background="@drawable/img_featured_bg"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:paddingBottom="@dimen/screen_padding_half"
+        android:paddingLeft="@dimen/screen_padding"
+        android:paddingRight="@dimen/screen_padding_double"
+        android:paddingTop="@dimen/screen_padding_half"
+        android:text="Featured"
+        android:textAllCaps="true"
+        android:textSize="@dimen/font_size_10" />
+
+    <ImageView
+        android:id="@+id/imageViewSearchCarCarlsbergLogo"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:src="@drawable/img_carlsberg_listing"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_bg_gradient"
+            android:padding="@dimen/screen_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textViewSearchCardRating"
+                style="@style/MyStyle"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_14" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/new_tag_template"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutSearchCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayoutSearchCardImageSection"
+        android:background="@drawable/round_bottom_white_shape"
+        android:padding="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/textViewSearchCardRestaurant"
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/screen_padding_one"
+            android:textColor="@color/black_11"
+            android:textSize="@dimen/font_size_18" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutSearchCardContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewSearchCardRestaurant">
+
+            <LinearLayout
+                android:id="@+id/textViewSearchCardAddress_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewSearchCardAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/screen_padding_one"
+                    android:layout_weight="1"
+                    android:textColor="@color/white_3D"
+                    android:textSize="@dimen/font_size_14" />
+
+                <include
+                    layout="@layout/smartpay_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" />
+
+                <!--<TextView
+                    android:id="@+id/img_payment_notifier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/smartpay_normal_shape"
+                    android:paddingLeft="@dimen/screen_padding"
+                    android:paddingRight="@dimen/screen_padding"
+                    android:paddingTop="@dimen/screen_padding_half"
+                    android:text="@string/text_smartPay"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_10" />-->
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/frameLayoutReserveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/textViewSearchCardAddress_container"
+                android:paddingLeft="@dimen/screen_padding_half"
+                android:paddingTop="@dimen/screen_padding_eight">
+
+                <Button
+                    android:id="@+id/buttonSearchCardReserve"
+                    style="@style/ButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/button_reserve" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textViewSearchCardAmountForTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/frameLayoutReserveButton"
+                android:layout_below="@id/textViewSearchCardAddress_container"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/screen_padding_half"
+                android:layout_toLeftOf="@id/frameLayoutReserveButton"
+                android:textColor="@color/white_3D"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/textViewSearchCardOfferCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/frameLayoutReserveButton"
+                android:layout_below="@id/textViewSearchCardAmountForTwo"
+                android:layout_toLeftOf="@id/frameLayoutReserveButton"
+                android:gravity="bottom"
+                android:textColor="@color/dark_red"
+                android:textSize="@dimen/font_size_14" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewSearchCardDetailsDivider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/relativeLayoutSearchCardContentLayout"
+            android:layout_marginTop="@dimen/screen_padding_eight"
+            android:background="@color/grey_92" />
+
+        <TextView
+            android:id="@+id/textViewSearchCardOffers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewSearchCardDetailsDivider"
+            android:layout_marginTop="@dimen/screen_padding_eight"
+            android:singleLine="true"
+            android:textColor="@color/white_3D"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/relativeLayoutSearchCard"
+        android:background="@drawable/black_bottom_up_gradient_shape"
+        android:paddingBottom="@dimen/screen_padding_half"
+        android:paddingLeft="@dimen/screen_padding"
+        android:paddingRight="@dimen/screen_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/imageViewSearchCardLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/screen_padding_two"
+                android:layout_marginLeft="@dimen/screen_padding_half"
+                android:src="@drawable/ic_restaurant_location"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewSearchCardDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/imageViewSearchCardLocation"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_12"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSearchCardTags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewSearchCardBottomDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/relativeLayoutSearchCard"
+        android:background="@color/grey_BA" />
+
+</RelativeLayout>

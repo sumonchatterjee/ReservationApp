@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutConditionalBottomSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_primary_shade_two"
+        android:padding="@dimen/screen_padding_double">
+
+        <TextView
+            android:id="@+id/tv_call_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/call_us"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/tv_call_us_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_call_us"
+            android:layout_centerHorizontal="true"
+            android:text="@string/call_us_no"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_24" />
+
+        <ImageView
+            android:id="@+id/iv_dineout_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_call_us_no"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/screen_padding"
+            android:src="@drawable/ic_phone_call_center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/relativeLayoutConditionalBottomSection">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/screen_padding">
+
+            <ImageView
+                android:id="@+id/iv_conditional_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/screen_padding_double"
+                android:src="@drawable/ic_no_internet" />
+
+            <TextView
+                android:id="@+id/tv_conditional_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_conditional_icon"
+                android:layout_marginBottom="@dimen/screen_padding_double"
+                android:gravity="center"
+                android:text="@string/server_down"
+                android:textSize="@dimen/font_size_18" />
+
+            <Button
+                android:id="@+id/btn_conditional_button"
+                style="@style/ButtonStyle.WhiteBorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_conditional_message"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="@dimen/screen_padding_penta"
+                android:paddingRight="@dimen/screen_padding_penta"
+                android:text="@string/button_try_again" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

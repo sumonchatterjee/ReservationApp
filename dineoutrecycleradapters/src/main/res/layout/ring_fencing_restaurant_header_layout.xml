@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white_EF" />
+
+    <TextView
+        android:id="@+id/restaurant_specific_coupon_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/screen_padding"
+        android:paddingLeft="@dimen/screen_padding_double"
+        android:paddingRight="@dimen/screen_padding_double"
+        android:textColor="@color/activate_heading_label_color"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/restaurant_header_margin"
+        android:paddingLeft="@dimen/screen_padding_double"
+        android:paddingRight="@dimen/screen_padding_double"
+        android:paddingTop="4dp"
+        android:text=""
+        android:textColor="@color/grey_75"
+        android:textSize="13sp" />
+
+</LinearLayout>

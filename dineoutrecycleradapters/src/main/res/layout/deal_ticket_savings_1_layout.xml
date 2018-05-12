@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp">
+
+    <TextView
+        android:id="@+id/textView_deal_amount_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/grey_5E"
+        android:textSize="12sp"
+        tools:text="Estimated Bill amount" />
+
+    <TextView
+        android:id="@+id/textView_deal_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/grey_5E"
+        android:textSize="12sp"
+        tools:text="\u20B9 4500/-" />
+</LinearLayout>

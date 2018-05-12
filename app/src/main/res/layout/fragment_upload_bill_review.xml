@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<layout  xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto" >-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="330dp"
+        android:minHeight="440dp"
+        android:background="@drawable/round_white_rect_with_no_border"
+       >
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_bill_review_header"
+            android:textColor="@color/grey_4D"
+            android:textSize="16sp"
+            android:paddingLeft="16dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:paddingRight="36dp"/>
+
+        <com.dineout.android.volley.toolbox.NetworkImageView
+            android:id="@+id/network_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/upload_bill_rate_info_header"
+            android:textColor="@color/grey_4D"
+            android:textSize="@dimen/font_size_18"
+            />
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/grey_4D"
+            android:textSize="@dimen/font_size_18"
+            android:layout_marginBottom="20dp"
+            />
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/screen_padding_double"
+            android:numStars="5"
+            android:progressDrawable="@drawable/rating_bar"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/rating_desc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/upload_review_edit"
+            android:gravity="center"
+            android:singleLine="true"
+            android:hint="Want to say something?"
+            android:textSize="@dimen/font_size_16"
+            android:padding="8dp"
+            android:textColor="@color/grey_96"
+            android:textColorHint="@color/grey_96"
+            android:textIsSelectable="false" />
+
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/screen_padding_triple"
+            android:background="@drawable/gen_button_selector_rounded_bottom"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:padding="@dimen/screen_padding"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16"/>
+
+
+    </LinearLayout>
+<!--</layout>-->

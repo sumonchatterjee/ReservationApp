@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/white_f9"
+    android:paddingTop="@dimen/screen_padding">
+
+    <RelativeLayout
+        android:id="@+id/rating_logo_container"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/rating_logo_bg_iv"
+            android:layout_width="@dimen/rating_logo_bg_size"
+            android:layout_height="@dimen/rating_logo_bg_size"
+            android:src="@drawable/user_icon_background"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/rating_logo_iv"
+            android:layout_width="@dimen/rating_logo_size"
+            android:layout_height="@dimen/rating_logo_size"
+            android:src="@drawable/rating_user_icon_0"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_below="@+id/rating_logo_container"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:stepSize="1"
+        android:progressDrawable="@drawable/rnr_rating_bar"
+        android:layout_marginLeft="@dimen/screen_padding_plus_half"
+        android:layout_marginRight="@dimen/screen_padding_plus_half"
+        android:layout_marginTop="@dimen/screen_padding_eight"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/rating_text_tv"
+        android:layout_below="@+id/rating_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_16"
+        android:paddingLeft="@dimen/screen_padding_half"
+        android:paddingRight="@dimen/screen_padding_half"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rating_text_tv"
+        android:background="@color/app_grey_shade_eleven"
+        android:layout_marginTop="@dimen/screen_padding_plus_half"
+        android:layout_height="1px"/>
+</RelativeLayout>

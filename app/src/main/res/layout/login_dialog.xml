@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentView_login_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_padding_double">
+
+    <TextView
+        android:id="@+id/tv_login_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingLeft="@dimen/screen_padding"
+        android:paddingRight="@dimen/screen_padding"
+        android:text="@string/login_dialog_title_default"
+        android:textColor="@color/login_dialog_title"
+        android:textSize="@dimen/font_size_18"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_login_dialog_centre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/screen_padding_double" />
+
+    <TextView
+        android:id="@+id/tv_login_dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/screen_padding_double"
+        android:gravity="center"
+        android:paddingLeft="@dimen/screen_padding"
+        android:paddingRight="@dimen/screen_padding"
+        android:text="@string/login_dialog_message_default"
+        android:textColor="@color/login_dialog_title"
+        android:textSize="@dimen/font_size_18"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/screen_padding_double_plus_half">
+
+        <RelativeLayout
+            android:id="@+id/rl_login_dialog_fb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_btn_fb_intro"
+            android:padding="@dimen/screen_padding_half">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_login_facebook" />
+
+                <TextView
+                    android:id="@+id/btn_login_dialog_fb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/login_dialog_login_with_facebook"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_16" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_facebook_login_in_process"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4DFFFFFF"
+            android:visibility="gone">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:indeterminateTint="@color/colorPrimary"
+                android:indeterminateTintMode="src_atop" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/screen_padding">
+
+        <RelativeLayout
+            android:id="@+id/rl_login_dialog_gplus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_btn_gplus_intro"
+            android:padding="@dimen/screen_padding_half">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_g_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_login_google" />
+
+                <TextView
+                    android:id="@+id/btn_login_dialog_gplus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/login_dialog_login_with_google"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_16" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_gplus_login_in_process"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99FFFFFF"
+            android:visibility="gone">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:indeterminateTint="@color/colorPrimary"
+                android:indeterminateTintMode="src_atop" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_dialog_parent_login_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_login_dialog_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/gen_button_selector_light_grey"
+            android:padding="@dimen/screen_padding_half"
+            android:singleLine="true"
+            android:text="@string/login_dialog_login_with_email"
+            android:textAllCaps="false"
+            android:textColor="@color/login_dialog_btn_text"
+            android:textSize="@dimen/font_size_14" />
+
+        <Button
+            android:id="@+id/btn_login_dialog_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/screen_padding"
+            android:layout_weight="1"
+            android:background="@drawable/gen_button_selector_light_grey"
+            android:padding="@dimen/screen_padding_half"
+            android:text="@string/login_dialog_login_new_user"
+            android:textAllCaps="false"
+            android:textColor="@color/login_dialog_btn_text"
+            android:textSize="@dimen/font_size_14" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login_dialog_guest_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:background="@color/login_dialog_btn_bg"
+        android:singleLine="true"
+        android:text="@string/login_dialog_login_guest"
+        android:textColor="@color/login_dialog_btn_text"
+        android:textSize="@dimen/font_size_16"
+        android:visibility="gone" />
+
+</LinearLayout>

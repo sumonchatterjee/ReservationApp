@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="21.5dp"
+    android:paddingRight="@dimen/screen_padding_double_plus_half">
+
+    <TextView
+        android:id="@+id/step_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/screen_padding_double"
+        android:background="@drawable/ring_golden_shape"
+        android:gravity="center"
+        android:paddingBottom="@dimen/screen_padding_half"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="@dimen/screen_padding_half"
+        android:text="1"
+        android:textColor="@color/black_42"
+        android:textSize="@dimen/font_size_20" />
+
+    <TextView
+        android:id="@+id/step_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/step_number"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="@dimen/screen_padding_triple"
+        android:textColor="@color/black_42"
+        android:textSize="@dimen/font_size_14" />
+
+    <View
+        android:id="@+id/viewEndStepDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step_description" />
+
+    <View
+        android:id="@+id/viewStepLine"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/viewEndStepDescription"
+        android:layout_below="@id/step_number"
+        android:layout_marginLeft="15dp"
+        android:background="@color/golden" />
+
+</RelativeLayout>

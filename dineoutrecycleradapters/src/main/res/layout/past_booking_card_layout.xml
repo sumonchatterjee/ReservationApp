@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/booking_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:tag="cards main container"
+    app:cardBackgroundColor="@color/app_grey_shade_five"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_detail_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textViewBookingRestaurantName"
+                style="@style/MyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:text="Restaurant Name" />
+
+            <TextView
+                android:id="@+id/textViewBookingDinnerCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewBookingRestaurantName"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:text="Guest Count" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewBookingDinnerCount"
+                android:layout_marginLeft="-10dp"
+                android:padding="2dp">
+
+                <ImageView
+                    android:id="@+id/imageViewBookingCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cal_booking_white" />
+
+                <include
+                    android:id="@+id/layout_booking_status"
+                    layout="@layout/booking_status_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:id="@+id/textViewBookingDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/layout_booking_status"
+                    android:layout_toRightOf="@id/imageViewBookingCalendar"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    tools:text="Booking Date\nBooking Time" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_layout_detail_section"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewPastBookingLeftButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/gen_button_selector_grey"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_reserve_again_enabled"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/button_reserve_again"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/booking_divider_color" />
+
+            <TextView
+                android:id="@+id/textViewPastBookingRightButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/gen_button_selector_grey"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_write_review_enabled"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/button_write_review"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

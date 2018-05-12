@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <com.dineout.android.volley.toolbox.NetworkImageView
+        android:id="@+id/image_view_collection"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/text_view_collection_name"
+        style="@style/MyStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:minLines="1"
+        android:singleLine="true"
+        android:textColor="@color/grey_69"
+        android:textSize="14sp"
+        tools:text="North Indian" />
+
+    <TextView
+        android:id="@+id/text_view_collection_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:minLines="1"
+        android:singleLine="true"
+        android:textColor="@color/grey_9b"
+        android:textSize="12sp"
+        tools:text="12 Restaurants" />
+
+</LinearLayout>

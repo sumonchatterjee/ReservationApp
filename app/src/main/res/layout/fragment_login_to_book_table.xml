@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/screen_padding"
+        android:paddingTop="@dimen/screen_padding_half"
+        android:src="@drawable/ic_cross_grey" />
+
+    <ScrollView
+        android:id="@+id/sv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_cross">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/error_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/rating_red_circle"
+                android:textSize="@dimen/font_size_12" />
+
+            <RelativeLayout
+                android:id="@+id/rl_login_fb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_padding"
+                android:background="@drawable/bg_btn_fb_intro"
+                android:padding="@dimen/screen_padding_half">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_fb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_login_facebook" />
+
+                    <TextView
+                        android:id="@+id/btn_login_dialog_fb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Login with Facebook"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_16" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_login_gplus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_padding"
+                android:background="@drawable/bg_btn_gplus_intro"
+                android:padding="@dimen/screen_padding_half">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_g_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_login_google" />
+
+                    <TextView
+                        android:id="@+id/btn_login_dialog_gplus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Login with Google "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_16" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/screen_padding_triple">
+
+                <View
+                    android:layout_width="@dimen/divider_width"
+                    android:layout_height="@dimen/divider_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/dividerColor" />
+
+                <TextView
+                    android:id="@+id/tv_city_frag_or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ring_grey_shape"
+                    android:gravity="center"
+                    android:text="Or"
+                    android:textColor="@color/dividerColor"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="@dimen/divider_width"
+                    android:layout_height="@dimen/divider_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/dividerColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_padding"
+                android:orientation="vertical">
+
+                <com.dineout.book.widgets.FloatingEditText
+                    android:id="@+id/editTextLoginEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/table_email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black_11"
+                    android:textCursorDrawable="@null" />
+
+                <com.dineout.book.widgets.FloatingEditText
+                    android:id="@+id/editTextLoginPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/table_password"
+                    android:imeOptions="actionGo"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black_11"
+                    android:textCursorDrawable="@null" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginTop="-10dp">
+
+                    <com.dineout.book.widgets.CheckBox
+                        android:id="@+id/imageButtonShowPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/show_pass"
+                        android:textColor="@color/black_11" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/screen_padding"
+                android:background="@drawable/round_rectangle_primary_button_selector"
+                android:gravity="center"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/screen_padding_double"
+                android:text="@string/text_forgot_password"
+                android:textColor="@color/app_primary_shade_two"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/forgot_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/screen_padding"
+                android:text="@string/forgot_email"
+                android:textColor="@color/app_primary_shade_two"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+    <include layout="@layout/network_error_layout"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/snackbarLoginBookTablePosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

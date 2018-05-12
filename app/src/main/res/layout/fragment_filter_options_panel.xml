@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_search_option_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_search_remove"
+            android:layout_width="?android:attr/listPreferredItemHeightSmall"
+            android:layout_height="?android:attr/listPreferredItemHeightSmall"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_cross_grey" />
+
+        <EditText
+            android:id="@+id/editText_filter_option_search"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeightSmall"
+            android:layout_toLeftOf="@id/imageView_search_remove"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="@dimen/screen_padding"
+            android:hint="@string/text_search"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/screen_padding_plus_half"
+            android:paddingRight="@dimen/screen_padding"
+            android:singleLine="true"
+            android:textColor="@color/grey_4D"
+            android:textColorHint="@color/grey_cb"
+            android:textSize="@dimen/font_size_14" />
+
+        <View
+            style="@style/DividerStyle"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/editText_filter_option_search" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_filter_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView_no_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/screen_padding_double"
+        android:gravity="center"
+        android:text="@string/no_result_found_1"
+        android:textColor="@color/grey_A2"
+        android:textSize="@dimen/font_size_16"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</LinearLayout>

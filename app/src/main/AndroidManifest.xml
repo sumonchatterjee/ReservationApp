@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dineout.book"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- Required to allow the app to send events -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Recommended so that we can get the user's location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Recommended so that we can be smart about when to send the data -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.dineout.book.permission.MAPS_RECEIVE" />
+    <!-- Recommended so that we can get the user's primary e-mail address -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- GCM permissions starts here -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.dineout.book.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.dineout.book.permission.C2D_MESSAGE" />
+    <!-- GCM permissions ends here -->
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.dineout.book.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name=".application.MainApplicationClass"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/DOAppTheme">
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB3jkS5YaJBNgu6DpUxRdtCPHvn89cfl2I" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="9efc07d567891ee6b50ea1ba7bab323d28502c6a"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="GCM_SENDER_ID"
+            android:value="id:953585151264" />
+
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="key_live_jdo4vGkV3AAZzk945WFCUehlwxoaXbTs" />
+        <!-- PhonePe meta Tags -->
+       
+        <meta-data
+            android:name="com.phonepe.android.sdk.MerchantId"
+            android:value="TIMESINTERNET"/>
+
+        <meta-data
+            android:name="com.phonepe.android.sdk.AppId"
+            android:value="5621285dea6341c185ddc184208142f7" />
+
+        <meta-data
+            android:name="com.phonepe.android.sdk.Debuggable"
+            android:value="false"/>
+
+        <receiver
+            android:name="com.apsalar.sdk.ApsalarReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"></action>
+            </intent-filter>
+        </receiver>
+
+        <!-- Generic Install Referrer Receiver starts here -->
+        <receiver
+            android:name=".broadcastreceiver.GenericInstallReferrerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Facebook SDK starts here -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Translucent"
+            tools:replace="android:theme" />
+
+
+        <!-- GCM implementation starts here -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.dineout.book.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".broadcastreceiver.NetworkChangeReciever">
+
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".service.GCMListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+
+        <service
+            android:name=".service.ImageUploadService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.dineout.book.UPLOAD" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".service.GCMInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".service.GCMRegistrationIntentService"
+            android:exported="false" />
+        <!-- GCM Receiver implementation ends here -->
+
+
+
+        <!-- PayTm sdk starts from here -->
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <!-- PayTm sdk ends here -->
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="Dineout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/DineoutSplashBackground"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+
+        <activity
+            android:name=".activity.ForceUpdateActivity"
+            android:label="Force Update"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DineoutMainActivity"
+            android:label="MainScreen"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="*"
+                    android:scheme="@string/deep_linking_schema" />
+
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="dl.dineout.co.in"
+                    android:scheme="http" />
+
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="qa5.apsalar.com"
+                    android:pathPrefix="/api/v1/appstore/com.dineout.book.view.activity.DineoutMainActivity"
+                    android:scheme="http" />
+
+                <data android:scheme="amp88cf4a4bb967eb820d9da45-23ff03de-b42c-11e5-a962-003e57fecdee" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

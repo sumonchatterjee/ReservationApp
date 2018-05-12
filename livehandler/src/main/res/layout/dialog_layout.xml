@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/dialog_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            app:cardCornerRadius="5dp"
+            android:orientation="horizontal"
+            app:cardBackgroundColor="@android:color/white">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Eating out?"
+                    android:textStyle="bold"
+                    android:textColor="@color/zomato_red"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Reserve a table on Dineout App"
+                    android:textColor="@color/guest_grey"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Get great offers and discounts"
+                    android:textColor="@color/guest_grey"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/never_show_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="3dp"
+                    android:buttonTint="@color/grey_97"
+                    android:singleLine="true"
+                    android:text="Never show this again"
+                    android:textColor="@color/grey_97"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/head_negative"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@drawable/edit_text_rounded_border_grey"
+                        android:text="@string/dialog_view_negative_button_text"
+                        android:textAllCaps="false"
+                        android:textColor="@color/grey_97"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/head_positive"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@drawable/edit_text_rounded_border_red"
+                        android:text="@string/dialog_view_positive_button_text"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_legend_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:orientation="horizontal" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_booking_slot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_fragment" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_time_slot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayout_legend_section"
+        android:layout_below="@+id/recyclerView_booking_slot"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="@dimen/screen_padding" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_time_slot_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView_error_title"
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/screen_padding_double"
+            android:text="@string/text_time_slot_error_title"
+            android:textColor="#4D4D4D4D"
+            android:textSize="@dimen/font_size_20" />
+
+        <TextView
+            android:id="@+id/textView_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_error_title"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="#4D4D4D4D"
+            android:textSize="@dimen/font_size_12"
+            tools:text="@string/text_time_slot_error_message" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <include layout="@layout/network_error_layout" />
+
+    <RelativeLayout
+        android:id="@+id/login_screen"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_fragment">
+
+        <include layout="@layout/login_screen_common"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:id="@+id/coach_mark_layout">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/coach"/>
+
+
+
+
+    </FrameLayout>
+
+</RelativeLayout>

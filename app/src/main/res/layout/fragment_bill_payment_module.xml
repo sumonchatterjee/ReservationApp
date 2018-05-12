@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white_EF"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_fragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<include-->
+            <!--layout="@layout/toolbar_fragment"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+        <include
+            android:id="@+id/header_container"
+            layout="@layout/biller_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/screen_padding_double"
+            android:paddingRight="@dimen/screen_padding_double" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/heading_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="@dimen/screen_padding_double"
+        android:layout_marginRight="@dimen/screen_padding_double"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:text="How much would you like to pay via app?"
+        android:textColor="@color/grey_4D" />
+
+    <LinearLayout
+        android:id="@+id/payment_input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading_amount"
+        android:layout_marginLeft="@dimen/screen_padding_double"
+        android:layout_marginRight="@dimen/screen_padding_double"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:background="@drawable/bg_round_rect_white_edit"
+        android:orientation="horizontal"
+        android:padding="@dimen/screen_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/screen_padding"
+            android:text="@string/rupee_symbol"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_20" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:maxLength="5"
+            android:hint="@string/hint_bill_amt"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_75"
+            android:textSize="@dimen/font_size_16" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/middle_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payment_input_container"
+        android:layout_marginLeft="@dimen/screen_padding_double"
+        android:layout_marginRight="@dimen/screen_padding_double"
+        android:layout_marginTop="@dimen/screen_padding_double"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/promo_input_container"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_round_rect_white_edit"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/promo_code_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/screen_padding_half"
+                android:layout_marginRight="@dimen/screen_padding_half"
+                android:layout_weight="0.6"
+                android:background="@color/transparent"
+                android:hint="Have a Promo Code ?"
+                android:paddingLeft="@dimen/screen_padding_half"
+                android:textColor="@color/grey_4D"
+                android:textSize="@dimen/font_size_16"
+                android:textColorHint="@color/grey_A2" />
+
+            <Button
+                android:id="@+id/promo_code_apply"
+                style="@style/ButtonStyle.RectanglePrimaryButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:background="@drawable/primary_rounded_color_button"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="Apply" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/wallet_selector_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/middle_container"
+        android:layout_marginLeft="@dimen/screen_padding"
+        android:layout_marginRight="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/screen_padding_double"
+        android:background="@drawable/rect_white_bcg_rounded_no_stroke"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/screen_padding_plus_half">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/wallet_opted_promocode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checkMark="@drawable/wallet_icon_selector"
+            android:text="Use Dineout Earnings"
+            android:textColor="@color/use_wallet_text_selector"
+            android:textSize="@dimen/font_size_16"
+            android:checked="false" />
+
+
+        <TextView
+            android:id="@+id/wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/container_rupee"
+            android:textColor="@color/use_wallet_text_selector"
+            android:textSize="@dimen/font_size_16" />
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/earnings_selector_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/wallet_selector_container"
+        android:layout_marginTop="@dimen/screen_padding_double"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/screen_padding_plus_half">
+
+
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/earnings_check_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_test"
+            android:layout_marginLeft="5dp"
+
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/earnings_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/earnings_check_image"
+            android:text=""
+            android:paddingLeft="5dp"
+            android:layout_marginRight="55dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/use_wallet_text_selector"
+            android:textSize="@dimen/font_size_16" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/earnings_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/use_wallet_text_selector"
+            android:textSize="@dimen/font_size_16" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_view_summary"
+        style="@style/ButtonStyle.RectanglePrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/earnings_selector_container"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="@dimen/screen_padding"
+        android:layout_marginLeft="@dimen/screen_padding"
+        android:layout_marginRight="@dimen/screen_padding"
+        android:background="@drawable/round_rectangle_primary_button_selector"
+        android:gravity="center"
+        android:text="Continue"
+        android:textSize="@dimen/font_size_16" />
+    </RelativeLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <include layout="@layout/network_error_layout" />
+</RelativeLayout>

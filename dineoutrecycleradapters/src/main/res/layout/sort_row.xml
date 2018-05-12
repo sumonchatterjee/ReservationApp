@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.dineout.android.volley.toolbox.NetworkImageView
+        android:id="@+id/sort_icon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/sortby_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/generic_button_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textColor="#7f7f7f"
+        android:textSize="@dimen/font_size_15" />
+
+</LinearLayout>

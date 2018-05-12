@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <FrameLayout
+            android:id="@+id/frameLayout_ticket_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_ticket_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView_ticket_minus"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/round_rectangle_primary_button_selector"
+                    android:src="@drawable/ic_remove" />
+
+                <TextView
+                    android:id="@+id/textView_ticket_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/imageView_ticket_minus"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imageView_ticket_plus"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/textView_ticket_quantity"
+                    android:background="@drawable/round_rectangle_primary_button_selector"
+                    android:src="@drawable/ic_add" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView_event_sold_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_sold_out"
+                android:textColor="@color/dark_red"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView_ticket_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_4D"
+            android:textSize="14sp"
+            tools:text="Couples" />
+
+        <TextView
+            android:id="@+id/textView_ticket_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_ticket_name"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/frameLayout_ticket_section"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/grey_75"
+            android:textSize="12sp"
+            tools:text="This is ticket description which is added later" />
+
+        <TextView
+            android:id="@+id/textView_event_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_ticket_desc"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/light_green"
+            android:textSize="14sp"
+            tools:text="FREE" />
+
+        <TextView
+            android:id="@+id/textView_event_actual_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_ticket_desc"
+            android:layout_marginLeft="@dimen/screen_padding_double"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/textView_event_price"
+            android:textColor="@color/text_disable_color_selector_grey_75"
+            android:textSize="14sp"
+            tools:text="\u20B9 800" />
+
+        <TextView
+            android:id="@+id/textView_deal_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/frameLayout_ticket_section"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/dark_red"
+            android:textSize="12sp"
+            tools:text="Only 6 left" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_event_ticket"
+        style="@style/DividerStyle" />
+</LinearLayout>

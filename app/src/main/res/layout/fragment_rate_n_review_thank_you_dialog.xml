@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rating_wrapper_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/rating_thank_you_logo_iv"
+                    android:layout_width="@dimen/rate_n_review_thank_you_logo_size"
+                    android:layout_height="@dimen/rate_n_review_thank_you_logo_size"
+                    android:layout_marginTop="@dimen/screen_padding_half"
+                    android:src="@drawable/rnr_thank_you"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/restaurant_visit_text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="bold"
+                    android:padding="@dimen/screen_padding_half"/>
+
+                <TextView
+                    android:id="@+id/restaurant_visit_text_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center"
+                    android:lineSpacingExtra="12sp"
+                    android:paddingLeft="@dimen/screen_padding_double"
+                    android:paddingRight="@dimen/screen_padding_double"
+                    android:layout_marginBottom="@dimen/screen_padding_triple"
+                    android:textColor="@color/grey_69"
+                    android:textSize="@dimen/font_size_14" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/cross_iv"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="@dimen/rate_n_review_cross_icon_margin_top"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/review_cross_icon"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

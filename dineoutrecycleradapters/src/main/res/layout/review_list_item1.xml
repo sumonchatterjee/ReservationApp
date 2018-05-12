@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <com.dineout.recycleradapters.view.widgets.RoundedImageView
+            android:id="@+id/imageView_review_author_image"
+            android:layout_width="32dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="@dimen/screen_padding_half"
+            android:layout_marginRight="15dp"
+            android:paddingTop="5dp"
+            android:scaleType="centerCrop"
+
+            />
+
+
+        <TextView
+            android:id="@+id/textView_review_author_name"
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/imageView_review_author_image"
+            android:ellipsize="end"
+            android:maxLength="16"
+            android:textColor="@color/grey_4D"
+            android:textSize="15sp"
+            tools:text="John Anathon" />
+
+        <TextView
+            android:id="@+id/textView_review_type"
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView_review_author_name"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/textView_review_author_name"
+            android:background="@drawable/round_rect_critic_shape"
+            android:gravity="center_vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            tools:text="CRITIC" />
+
+        <LinearLayout
+            android:id="@+id/rating_bar_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <!--style="?android:attr/ratingBarStyleSmall"-->
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="@style/RatingBarfeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/grey_9b"
+                android:progressTint="@color/colorSecondary"
+                android:secondaryProgressTint="@color/grey_9b" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_review_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_review_type"
+            android:layout_marginTop="@dimen/screen_padding_half"
+            android:layout_toEndOf="@+id/imageView_review_author_image"
+            android:layout_toRightOf="@+id/imageView_review_author_image"
+            android:textColor="@color/grey_50_4D"
+            android:textSize="13sp"
+            tools:text="Posted on 14 Mrarch, 2016" />
+
+        <RelativeLayout
+            android:id="@+id/review_description_text_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView_review_author_image"
+            android:layout_toRightOf="@id/imageView_review_author_image">
+
+            <com.dineout.recycleradapters.view.widgets.MyReviewTextView
+                android:id="@+id/textView_review_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_padding_double"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/grey_69"
+                android:textSize="14sp"
+                app:appendedText="..."
+                app:appendedTextColor="@color/colorSecondary"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Crasneclaoreet justo, ac lobortis arcu. Nunc sodtales rutrum neque vehicula auctor." />
+
+            <com.dineout.recycleradapters.view.widgets.OtherReviewTextView
+                android:id="@+id/textView_review_etv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_padding_double"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/grey_69"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:appendedText="... See more"
+                app:appendedTextColor="@color/grey_ae"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Crasneclaoreet justo, ac lobortis arcu. Nunc sodtales rutrum neque vehicula auctor." />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/feedback_layout_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review_description_text_wrapper"
+            android:layout_marginTop="@dimen/screen_padding_plus_half"
+            android:layout_toRightOf="@id/imageView_review_author_image">
+
+            <ImageView
+                android:id="@+id/like_status_iv"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/like_status_iv">
+
+                <LinearLayout
+                    android:id="@+id/feedback_tags_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/DividerStyle"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

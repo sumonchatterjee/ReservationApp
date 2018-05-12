@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto">-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_container"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="18dp"
+    android:paddingRight="15dp"
+    android:paddingTop="16dp"
+    >
+    
+    
+    <ImageView
+        android:id="@+id/your_bill_image"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/screen_padding_half"
+        android:paddingTop="@dimen/screen_padding_half"
+        android:src="@drawable/ic_your_bill"
+        android:layout_height="wrap_content" />
+    
+    <LinearLayout
+        android:id="@+id/first_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/your_bill_image"
+        android:layout_marginLeft="14dp"
+
+        android:layout_alignTop="@id/your_bill_image"
+        android:layout_alignParentRight="true">
+
+
+        <TextView
+            android:id="@+id/restaurant_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_14"
+            android:singleLine="true"
+            android:gravity="left"
+            android:textColor="@color/grey_4D"/>
+
+
+        <TextView
+            android:id="@+id/status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_10"
+            android:layout_marginBottom="3dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/second_line_your_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@id/your_bill_image"
+        android:layout_below="@id/first_content">
+
+
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_12"
+            android:singleLine="true"
+            android:textColor="@color/grey_4D"/>
+
+
+        <TextView
+            android:id="@+id/cash_back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_4D"
+            android:textSize="@dimen/font_size_10"
+          />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/second_line_your_bill"
+        android:background="@color/divider_horizontal"/>
+
+
+    
+
+
+</RelativeLayout>
+    <!--</layout>-->

@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ly.count.android.sdk">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <service android:name="org.OpenUDID.OpenUDID_service">
+        <intent-filter>
+            <action android:name="org.OpenUDID.GETUDID" />
+        </intent-filter>
+    </service>
+
+    <!--<instrumentation android:name="ly.count.android.sdk.test.InstrumentationTestRunner"-->
+        <!--android:targetPackage="ly.count.android.sdk"/>-->
+
+</manifest>

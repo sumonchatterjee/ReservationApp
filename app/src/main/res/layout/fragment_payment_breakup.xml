@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_EF"
+    android:gravity="center_horizontal">
+
+    <include
+        layout="@layout/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/promo_head_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_fragment"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding_double">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/label_total_amount"
+            android:textColor="@color/black_42"
+            android:textSize="@dimen/font_size_18" />
+
+        <TextView
+            android:id="@+id/membership_fees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_28" />
+
+        <LinearLayout
+            android:id="@+id/applied_promo_detail_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/after_promo_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_A2"
+                android:textSize="@dimen/font_size_20" />
+
+            <TextView
+                android:id="@+id/after_promo_dicsount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_size_20" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/payment_breakup_txt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/deal_confirmation_height"
+        android:layout_below="@id/promo_head_container"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/screen_padding_double"
+        android:text="Payment Breakup"
+        android:textColor="@color/guest_grey"
+        android:textSize="@dimen/font_size_14"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payment_breakup_txt"
+        android:layout_marginLeft="@dimen/screen_padding"
+        android:layout_marginRight="@dimen/screen_padding"
+        android:background="@drawable/rect_white_bcg_rounded_no_stroke"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/screen_padding"
+            android:paddingLeft="@dimen/screen_padding_plus_half"
+            android:paddingRight="@dimen/screen_padding_plus_half"
+            android:paddingTop="@dimen/screen_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:paddingRight="@dimen/screen_padding"
+                android:text="Total Amount"
+                android:textColor="@color/grey_4D"
+                android:textSize="@dimen/font_size_14" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/screen_padding_eight"
+                    android:text="@string/rupee_symbol"
+                    android:textColor="@color/grey_4D"
+                    android:textSize="@dimen/font_size_18" />
+
+                <TextView
+
+                    android:id="@+id/amount_tobe_paid_breakup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textColor="@color/grey_4D"
+                    android:textSize="@dimen/font_size_18" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wallet_summary_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/screen_padding"
+            android:paddingLeft="@dimen/screen_padding_plus_half"
+            android:paddingRight="@dimen/screen_padding_plus_half"
+            android:paddingTop="@dimen/screen_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:paddingRight="@dimen/screen_padding"
+                android:text="Dineout Earnings"
+                android:textColor="@color/grey_4D"
+                android:textSize="@dimen/font_size_14" />
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/screen_padding_eight"
+                    android:text="@string/rupee_symbol"
+                    android:textColor="@color/grey_4D"
+                    android:textSize="@dimen/font_size_18" />
+
+                <TextView
+
+                    android:id="@+id/amount_wallet_breakup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textColor="@color/grey_4D"
+                    android:textSize="@dimen/font_size_18" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/coupon_summary_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/screen_padding"
+            android:paddingLeft="@dimen/screen_padding_plus_half"
+            android:paddingRight="@dimen/screen_padding_plus_half"
+            android:paddingTop="@dimen/screen_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/coupon_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:paddingRight="@dimen/screen_padding"
+                android:text="Dineout Earnings"
+                android:textColor="@color/grey_4D"
+                android:textSize="@dimen/font_size_14" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/screen_padding_eight"
+                    android:text="@string/rupee_symbol"
+                    android:textColor="@color/grey_4D"
+                    android:textSize="@dimen/font_size_18" />
+
+                <TextView
+
+                    android:id="@+id/amount_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textColor="@color/grey_4D"
+                    android:textSize="@dimen/font_size_18" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/screen_padding_plus_half"
+            android:background="@color/dividerColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/screen_padding"
+            android:paddingLeft="@dimen/screen_padding_plus_half"
+            android:paddingRight="@dimen/screen_padding_plus_half"
+
+
+            android:paddingTop="@dimen/screen_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:paddingRight="@dimen/screen_padding"
+                android:text="FINAL AMOUNT"
+                android:textColor="@color/grey_4D"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/screen_padding_eight"
+                    android:text="@string/rupee_symbol"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/font_size_18" />
+
+                <TextView
+
+                    android:id="@+id/amount_net_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/font_size_18" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_payment_option_breakup"
+        style="@style/ButtonStyle.RectanglePrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/screen_padding"
+        android:layout_marginLeft="@dimen/screen_padding"
+        android:layout_marginRight="@dimen/screen_padding"
+        android:background="@drawable/round_rectangle_primary_button_selector"
+        android:gravity="center"
+        android:text="@string/label_select_payment"
+        android:textColor="@color/generic_button_text_color_selector"
+        android:textSize="@dimen/font_size_16" />
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

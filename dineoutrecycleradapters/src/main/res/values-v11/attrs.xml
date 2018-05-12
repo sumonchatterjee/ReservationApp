@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ProgressWheel -->
+    <declare-styleable name="ProgressWheel">
+        <attr name="progressIndeterminate" format="boolean" />
+        <attr name="barColor" format="color" />
+        <attr name="rimColor" format="color" />
+        <attr name="rimWidth" format="dimension" />
+        <attr name="spinSpeed" format="float" />
+        <attr name="barSpinCycleTime" format="integer" />
+        <attr name="circleRadius" format="dimension" />
+        <attr name="fillRadius" format="boolean" />
+        <attr name="barWidthWheel" format="dimension" />
+        <attr name="linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <!-- Conditional Dialog-->
+    <declare-styleable name="TcConditionalView">
+        <attr name="viewMessage" format="string" />
+        <attr name="viewButtonMessage" format="string" />
+        <attr name="viewLoaderBackgroundVisible" format="boolean" />
+        <attr name="viewType" format="enum">
+            <enum name="server_error" value="1" />
+            <enum name="internet" value="2" />
+            <enum name="internet_checking" value="3" />
+            <enum name="loading" value="4" />
+            <enum name="custom_error" value="5" />
+        </attr>
+    </declare-styleable>
+
+    <!--rounded image-->
+    <declare-styleable name="BezelImageView">
+        <attr name="maskDrawable" format="reference" />
+        <attr name="borderDrawable" format="reference" />
+        <attr name="desaturateOnPress" format="boolean" />
+    </declare-styleable>
+
+    <!-- FloatingEditText Attribute -->
+    <declare-styleable name="FloatingEditText">
+        <attr name="floating_edit_text_hint_scale" format="float" />
+        <attr name="floating_edit_text_color" format="color" />
+        <attr name="floating_edit_text_highlighted_color" format="color" />
+        <attr name="floating_edit_text_error_color" format="color" />
+        <attr name="floating_edit_text_underline_height" format="dimension" />
+        <attr name="floating_edit_text_underline_highlighted_height" format="dimension" />
+    </declare-styleable>
+
+    <!--Range Bar-->
+    <declare-styleable name="RangeBar">
+        <attr name="tickCount" format="integer" />
+        <attr name="tickHeight" format="dimension" />
+        <attr name="barWeight" format="dimension" />
+        <attr name="barColorRangeBar" format="reference|color" />
+        <attr name="connectingLineWeight" format="dimension" />
+        <attr name="connectingLineColor" format="reference|color" />
+        <attr name="thumbRadius" format="dimension" />
+        <attr name="thumbImageNormal" format="reference" />
+        <attr name="thumbImagePressed" format="reference" />
+        <attr name="thumbColorNormal" format="reference|color" />
+        <attr name="thumbColorPressed" format="reference|color" />
+    </declare-styleable>
+
+</resources>

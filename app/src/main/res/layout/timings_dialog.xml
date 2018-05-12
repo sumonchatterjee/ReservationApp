@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_primary_shade_four"
+        android:gravity="center"
+        android:padding="@dimen/screen_padding"
+        android:text="@string/all_timings"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_18" />
+
+    <ListView
+        android:id="@+id/lv_timing_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_dismiss_selector"
+        android:text="@string/button_dismiss"
+        android:textAllCaps="true"
+        android:textColor="@color/app_primary_shade_two" />
+</LinearLayout>

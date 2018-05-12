@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/wallet_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/screen_padding_double"
+        android:layout_marginBottom="@dimen/screen_padding"/>
+
+
+    <TextView
+        android:id="@+id/add_money_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_4D"
+        android:layout_marginBottom="@dimen/screen_padding_half"
+        />
+
+    <TextView
+        android:id="@+id/add_money_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:layout_marginBottom="@dimen/screen_padding_double_plus_half"
+
+        />
+
+</LinearLayout>

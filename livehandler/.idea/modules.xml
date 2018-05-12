@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../MobiKwik_SDK_V2.0.1/MobiKwik_SDK_V2.0.1.iml" filepath="$PROJECT_DIR$/../MobiKwik_SDK_V2.0.1/MobiKwik_SDK_V2.0.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dineout_android_new.iml" filepath="$PROJECT_DIR$/../dineout_android_new.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dineoutbaseview/dineoutbaseview.iml" filepath="$PROJECT_DIR$/../dineoutbaseview/dineoutbaseview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dineoutnetworkmodule/dineoutnetworkmodule.iml" filepath="$PROJECT_DIR$/../dineoutnetworkmodule/dineoutnetworkmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dineoutpayments/dineoutpayments.iml" filepath="$PROJECT_DIR$/../dineoutpayments/dineoutpayments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dineoutrecycleradapters/dineoutrecycleradapters.iml" filepath="$PROJECT_DIR$/../dineoutrecycleradapters/dineoutrecycleradapters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/livehandler.iml" filepath="$PROJECT_DIR$/livehandler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sdkui/sdkui.iml" filepath="$PROJECT_DIR$/../sdkui/sdkui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../volley/volley.iml" filepath="$PROJECT_DIR$/../volley/volley.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,107 @@
+<resources>
+
+    <integer name="jp_mile_number_length">9</integer>
+
+    <!--dineout global-->
+    <dimen name="generic_button_height">48dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="map_restaurant_detail">128dp</dimen>
+
+    <!-- Paddings -->
+    <dimen name="legend_size">6dp</dimen>
+    <dimen name="screen_padding">10dp</dimen>
+    <dimen name="screen_padding_plus_two">12dp</dimen>
+    <dimen name="screen_padding_minus">-10dp</dimen>
+    <dimen name="screen_padding_minus_half">-5dp</dimen>
+    <dimen name="screen_padding_plus_half">15dp</dimen>
+    <dimen name="screen_padding_eighteen">18dp</dimen>
+    <dimen name="screen_padding_double">20dp</dimen>
+    <dimen name="screen_padding_double_minus">-20dp</dimen>
+    <dimen name="screen_padding_double_plus_half">25dp</dimen>
+    <dimen name="screen_padding_triple">30dp</dimen>
+    <dimen name="screen_padding_triple_plus_half">35dp</dimen>
+    <dimen name="screen_padding_tetra">40dp</dimen>
+    <dimen name="screen_padding_tetra_plus_half">45dp</dimen>
+    <dimen name="screen_padding_penta">50dp</dimen>
+    <dimen name="screen_padding_penta_plus_half">55dp</dimen>
+    <dimen name="screen_padding_hexa">60dp</dimen>
+    <dimen name="screen_padding_hepta">70dp</dimen>
+    <dimen name="screen_padding_octa">80dp</dimen>
+    <dimen name="screen_padding_deca">100dp</dimen>
+    <dimen name="screen_padding_half">5dp</dimen>
+    <dimen name="screen_padding_half_minus">-5dp</dimen>
+    <dimen name="screen_padding_two">2dp</dimen>
+    <dimen name="screen_padding_one">1dp</dimen>
+    <dimen name="screen_padding_eight">8dp</dimen>
+    <dimen name="screen_padding_200">200dp</dimen>
+    <dimen name="screen_padding_120">72dp</dimen>
+
+
+    <!-- Font sizes-->
+    <dimen name="font_size_8">8sp</dimen>
+    <dimen name="font_size_10">10sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_15">15sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_22">22sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+    <dimen name="font_size_26">26sp</dimen>
+    <dimen name="font_size_28">28sp</dimen>
+    <dimen name="font_size_34">34sp</dimen>
+
+    <dimen name="font_size_50">50sp</dimen>
+    <dimen name="font_size_84">84sp</dimen>
+    <!-- City List Divider -->
+    <dimen name="divider_width">60dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <!--parallax toolbar-->
+
+    <dimen name="flexible_space_image_height">240dp</dimen>
+
+    <!--restaurant details:start-->
+    <dimen name="rest_details_horizontal_margin">10dp</dimen>
+    <dimen name="rest_details_vertical_margin">20dp</dimen>
+    <dimen name="rest_details_generic_big_padding">10dp</dimen>
+    <dimen name="rest_details_circle_tabs_size_for_review">34dp</dimen>
+    <dimen name="rest_details_circle_tabs_size">56dp</dimen>
+    <dimen name="rest_details_margin_from_top_img_of_tags">-20dp</dimen>
+    <dimen name="rest_details_margin_from_top_img_of_tags_tetra">-30dp</dimen>
+    <dimen name="rest_details_bottom_action_height">50dp</dimen>
+    <dimen name="menu_image_height">80dp</dimen>
+    <dimen name="menu_parent_image_height">90dp</dimen>
+    <!--restaurant details:end-->
+
+    <!-- floating edit text start -->
+    <dimen name="floating_edit_text_underline_height">1dp</dimen>
+    <dimen name="floating_edit_text_underline_highlighted_height">2dp</dimen>
+    <!-- floating edit text ends -->
+
+    <!-- Table booking -->
+    <dimen name="table_booking_toolbar_height">68dp</dimen>
+    <dimen name="table_booking_arrow_width">60dp</dimen>
+
+    <!--filter-->
+    <dimen name="fl_height">68dp</dimen>
+
+    <!-- Conditional dialog -->
+    <dimen name="conditional_dialog_margin_bottom">75dp</dimen>
+
+    <!--Images -->
+    <dimen name="image_detail_pager_margin">80dp</dimen>
+
+    <!-- Tags -->
+    <dimen name="tags_card_height">130dp</dimen>
+
+    <!-- OTP -->
+    <dimen name="otp_edit_field_size">60dp</dimen>
+
+    <!--in app rating -->
+    <dimen name="user_icon_size">45dp</dimen>
+
+</resources>

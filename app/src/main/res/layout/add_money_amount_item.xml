@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/amount_add_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/screen_padding_plus_half"
+        android:layout_marginRight="@dimen/screen_padding_plus_half"
+        android:background="@drawable/bg_round_rect_white_edit"
+        android:textSize="@dimen/font_size_14"
+        android:padding="8dp"
+        android:textColor="@color/grey_4D"
+        android:layout_marginBottom="@dimen/screen_padding_half"
+    />
+
+    <TextView
+        android:id="@+id/minimum_amount_add_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_4D"
+        android:textSize="@dimen/font_size_10"
+        android:layout_marginBottom="@dimen/screen_padding_double_plus_half"/>
+
+</LinearLayout>

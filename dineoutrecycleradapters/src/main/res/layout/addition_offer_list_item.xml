@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/progressBar_addition_offer"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_additional_offer_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="13dp">
+
+        <TextView
+            android:id="@+id/textView_additional_offer_msg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_4D"
+            android:textSize="14sp"
+            tools:text="Use smartPay here and get 10% cashback" />
+
+        <TextView
+            android:id="@+id/textView_additional_offer_msg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/grey_4D"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:text="You can use \u20B9 750 from your balance earnings here" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_additional_offer"
+        style="@style/DividerStyle.Short"
+        android:layout_below="@id/linearLayout_additional_offer_info" />
+</RelativeLayout>

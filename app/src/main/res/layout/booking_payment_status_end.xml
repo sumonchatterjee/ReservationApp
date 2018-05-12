@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/info_container_status"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@drawable/rect_white_bcg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/screen_padding"
+            android:paddingBottom="@dimen/screen_padding"
+            android:paddingLeft="@dimen/screen_padding_plus_half"
+            android:paddingRight="@dimen/screen_padding_plus_half"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black_75"
+                android:textStyle="bold"
+                android:text="Bill Amount"/>
+
+            <TextView
+                android:id="@+id/status_bill_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/green"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_D2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/screen_padding"
+            android:paddingBottom="@dimen/screen_padding"
+            android:paddingLeft="@dimen/screen_padding_plus_half"
+            android:paddingRight="@dimen/screen_padding_plus_half"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black_75"
+                android:textStyle="bold"
+
+                android:text="Transaction ID"/>
+
+            <TextView
+                android:id="@+id/status_trans_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_75"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_D2"/>
+
+        <LinearLayout
+            android:id="@+id/invoice_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/screen_padding"
+            android:paddingBottom="@dimen/screen_padding"
+            android:paddingLeft="@dimen/screen_padding"
+            android:paddingRight="@dimen/screen_padding_plus_half"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black_75"
+                android:paddingLeft="7dp"
+                android:drawableLeft="@drawable/ic_invoice"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="View Invoice"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/transaction_status_time"
+        android:layout_below="@id/info_container_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_A2"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+
+</RelativeLayout>

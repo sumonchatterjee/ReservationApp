@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/app_grey_shade_five_with_transparency">
+
+        <com.dineout.android.volley.toolbox.NetworkImageView
+            android:id="@+id/iv_rest_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_list" />
+
+        <ImageView
+            android:id="@+id/imageViewDetailDOPlusLogo"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/dineout_plus_tag"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="145dp">
+
+        <include
+            layout="@layout/new_tag_template"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_rest_details_rating"
+            style="@style/MyStyle"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_circle_rating"
+            android:gravity="center"
+            android:text="2.0"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </FrameLayout>
+</RelativeLayout>

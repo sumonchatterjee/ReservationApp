@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout_jp_mile_section"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/screen_padding"
+    android:layout_marginRight="@dimen/screen_padding"
+    android:layout_marginTop="@dimen/screen_padding_plus_half"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_jp_know_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/screen_padding_half"
+            android:text="@string/text_know_more"
+            android:textColor="@color/gen_dark_text_selector"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_jp_title"
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/text_jp_know_more"
+            android:text="@string/text_enter_your_jp_number"
+            android:textAllCaps="true"
+            android:textColor="@color/grey_4D"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/round_white_rect_grey_broder_shape">
+
+        <LinearLayout
+            android:id="@+id/jp_action_section"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey_e7" />
+
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/progressBar_jp_action"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:id="@+id/image_view_jp_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_cross"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_jp_miles_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/jp_action_section"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_enter_your_jp_number"
+            android:inputType="number"
+            android:maxLength="@integer/jp_mile_number_length"
+            android:paddingLeft="@dimen/screen_padding_plus_half"
+            android:paddingRight="@dimen/screen_padding_half"
+            android:textColor="@color/grey_4D"
+            android:textColorHint="@color/grey_e7"
+            android:textSize="@dimen/font_size_16" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_view_jp_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/screen_padding_half"
+        android:textColor="@color/grey_4D"
+        android:textSize="10sp" />
+
+</LinearLayout>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- NEW VERSION COLORS STARTS -->
+    <!-- (Avoid using existing colors or merge them. Try to make them common) -->
+
+    <color name="transparent">#00000000</color>
+    <!-- card colors -->
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
+    <color name="card_detailing">#eee</color>
+    <color name="black_21">#212121</color>
+    <color name="black_4D">#4D000000</color>
+    <color name="black_34">#343434</color>
+    <color name="dark_golden">#be9c00</color>
+    <color name="yellow_f8">#f89a1c</color>
+
+    <color name="black_42">#424242</color>
+    <color name="grey_C3">#c3c3c3</color>
+    <color name="grey_CE">#CECECE</color>
+    <color name="grey_AA">#AAAAAA</color>
+    <color name="black_40">#64000000</color>
+    <color name="golden_d6">#d6ad4d</color>
+    <color name="grey_e7">#e7e7e7</color>
+    <color name="blue_00b">#00baf2</color>
+    <color name="grey_ee">#eeeeee</color>
+    <color name="grey_ec">#ececec</color>
+    <color name="grey_9a">#9a9a9a</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_e1">#E1E1E1</color>
+    <color name="white_1a">#1affffff</color>
+    <color name="white_33">#33ffffff</color>
+    <color name="white_B3FF">#B3ffffff</color>
+    <color name="white_66">#66ffffff</color>
+    <color name="white_96">#96ffffff</color>
+    <color name="white_CC">#CCFFFFFF</color>
+    <color name="white_99">#99FFFFFF</color>
+    <color name="white_80">#80FFFFFF</color>
+    <color name="white_3D">#3D3D3D</color>
+    <color name="white_EF">#EFEFEF</color>
+    <color name="black">#000000</color>
+    <color name="black_80">#80000000</color>
+    <color name="black_18">#181818</color>
+    <color name="black_11">#111111</color>
+    <color name="black_74">#747774</color>
+    <color name="black_B311">#B3111111</color>
+    <color name="grey_84">#848484</color>
+    <color name="grey_80">#808080</color>
+    <color name="grey_92">#929292</color>
+    <color name="grey_97">#979797</color>
+    <color name="grey_96">#969696</color>
+    <color name="grey_F0">#F0F0F0</color>
+    <color name="grey_4D">#4D4D4D</color>
+    <color name="grey_85">#858585</color>
+    <color name="grey_994D">#994D4D4D</color>
+    <color name="grey_B34D">#B34D4D4D</color>
+    <color name="grey_50_4D">#804D4D4D</color>
+    <color name="grey_D2">#D2D2D2</color>
+    <color name="grey_A2">#A2A2A2</color>
+    <color name="grey_B4">#B4B4B4</color>
+    <color name="grey_A6">#A6A6A6</color>
+    <color name="grey_BA">#BABABA</color>
+    <color name="grey_E5">#E5E5E5</color>
+    <color name="grey_E8">#E8E8E8</color>
+    <color name="grey_63">#636363</color>
+    <color name="grey_d0">#d0d0d0</color>
+    <color name="grey_75">#757575</color>
+    <color name="grey_35">#353535</color>
+    <color name="light_grey">#c7c8cc</color>
+    <color name="grey_4a">#4A4A4A</color>
+    <color name="light_red">#e95045</color>
+    <color name="cyan">#21b9c7</color>
+    <color name="light_cyan">#1d9da9</color>
+    <color name="dark_green">#157179</color>
+    <color name="darker_green">#11585E</color>
+    <color name="red">#E61E1E</color>
+    <color name="red_CC2">#CC2222</color>
+    <color name="dark_red">#CB2708</color>
+    <color name="light_orange_red">#e33434</color>
+    <color name="orange_fa">#fa5757</color>
+    <color name="green">#34AB5E</color>
+    <color name="light_green">#59b417</color>
+    <color name="green_2f">#2fbf44</color>
+    <color name="blue">#042e6f</color>
+    <color name="blue_dark">#042456</color>
+    <color name="paytm_light_blue">#1FBBEF</color>
+    <color name="golden">#CFA74B</color>
+    <color name="golden_dark">#D3A02B</color>
+    <color name="black_3d">#3d3d3d</color>
+    <color name="black_75">#757575</color>
+    <color name="divider_light">#979797</color>
+    <color name="colorPrimary">#fa5757</color>
+    <color name="colorPrimaryFaded">#64F97157</color>
+    <color name="white_fa">#fafafa</color>
+    <color name="white_f9">#f9f9f9</color>
+    <color name="white_db">#dbdbdb</color>
+    <color name="colorSecondary">#3595ff</color>
+    <color name="colorSecondaryPressed">#157FF3</color>
+    <color name="grey_51">#515151</color>
+    <color name="light_bright_green">#4ecd60</color>
+    <color name="dark_green_2">#43a350</color>
+    <color name="grey_faded"> #38000000</color>
+
+    <color name="default_section_color">@color/black_18</color>
+    <color name="feedback_color">@color/white_33</color>
+    <color name="feedback_pressed_color">@color/white_1a</color>
+
+    <color name="activate_heading_label_color">#4d4d4d</color>
+    <color name="payment_history_btn_bcg">@color/white_fa</color>
+    <color name="payment_history_btn_label">#E64d4d4d</color>
+    <color name="orderid_payment_history">#66000000</color>
+    <color name="amt_payment_history">#8d8d8d</color>
+    <color name="rest_payment_history">#99000000</color>
+    <color name="transaction_detail_label">#CC757575</color>
+    <color name="transaction_detail_value">#757575</color>
+    <color name="pista_green">@color/app_status_confirmed</color>
+    <color name="grey_cb">#CBCBCB</color>
+    <color name="lightest_grey">#f8f8f8</color>
+
+
+    <!-- NEW VERSION COLORS ENDS -->
+
+    <!-- Navigational Drawer -->
+    <color name="drawer_pending_bg_color">#cf0302</color>
+
+    <color name="card_background">@color/white</color>
+    <color name="card_shadow">#10000000</color>
+
+    <color name="window_background">#00000000</color>
+
+    <!-- divider color -->
+    <color name="dividerColor">@color/white_e1</color>
+
+    <color name="invite_verification_divider_color">#4DC8C8C8</color>
+
+
+    <!--restaurant details:start-->
+    <color name="primaryColorDetail">#99986c</color>
+    <color name="cuisine_fg">@color/white</color>
+    <color name="cuisine_bg">#949494</color>
+    <color name="rest_fvrt_unselected">#AAAAAA</color>
+    <color name="bk_circular_tab_bg">@color/white</color>
+    <color name="bottom_action_text">@color/white</color>
+    <color name="rest_address">#454545</color>
+    <color name="history_detail_header">#4d4d4d</color>
+    <!--restaurant details:end-->
+
+    <!-- floating edit text start -->
+    <color name="floating_edit_text_color">#ffc8c8c8</color>
+    <color name="floating_edit_text_error_color">#DB4437</color>
+    <!-- floating edit text ends -->
+
+    <!--rating:start-->
+    <color name="rating_red_circle">#e95333</color>
+    <color name="rating_orange_circle">#f7923a</color>
+    <color name="rating_yellow_circle">#ffbf00</color>
+    <color name="rating_light_green_circle">#b4cb01</color>
+    <color name="rating_green_circle">#7eb702</color>
+    <!--rating:end-->
+
+    <!-- restaurant result card -->
+    <color name="toolbar_background">@color/black_18</color>
+    <color name="cuisine_tag_color">#80757575</color>
+    <color name="toolbar_background_white">@color/transparent</color>
+
+    <!-- booking completed -->
+    <color name="booking_complete_success">@color/cyan</color>
+    <color name="booking_complete_failure">#DB4437</color>
+    <color name="booking_complete_status_color">#99986c</color>
+
+    <!--snackbar-->
+    <color name="snackbar_default_background_color">@color/app_grey_shade_four</color>
+    <color name="snackbar_default_text_color">@color/white</color>
+    <color name="snackbar_action_text_color">#E5E500</color>
+    <color name="snackbar_error_background_color">@color/red_CC2</color>
+    <color name="snackbar_success_background_color">#428827</color>
+
+    <!-- LoginActivity Dialog -->
+    <color name="login_dialog_title">@color/grey_4D</color>
+
+    <!--<color name="fb_icon">#5c84da</color>-->
+    <color name="fb_icon_bg">#3b5998</color>
+    <color name="fb_icon_bg_selected">#E65c84da</color>
+
+    <!--<color name="google_icon">#cc6864</color>-->
+    <color name="google_icon_bg">#da4835</color>
+    <color name="google_icon_bg_selected">#E6cc6864</color>
+    <color name="login_dialog_btn_bg">#e0e0e0</color>
+    <color name="login_dialog_btn_text">#4f4f4f</color>
+
+    <!--filter screen: start-->
+    <color name="fl_header">#444444</color>
+    <color name="fl_sub_header">#e0e0e0</color>
+    <color name="fl_applied">#20bf90</color>
+    <color name="fl_sel_header">#99986c</color>
+    <color name="fl_range_bar">#20bf90</color>
+    <color name="fl_range_bar_default">#949494</color>
+    <!--filter screen: end-->
+
+    <!--app standard colors-->
+    <color name="app_grey_shade_one">#212121</color>
+    <color name="app_grey_shade_two">#303030</color>
+    <color name="app_grey_shade_four">@color/grey_4D</color>
+    <color name="app_grey_shade_five">#616161</color>
+    <color name="app_grey_shade_six">#757575</color>
+    <color name="app_grey_shade_seven">@color/grey_F0</color>
+    <color name="app_grey_shade_eight">#40000000</color>
+    <color name="app_grey_shade_nine">#dedcdc</color>
+    <color name="app_grey_shade_five_with_transparency">#32000000</color>
+    <color name="app_grey_shade_ten">#3a3a3a</color>
+    <color name="app_grey_shade_eleven">#e0e0e0</color>
+
+    <color name="app_primary_shade_one_dark_with_transparency">#e6157179</color>
+    <color name="app_primary_shade_one_dark">#cc5640</color>
+    <color name="app_primary_shade_one">@color/colorPrimary</color>
+    <color name="app_primary_shade_one_with_transparency">#e621b9c7</color>
+    <color name="app_primary_shade_two">@color/cyan</color>
+    <color name="app_primary_shade_three">#20bf90</color>
+    <color name="app_primary_shade_four">@color/light_red</color>
+    <color name="app_primary_button_shade">#157179</color>
+    <color name="app_primary_shade_three_selector">#1fbf8f</color>
+    <color name="app_primary_button_shade_selector">#11585e</color>
+
+    <color name="app_horizontal_divider">#c8c7cc</color>
+    <color name="app_white_half">@color/white_80</color>
+
+    <!-- Share Dialog -->
+    <color name="share_dialog_clickable">#F7F7F7</color>
+    <color name="share_dialog_clickable_pressed">@color/grey_E5</color>
+
+    <!-- Your Booking -->
+    <color name="booking_divider_color">#80c8c7cc</color>
+
+    <!-- carlsberg Color-->
+    <color name="carslberg_background_color_code">#1f401d</color>
+
+    <color name="white_f1">#f1f1f1</color>
+
+    <!-- You Screen -->
+    <color name="you_item_option_title">@color/white_CC</color>
+    <color name="you_image_circle_stroke">@color/white_66</color>
+    <color name="you_profile_name">@color/white_CC</color>
+    <color name="you_profile_subtitle">@color/white_CC</color>
+
+    <!-- Booking Details -->
+    <color name="booking_detail_stroke">#80c8c7cc</color>
+    <color name="booking_detail_stroke_red">@color/colorPrimary</color>
+    <color name="booking_detail_resto_name">@color/colorPrimary</color>
+    <color name="booking_detail_resto_location">@color/white_CC</color>
+    <color name="booking_detail_common_text">@color/white_CC</color>
+    <color name="booking_detail_address_text">#4D4D4D</color>
+    <color name="booking_detail_uber_text">@color/grey_F0</color>
+
+    <!-- Restaurant Details -->
+    <color name="resto_detail_title_color">@color/colorPrimary</color>
+    <color name="resto_detail_common_text">@color/white_CC</color>
+    <color name="resto__detail_review_name">@color/white_CC</color>
+    <color name="resto_detail_review_date">@color/white_99</color>
+    <color name="resto_detail_review_text">@color/white_CC</color>
+    <color name="resto_detail_review_stroke">#33ffffff</color>
+    <color name="resto_detail_review_type_bg">#e6ffffff</color>
+    <color name="resto_detail_review_type_critic">#d62d39</color>
+    <color name="resto_detail_review_type_tripadvisor">#589442</color>
+    <color name="resto_detail_review_type_authentic">@color/colorPrimary</color>
+    <!-- Review Layout-->
+
+    <color name="konotor_theme_color">@color/colorPrimary</color>
+
+    <color name="payment_failure_status">@color/red_CC2</color>
+    <color name="payment_success_status">#428827</color>
+    <color name="payment_pending_status">#1c9ca8</color>
+    <color name="red_cc">#cc2222</color>
+    <color name="dark_green_1">#5e8a00</color>
+
+    <!-- Dineout Landing -->
+    <color name="dineout_landing_header_label">#E6ffffff</color>
+
+    <color name="verification_result">@color/black_3d</color>
+
+    <color name="app_status_confirmed">#428827</color>
+    <color name="app_status_denied">@color/red_CC2</color>
+    <color name="app_status_cancelled">@color/red_CC2</color>
+    <color name="app_status_waitlist">@color/grey_4D</color>
+    <color name="app_status_expired">@color/grey_4D</color>
+
+    <color name="spinner_background">#8e8e93</color>
+
+    <color name="greys">#7f7f7f</color>
+    <color name="colorPrimaryPressed">#CC5640</color>
+    <color name="heading_new">#6f6f6f</color>
+    <color name="warm_grey">#757575</color>
+    <color name="guest_grey">#4d4d4d</color>
+    <color name="grey_new">#878787</color>
+    <color name="grey_f3">#f3f1f1</color>
+    <color name="grey_66">#666666</color>
+
+    <color name="divider_grey">#8e8e93</color>
+    <color name="divider">#979797</color>
+    <color name="divider_horizontal">#c8c7cc</color>
+    <color name="grey_variety">#696868</color>
+
+
+    <!-- NEW COLOR SET -->
+    <color name="grey_9b">#9b9b9b</color>
+    <color name="grey_69">#696969</color>
+    <color name="grey_8e">#8e8c8c</color>
+    <color name="grey_ae">#aeaeae</color>
+    <color name="dark_grey_label">#5f5e5e</color>
+    <color name="grey_5E">#5E5E5E</color>
+    <color name="grey_F1">#F1F1F1</color>
+    <color name="notification_text_color">#717070</color>
+
+    <!--login art screen-->
+    <color name="login_art_screen_msg_color">#99986c</color>
+
+</resources>

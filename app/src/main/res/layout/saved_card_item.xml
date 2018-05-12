@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/screen_padding"
+    android:paddingRight="@dimen/screen_padding"
+
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/saved_card_collapsed_container"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/screen_padding_plus_half"
+        android:layout_marginBottom="@dimen/screen_padding_half"
+        android:padding="@dimen/screen_padding"
+        android:background="@drawable/saved_card_even_bcg"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/saved_card_issuer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="@dimen/screen_padding_eight"/>
+
+        <TextView
+            android:id="@+id/saved_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/saved_card_expanded_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/saved_card_even_bcg"
+        android:padding="@dimen/screen_padding"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:orientation="vertical" android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/screen_padding_half"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/saved_card_expanded_issuer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:id="@+id/saved_card_expanded_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_size_14"
+                        android:textColor="@color/white"/>
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/saved_card_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_14"
+                    android:layout_marginBottom="@dimen/screen_padding_half"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Please Enter CVV"
+                    android:layout_marginTop="@dimen/screen_padding_half"
+                    android:layout_marginBottom="@dimen/screen_padding_half"
+                    android:textSize="@dimen/font_size_12"/>
+
+                <EditText
+                    android:id="@+id/saved_card_cvv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_white_bcg_rounded_no_stroke"
+                    android:hint="CVV"
+
+                    android:paddingTop="@dimen/screen_padding_half"
+                    android:paddingBottom="@dimen/screen_padding_half"
+                    android:paddingLeft="@dimen/screen_padding_half"
+                    android:paddingRight="@dimen/screen_padding_half"
+                    android:minEms="4"
+                    android:inputType="numberPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/black_75"
+
+                    android:textColorHint="@color/grey_D2"
+                    android:textSize="@dimen/font_size_14"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/delete_save_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete_card"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Card"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_12"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

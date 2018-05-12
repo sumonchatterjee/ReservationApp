@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/empty_saved_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/screen_padding_half"
+                android:src="@drawable/ic_no_save_cards" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No saved cards"
+                android:textColor="@color/grey_4D"
+                android:textSize="@dimen/font_size_18" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/saved_card_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label_stored_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/screen_padding_triple"
+                android:layout_marginLeft="@dimen/screen_padding"
+                android:layout_marginRight="@dimen/screen_padding"
+                android:layout_marginTop="@dimen/screen_padding_double"
+                android:text="YOUR SAVED CARDS"
+                android:textColor="@color/grey_75"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/stored_card_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_pay_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_rectangle_primary_button_selector"
+                android:enabled="false"
+                android:text="Pay now"
+                android:textColor="@color/generic_button_text_color_selector" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

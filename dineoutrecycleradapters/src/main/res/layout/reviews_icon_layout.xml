@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrapper_layout"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/review_icon_image_background">
+
+        <com.dineout.recycleradapters.view.widgets.RoundedImageView xmlns:lib="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView_review_author_image"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:src="@drawable/img_profile_nav_default"
+            lib:maskDrawable="@drawable/circle_mask" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

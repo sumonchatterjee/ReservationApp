@@ -1,0 +1,41 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    repositories {
+        mavenCentral()
+    }
+    
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:2.3.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.2'
+        classpath 'com.github.dcendents:android-maven-plugin:1.2'
+        classpath 'com.google.gms:google-services:3.0.0'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.fabric.io/public' }
+        maven() { url "http://static.clmbtech.com/maven" }
+        maven() { url "http://tilsdk.indiatimes.com/nexus/content/groups/public/" }
+    }
+    repositories {
+        mavenCentral()
+        maven {
+
+            url  "http://phonepe.bintray.com/PhonePeAndroidSDK"
+
+            credentials {
+                username 'phonepe_android_sdk_release_key@phonepe'
+                password '66edd0b74318b237395d8c2293243cd038985889'
+            }
+        }
+    }
+}

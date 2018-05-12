@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_EF">
+
+    <include
+        android:id="@+id/toolbar_booking_confirmation"
+        layout="@layout/selected_offer_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<Button
+        android:id="@+id/bt_rest_book"
+        style="@style/ButtonStyle.RectanglePrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rest_details_bottom_action_height"
+        android:layout_alignParentBottom="true"
+        android:text="@string/continue_str" />-->
+
+    <RelativeLayout
+        android:id="@+id/bt_rest_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle_primary_button_selector"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/textView_pay_now"
+            style="@style/MyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="54dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text="@string/button_pay_now" />
+
+        <View
+            android:id="@+id/divider_pay_now"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/textView_pay_now"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/textView_total_ticket_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@id/divider_pay_now"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Total: \u20B9 1000" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_deal_confirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bt_rest_book"
+        android:layout_below="@id/toolbar_booking_confirmation"
+        android:background="@color/white" />
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <include layout="@layout/network_error_layout" />
+
+</RelativeLayout>

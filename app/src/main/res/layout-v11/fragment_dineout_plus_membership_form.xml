@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_EF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_membership_forms"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/membership_fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/screen_padding_plus_half"
+                    android:paddingRight="@dimen/screen_padding_plus_half">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/screen_padding_plus_half"
+                        android:paddingTop="@dimen/screen_padding_double"
+                        android:text="@string/label_enter_details"
+                        android:textColor="@color/black_75"
+                        android:textSize="@dimen/font_size_14"
+                        style="@style/MyStyle" />
+
+                    <EditText
+                        style="@android:style/Widget.Holo.Light.EditText"
+
+                        android:id="@+id/member_detail_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="@string/text_name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black_75"
+                        android:textColorHint="@color/grey_D2"
+                        android:textSize="@dimen/font_size_16" />
+
+                    <EditText
+                        android:id="@+id/member_detail_phone"
+                        style="@android:style/Widget.Holo.Light.EditText"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:maxLength="10"
+                        android:hint="@string/text_phone_number"
+                        android:inputType="number"
+                        android:textColor="@color/black_75"
+                        android:textColorHint="@color/grey_D2"
+                        android:textSize="@dimen/font_size_16" />
+
+                    <EditText
+                        android:id="@+id/member_detail_email"
+                        style="@android:style/Widget.Holo.Light.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:editable="false"
+                        android:hint="@string/hint_email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black_75"
+                        android:textColorHint="@color/grey_D2"
+                        android:textSize="@dimen/font_size_16" />
+
+                    <EditText
+                        android:id="@+id/member_detail_address_one"
+                        style="@android:style/Widget.Holo.Light.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="@string/hint_adress_line1"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/black_75"
+                        android:textColorHint="@color/grey_D2"
+                        android:textSize="@dimen/font_size_16" />
+
+                    <EditText
+                        android:id="@+id/member_detail_address_two"
+                        style="@android:style/Widget.Holo.Light.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="@string/hint_adress_line2"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/black_75"
+                        android:textColorHint="@color/grey_D2"
+                        android:textSize="@dimen/font_size_16" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            style="@android:style/Widget.Holo.Light.Spinner"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="50dp"
+                            android:id="@+id/city_spinner"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="@dimen/font_size_16"
+                            android:minHeight="40dp"
+                            android:textColor="@color/black_75"
+                            android:layout_marginBottom="10dp"
+                            />
+
+                        <EditText
+                            android:id="@+id/member_detail_pincode"
+                            style="@android:style/Widget.Holo.Light.EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="@dimen/screen_padding"
+                            android:layout_weight="1"
+                            android:hint="@string/hint_pin_code"
+                            android:maxLength="6"
+                            android:inputType="number"
+                            android:textColor="@color/black_75"
+                            android:textColorHint="@color/grey_D2"
+                            android:textSize="@dimen/font_size_16" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_do_member_signup"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/screen_padding_plus_half"
+
+                    android:text="@string/button_proceed_to_payment" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/snackbarMemberDetailPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

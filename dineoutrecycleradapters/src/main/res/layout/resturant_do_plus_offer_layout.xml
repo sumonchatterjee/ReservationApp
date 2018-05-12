@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRestDetailDoPlusOfferSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textViewRestDetailDOPlusOfferTitle"
+            style="@style/RestDetailsFieldTitleV1"
+            android:layout_marginBottom="10dp"
+            android:text="@string/text_doplus_member_offer_title"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutRestDetailDOPlusOfferSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dashed_boundary_new"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewRestDetailDOPlusOfferRightArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:src="@drawable/ic_arrow_right"/>
+
+            <TextView
+                android:id="@+id/textViewRestDetailDOPlusOfferShortDesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/imageViewRestDetailDOPlusOfferRightArrow"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/textViewRestDetailDOPlusOfferTiming"
+                style="@style/MyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textViewRestDetailDOPlusOfferShortDesc"
+                android:layout_toLeftOf="@id/imageViewRestDetailDOPlusOfferRightArrow"
+                android:textColor="#4D4D4D"
+                android:textSize="14sp"/>
+
+            <TextView
+                style="@style/MyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewRestDetailDOPlusOfferTiming"
+                android:layout_toLeftOf="@id/imageViewRestDetailDOPlusOfferRightArrow"
+                android:paddingTop="@dimen/screen_padding_half"
+                android:text="@string/text_tap_view_details"
+                android:textColor="#4D4D4D"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_carlsberg_offers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_carslberg_head"
+            style="@style/RestDetailsFieldTitle"
+            android:text="@string/restaurant_carlsberg_details"/>
+
+        <TextView
+            android:id="@+id/tv_carlsberg_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_carslberg_head"
+            android:paddingTop="10dp"
+            android:text="Get 2 complimentary glasses fo Chilled Drinks sponsed by Carlsberg Club Glasses offer along dineout offer u select below."
+            android:textColor="#CCFFFFFF"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_rest_offers"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_offer_ctr_head"
+            style="@style/RestDetailsFieldTitleV1"
+            android:text="@string/restaurant_detail_offer_count"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_offer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_offer_ctr_head"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

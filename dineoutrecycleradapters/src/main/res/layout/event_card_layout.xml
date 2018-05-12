@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView_event_card"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="286dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_event_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_event_details"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <com.dineout.recycleradapters.view.widgets.NetworkRoundCornerImageView
+                android:id="@+id/image_view_event"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/black_bottom_up_gradient_shape"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_view_event_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    tools:text="Event Name" />
+
+                <TextView
+                    android:id="@+id/text_view_restaurant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_view_event_name"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="Restaurant Name" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_layout_event_details"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp">
+
+            <TextView
+                android:id="@+id/text_view_event_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_4D"
+                android:textSize="12sp"
+                tools:text="Friday, 29th April" />
+
+            <TextView
+                android:id="@+id/text_view_event_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_event_date"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/grey_4D"
+                android:textSize="12sp"
+                tools:text="8:30 PM Onwards" />
+
+            <TextView
+                android:id="@+id/text_view_event_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/grey_4D"
+                android:textSize="14sp"
+                tools:text="\u20B9 800" />
+
+            <TextView
+                android:id="@+id/text_view_event_price_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/text_view_event_price"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/grey_4D"
+                android:textSize="10sp"
+                tools:text="Onwards" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

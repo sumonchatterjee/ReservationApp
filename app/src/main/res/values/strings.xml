@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- GCM Registation ID -->
+    <!-- <string name="gcm_sender_id">224850588457</string> -->
+    <string name="gcm_defaultSenderId">953585151264</string>
+    <string name="deep_linking_schema">dineout</string>
+
+
+    <!-- Google Analytics -->
+    <string name="ga_tracking_id_testing">UA-73617076-1</string>
+    <!--<string name="ga_tracking_id_testing">UA-32580312-4</string>-->
+    <string name="ga_tracking_id_production">UA-32580312-2</string>
+
+
+    <!-- Apsalar SDK credentials -->
+    <string name="apsalar_api_key">timesinternet</string>
+    <string name="apsalar_secret_key">NmecPMtU</string>
+
+    <string name="app_name">Dineout</string>
+    <string name="call_failed_response">Call failed. Please try again later.</string>
+
+    <!-- Taplytics -->
+    <!--<string name="taplytics_release_account_id">5defd13ba14e2074d8fce719efcf22bc2b200bfb</string>
+    <string name="taplytics_development_account_id">5defd13ba14e2074d8fce719efcf22bc2b200bfb</string>-->
+
+    <!-- ShowCase Strings -->
+    <string name="button_ok">OK</string>
+    <string name="button_dismiss">DISMISS</string>
+
+    <!-- FB Dialog -->
+    <string name="facebook_app_id">568956213159751</string>
+
+    <!-- Conditional Dialog -->
+    <string name="no_network_connection">No Internet Connectivity</string>
+    <string name="server_down">Server Error. Kindly try again later</string>
+    <string name="call_us">CALL US TO BOOK YOUR TABLE</string>
+    <string name="call_us_no">+91 9212340202</string>
+    <string name="checking">Checking… Please wait</string>
+
+    <!-- restaurant details -->
+    <string name="uber_dialog_title">Ride there with Uber</string>
+
+    <!-- restaurant details -->
+    <!-- City List -->
+    <string name="search_locality_hint">Search your area/locality here</string>
+    <string name="text_all_localities">All Localities</string>
+
+    <!-- Table Confirmation -->
+    <string name="table_confirmation_hint">The Mobile number and Email address is mandatory as it will help us to send you a booking confirmation via SMS and Email</string>
+    <string name="sign_name">Your Name</string>
+    <string name="table_mobile_number">Your Phone Number</string>
+    <string name="table_email">Your Email Address</string>
+    <string name="table_password">Your Password</string>
+    <string name="table_confirm_text">Confirm my table</string>
+    <string name="go_now_text">Walk in and get offer</string>
+
+    <!-- restaurant details -->
+    <string name="view_all_reviews">view all reviews</string>
+    <string name="rate">Rate &amp; Review</string>
+    <string name="menu">MENU</string>
+    <string name="action_share">Share</string>
+    <string name="rat_rv_title">RATING &amp; REVIEW</string>
+    <string name="restaurant_detail_offer_count">%1$d OFFER(S) AVAILABLE</string>
+    <string name="restaurant_carlsberg_details">CARLSBERG CLUB GLASSES OFFER</string>
+    <string name="call_now">Call now</string>
+    <string name="view_all">VIEW ALL</string>
+    <string name="text_doplus_member_offer_title">DINEOUT PLUS OFFER - EXCLUSIVELY FOR YOU</string>
+    <string name="text_doplus_non_member_offer_title">OFFER FOR DINEOUT PLUS MEMBER</string>
+    <string name="text_tap_view_details">TAP TO VIEW MORE DETAILS</string>
+
+    <!-- Restaurant Result -->
+    <string name="text_result">Result</string>
+    <string name="text_results">Results</string>
+    <string name="restaurant_result_offer_count_single">%1$s offer available</string>
+    <string name="restaurant_result_offer_count_multi">%1$s offers available</string>
+    <string name="no_result_found_1">Oops! No Results Found</string>
+    <string name="no_result_found_2">Try changing some filters or search again</string>
+    <string name="result_search_hint">Search Restaurants, Cuisine, etc</string>
+
+    <!-- Booking Complete -->
+    <string name="booking_complete_failure_msg_1">Something wrong has happened</string>
+
+    <!-- BookTable Fragment -->
+    <string name="tb_one_moment">One moment please…</string>
+    <string name="tb_detecting_location">We are detecting your location</string>
+
+    <!-- sign up -->
+    <string name="text_term_condition_privacy_policy">By signing up, you accept our\nTerms &amp; Conditions and Privacy Policy</string>
+    <string name="show_pass">Show Password</string>
+    <string name="text_forgot_password">Forgot your Password?</string>
+    <string name="forgot_pass_head">Enter your registered Email address and we will send you the password.</string>
+
+    <!-- LoginActivity Dialog -->
+    <string name="login_dialog_login_with_facebook">Login with Facebook</string>
+    <string name="login_dialog_login_with_google">Login with Google</string>
+    <string name="login_dialog_login_with_email">Login with Email</string>
+    <string name="login_dialog_login_new_user">New User ?</string>
+    <string name="login_dialog_login_guest">Continue as a Guest</string>
+
+    <string name="login_dialog_title_default">Yay!! We have saved your Table&#8230;</string>
+    <string name="login_dialog_message_default">To confirm your table, please login now</string>
+    <string name="login_dialog_title_home">Please login to proceed further</string>
+    <string name="login_dialog_title_my_bookings">To view your Upcoming &amp; Past Bookings, please login now</string>
+    <string name="login_dialog_title_review">We would love to know your experience&#8230;</string>
+    <string name="login_dialog_message_review">To write your review, please login now</string>
+    <string name="login_dialog_title_my_account">To view your Savings and save your details, please login now</string>
+    <string name="login_dialog_title_my_favs">To view your Favourite Restaurants, please login now</string>
+    <string name="login_dialog_title_do_fav">To favourite a Restaurant, please login now</string>
+    <string name="login_dialog_title_wallet">To view Your Earnings on Dineout, please login now</string>
+    <string name="login_dialog_title_referral">In order to Refer Friends &amp; Earn Rewards, please login now</string>
+    <string name="login_dialog_title_my_bills">To view your Bills, please login now</string>
+    <string name="login_dialog_title_my_transactions">To view your past Transactions, please login now</string>
+    <string name="login_dialog_title_my_do_plus_card">To view your DO Plus Membership Card, please login now</string>
+    <string name="login_dialog_title_my_do_plus_membership">To become DO Plus Member, please login now</string>
+
+    <!-- Search Activity -->
+    <string name="search_activity_title">Search</string>
+    <string name="title_activity_login">Login</string>
+    <string name="text_sign_in">Sign in</string>
+    <string name="suggested_search">SUGGESTED SEARCHES IN %1$s</string>
+
+    <!-- filter screen -->
+    <string name="text_filter">Filter</string>
+
+    <!-- My account fragment -->
+    <string name="account_joining_date">You joined dineout on %1$s</string>
+    <string name="all_timings">All Timings</string>
+
+    <!-- your cuisines -->
+    <string name="no_upcoming_bookings">You don\'t have any upcoming bookings</string>
+    <string name="no_history_bookings">You don\'t have any past bookings</string>
+    <string name="reserve_again">Reserve Again</string>
+    <string name="reviewed">REVIEWED</string>
+    <string name="write_review">Write Review</string>
+    <string name="diner_name">Hi %1$s,</string>
+    <string name="booking_id">Your Booking ID is </string>
+    <string name="booking_cancel_msg">Are you sure you want to cancel this booking?</string>
+    <string name="booking_edit_msg">Editing will make your current booking invalid. Are you sure you want to proceed?</string>
+    <string name="text_dineout_plus_unique_code">Dineout Plus Unique code</string>
+
+    <!-- Share Dialog -->
+    <string name="share_plan_paragraph">Outings are more fun with friends. Inform them your plan!</string>
+    <string name="share">PLAN</string>
+    <string name="share_fb" formatted="false">I have just reserved a table with dineout at %1$s for FREE. It was super easy and saved me good time, effort and MONEY. Check it out at %2$s</string>
+    <string name="share_twitter" formatted="false">Got a table via @dineout_india at %1$s. Saved time &amp; MONEY</string>
+    <string name="share_twitter_rest_url" formatted="false">Got a table via @dineout_india at %1$s. Saved time &amp; MONEY. Follow %2$s</string>
+    <string name="share_whatsapp" formatted="false">Hi, I have just reserved a table via dineout at %1$s on %2$s at %3$s. Check it out at %4$s. See you there!! (Booking ID: %5$s)</string>
+    <string name="share_message" formatted="false">Hi, I have just reserved a table via dineout at %1$s on %2%s at %3$s. Check it out at %4$s. See you there!! (Booking ID: %5$s)</string>
+    <string name="share_email" formatted="false">Hi,\n\n%s has invited you to %1$s on %2$s at %3%s. We hope you have a good time.\n\nCheck out the Restaurant at %4$s\n\nJust like %5$s, be smart and reserve a table for FREE on dineout.co.in at the best restaurants in your city and save up to 30%%.\n\nCheers!\nTeam dineout.</string>
+    <string name="share_default" formatted="false">I have just reserved a table with dineout for FREE. It was super easy and saved me good time, effort and MONEY up to 30%.</string>
+    <string name="share_resto_detail" formatted="false">Checkout this restaurant on dineout. %1$s, %2$s, %3$s.</string>
+    <string name="share_resturant_subject" formatted="false">Checkout %1$s on dineout</string>
+
+    <!-- gallery -->
+    <string name="gallery_counter">Showing %1$s out of %2$s</string>
+
+    <!-- rate and review -->
+    <string name="done">Done</string>
+    <string name="submit">Submit</string>
+    <string name="review_hint">Write your review here…</string>
+    <string name="rate_review_head_title">Tell us about your experience (optional).</string>
+    <string name="review_rating_error">Please provide a rating</string>
+
+    <!-- Wizrocket credentials -->
+    <string name="wiz_account_id">888-58R-5R4Z</string>
+    <string name="wiz_account_token">2b5-bbb</string>
+
+    <!--<string name="wiz_server_upload_key">SYE-JQC-UWAL</string>-->
+    <!--<string name="wiz_account_id">TEST-656-RW7-554Z</string>-->
+    <!--<string name="wiz_account_token">TEST-a02-656</string>-->
+
+    <!-- settings -->
+    <string name="tnc">Terms &amp; Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="your_feedback">Your Feedback</string>
+    <string name="rate_our_app">Rate our app</string>
+    <string name="accessibility_setting">Booking Assistant</string>
+    <string name="about">About dineout</string>
+    <string name="dineout_site">www.dineout.co.in</string>
+    <string name="about_str">About</string>
+
+    <!-- referral share -->
+    <string name="promoCopyMessage">Promotion Code Copied</string>
+    <string name="referral_invite_fb_title">Copy text and paste to Facebook dialogue</string>
+    <string name="text_copied">Text copied to clipboard, To share it, please paste it to Facebook dialogue</string>
+
+    <!-- konotor settings -->
+    <string name="konotor_app_id">b7e54b04-89a3-4501-82eb-e8cfdbb49918</string>
+    <string name="konotor_app_key">ff7163c2-70de-4bbd-b685-8ed0f8094fe8</string>
+    <string name="konotor_title">10:30 am – 11:00 pm</string>
+    <string name="konotor_welcome_msg">Welcome to dineout! We would love to help you reserve a table or plan any parties/events that you may want to organize. You can speak to us as well at +91-9212340202.</string>
+
+    <!-- Auth Failed -->
+    <string name="auth_failed_login_msg">Session Expired. Kindly Login Again.</string>
+
+    <!-- Play Store Dialog -->
+    <string name="play_store_title">Rate our app</string>
+    <string name="play_store_desc">Spread the love. Rate us on Play Store. </string>
+    <string name="play_store_no_thanks">Never ask me again</string>
+    <string name="play_store_remind_later">Remind me later</string>
+    <string name="play_store_rate_now">Yes, let\'s do it</string>
+
+    <!-- OTP -->
+    <string name="otp_step_2_title">Please enter the SMS code that you have received on %1$s</string>
+    <string name="otp_step_2_resend_code">Request new code</string>
+    <string name="otp_step_2_edit_phone">Edit number</string>
+    <string name="otp_step1_desc">Please enter and confirm your phone number</string>
+    <string name="otp_step1_desc_2">An SMS will be sent with an activation line1.</string>
+    <string name="otp_step1_title">Enter Phone number</string>
+    <string name="otp_step2_error">SMS passcode is incorrect, Please try again</string>
+
+    <!-- LoginActivity To book table -->
+    <string name="forgot_email">Forgot your Email?</string>
+
+    <!-- Titles -->
+    <string name="title_dineout_wallet">My Earnings</string>
+    <string name="title_earning_history">Earning History</string>
+    <string name="title_my_bookings">My Bookings</string>
+    <string name="title_payment_history">Transaction History</string>
+    <string name="title_information">Information</string>
+    <string name="title_confirmation">Confirmation</string>
+    <string name="title_confirm">Confirm</string>
+    <string name="title_refer_earn">Refer and Earn</string>
+    <string name="title_app_rating">App Rating</string>
+    <string name="title_restaurant_rating">Restaurant Rating</string>
+    <string name="title_smart_pay">SmartPay</string>
+    <string name="title_dineout_plus_card">Dineout Plus Card</string>
+    <string name="title_membership_detail">Membership Detail</string>
+
+    <!-- Container Strings -->
+    <string name="container_dinner_for">%1$s for %2$s</string>
+    <string name="container_amount_for_2">\u20B9 %1$s/- for 2</string>
+    <string name="container_distance">%1$s kms</string>
+    <string name="container_is_required">%1$s is required</string>
+    <string name="container_enter_valid">Please enter valid %1$s</string>
+
+    <!-- Buttons -->
+    <string name="button_sign_up">Sign Up</string>
+    <string name="button_login">Login</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_send_password">Send Password</string>
+    <string name="button_confirm">Confirm</string>
+    <string name="button_verify">Verify</string>
+    <string name="button_continue">Continue</string>
+    <string name="button_paid">PAID</string>
+    <string name="button_try_again">TRY AGAIN</string>
+    <string name="button_proceed_to_payment">Proceed to payments</string>
+    <string name="button_reserve_table">Reserve a Table</string>
+
+    <string name="label_btn_submit">Submit</string>
+    <string name="label_do_plus_fees">Dineout Plus\nMembership Fees</string>
+    <string name="label_total_amount">Total Amount</string>
+
+    <!-- You Fragment -->
+    <string name="you_logged_out_subtitle">Please Login to access your account</string>
+    <string name="you_logged_in_subtitle">Tap to manage your account</string>
+    <string name="you_logged_out_title">Hi Guest</string>
+    <string name="text_select_preferences">Select your preferences</string>
+    <string name="text_day">Day</string>
+    <string name="text_time">Time</string>
+
+    <string name="text_email">Email</string>
+    <string name="text_password_range_error">Password must be min 6 and max 12 character long</string>
+    <string name="text_password_space_error">Password must not contain white space</string>
+    <string name="text_phone_number">Phone Number</string>
+    <string name="text_name">Name</string>
+    <string name="text_name_atleast_4">Your name should be at least 4 characters long</string>
+    <string name="text_accept_alphabets">Accept alphabets only for Name</string>
+    <string name="text_phone_number_10_digit">Please provide 10 digit phone number</string>
+    <string name="text_accept_digits">Accept digits only for Phone Number</string>
+    <string name="text_server_error">Server Error. Please try again</string>
+    <string name="text_please_sign_up">Email Address not found. Please Sign Up.</string>
+    <string name="text_no_uber_cabs_found">No Uber Cabs found</string>
+    <string name="text_booking_cancelled_success">Booking cancelled successfully</string>
+    <string name="text_please_try_again">Please try again</string>
+    <string name="text_add_favourite_error">Could not mark favorite. Please try again</string>
+    <string name="text_remove_favourite_error">Could not remove favorite. Please try again</string>
+    <string name="text_favourite_marked_success">Marked Favorite. This will reflect in your favourite list</string>
+    <string name="text_favourite_remove_success">Favorite removed successfully</string>
+    <string name="text_check_network">Please check Network connectivity</string>
+    <string name="text_no_feedback_error">Could not get your feedback. Please try again</string>
+    <string name="text_app_not_installed">Application not installed</string>
+    <string name="text_unable_fetch_details">Unable to Fetch Details</string>
+    <string name="text_details_updated_success">Details updated successfully.</string>
+    <string name="text_details_updated_failed">Details could not be updated</string>
+
+    <string name="text_how_it_works">How It Works</string>
+    <string name="text_cancel_booking">Cancel booking</string>
+    <string name="text_view_restaurant_detail_page">View restaurant detail page</string>
+    <string name="text_dineout_plus_membership_details">Dineout Plus membership details</string>
+
+    <!-- RestoDetail -->
+    <string name="resto_review_type_critic">CRITIC</string>
+    <string name="resto_review_type_authentic">AUTHENTIC</string>
+    <string name="resto_review_type_tripadvisor">TRIPADVISOR</string>
+
+    <string name="hint_email">Email address</string>
+    <string name="hint_pin_code">Pin Code</string>
+    <string name="hint_adress_line1">Address Line 1</string>
+    <string name="hint_adress_line2">Address Line 2</string>
+
+    <string name="label_enter_details">ENTER YOUR DETAILS</string>
+    <string name="label_enter_enquiry_detail">Please fill in the Enquiry form.</string>
+
+    <string name="logout_dialog_content">Are you sure you want to logout?</string>
+    <string name="review_submitted_dialog">Your review is being moderated and should be approved in 2-3 days.\n Happy dining</string>
+    <string name="review_dialog_header">Thanks!</string>
+    <string name="text_general_error_message">Some Error occurred. Please try again later</string>
+    <string name="text_recently_added">Recently Added</string>
+    <string name="logout_text_button">Logout</string>
+
+
+    <!-- DO NOT REMOVE GOOGLE APP ID : It is required by Location APIs -->
+    <string name="google_app_id">758268130602</string>
+
+
+    <string name="text_auto_detect_my_location">Auto Detect My Location</string>
+    <string name="text_search_history">Search History</string>
+    <string name="text_unable_fetch_location">Unable to fetch your location</string>
+
+    <string name="label_dineout_sec_one_title">5-star dining just became affordable</string>
+    <string name="label_dineout_section_one_desc">With one wonderful card you will get a <b>Flat ###</b>\n
+        at over *** restaurants in 5-star hotels.</string>
+    <string name="label_buy_button_do_plus">BUY NOW</string>
+    <string name="label_tell_button_do_plus">TELL ME MORE</string>
+    <string name="label_do_plus_section_three_header">Interested?</string>
+    <string name="label_do_plus_section_three_desc">Buy your membership now for \u20B9 %1$s or If you want to know more give us your detail and we will get in touch with you.</string>
+
+    <string name="text_skip_tour">Skip tour</string>
+    <string name="text_got_it">Ok! Got it</string>
+    <string name="refer_dineout">For every friend\nwho downloads\nthe Dineout App,</string>
+    <string name="refer_dineout_amt">you both earn \u20B9 100</string>
+
+    <string name="refer_dineout_plus">For every friend who buy the Dineout Plus Membership,</string>
+    <string name="refer_dineout_plus_amt">you both earn \u20B91000 and they get \u20B91000 off their membership price</string>
+
+    <string name="text_tab_home">HOME</string>
+    <string name="text_tab_dineout_plus">DINEOUT PLUS</string>
+    <string name="text_tab_you">YOU</string>
+
+    <string name="edit_booking">Edit Booking</string>
+    <string name="button_edit_booking">EDIT BOOKING</string>
+    <string name="title_edit_booking">Edit Booking</string>
+    <string name="title_edit_deal">Edit Deal</string>
+    <string name="button_edit_deal">EDIT DEAL</string>
+    <string name="edit_booking_status">Your booking has been successfully edited.</string>
+
+    <string name="text_your_referral_code">YOUR REFERRAL CODE</string>
+    <string name="text_your_current_location">Your Location</string>
+
+    <string name="text_smartPay">smartPay</string>
+    <string name="doplus_breakfast">Break Even in Just 2 Meals</string>
+    <string name="doplus_refer">&#8230;or By Referring 5 friends</string>
+    <string name="doplus_refer_sub">You will earn \u20b9 1,000 cashback for each friend who buys Dineout Plus using your referral code</string>
+    <string name="doplus_refer_restaurant">With a flat ### discount at over %1$s restaurants, Dineout Plus members break even in just 2 meals</string>
+
+    <string name="title_enquiry">Enquiry</string>
+    <string name="title_payment_summary">Payment Summary</string>
+    <string name="text_know_more">(Know more)</string>
+    <string name="text_enter_your_jp_number">JetPrivilege Number</string>
+    <string name="hint_enter_your_jp_number">Enter your JetPrivilege Number</string>
+    <string name="text_verified">Verified</string>
+
+    <string name="my_account">My Account</string>
+
+
+    <!-- Deal Confirmation -->
+    <string name="continue_str">Continue</string>
+    <string name="ok_continue_str">OK, CONTINUE</string>
+
+    <string name="deals_confirmation">Deals Confirmation</string>
+    <string name="events_confirmation">Events Confirmation</string>
+
+    <string name="text_cost_for_2_container">\u20B9 %1$s for 2 people</string>
+    <string name="text_approx">(approx)</string>
+    <string name="text_cuisine">Cuisine:</string>
+
+    <string name="text_rest_detail_reservation_page">RESERVATION</string>
+    <string name="text_rest_detail_event_page">EVENTS</string>
+    <string name="text_rest_detail_info_page">INFO</string>
+    <string name="text_rest_detail_reviews_page">REVIEWS</string>
+    <string name="payment_details">Payment Details</string>
+
+    <string name="text_guest_details">GUEST DETAILS</string>
+    <string name="text_no_of_guests">NO OF GUESTS</string>
+    <string name="text_please_enter_your_name">Please enter your name</string>
+    <string name="text_please_enter_your_email_address">Please enter your email address</string>
+    <string name="text_please_enter_your_phone_number">Please enter your phone number</string>
+    <string name="text_special_request_hint">eg. Birthday Party, please arrange cake!</string>
+    <string name="text_selected_offers">Selected Offers</string>
+    <string name="text_booking_confirmation">Booking Confirmation</string>
+    <string name="title_my_list">My List</string>
+    <string name="title_filters">Filters</string>
+    <string name="edit_user_details">Edit Details</string>
+
+
+    <string name="paid_restaurant">You have already paid for this restaurant</string>
+    <string name="title_map">Map</string>
+    <string name="text_get_directions">Get Directions</string>
+
+    <string name="filters">FILTERS</string>
+    <string name="sort_by">SORT BY</string>
+    <string name="text_error">Error</string>
+
+    <string name="no_deals">No deals available.\n\n We are working hard to bring amazing deals at your location.</string>
+    <string name="no_deals_available">No deals available</string>
+    <string name="button_deals_result">No results found</string>
+    <string name="transaction_result">No Transaction history to show</string>
+    <string name="no_earnings_result">No Earnings history to show</string>
+
+    <string name="button_apply">Apply</string>
+    <string name="menu_clear">Clear</string>
+
+    <string name="text_confirm_redeem_deal">Are you sure you want to redeem this deal? This cannot be undone</string>
+    <string name="title_connection_error">Connection Error</string>
+
+    <string name="text_smartpay_content_1">Reserve &amp; pay your restaurant bill via app &amp; get additional cashback.</string>
+    <string name="text_smartpay_content_2">Creditcard/Debitcard/netbanking/PayTM/Mobiwick available.</string>
+
+    <string name="upload_bill_review_header">You\'re just a step away from earning your cashback</string>
+    <string name="upload_bill_rate_info_header">Rate your Experience</string>
+    <string name="text_application_not_installed">Application(s) not installed to share</string>
+
+    <string name="text_promotions">PROMOTIONS</string>
+    <string name="text_gift_vouchers">GIFT VOUCHERS</string>
+
+    <string name="text_voucher_code">Voucher code</string>
+    <string name="text_pin">PIN</string>
+    <string name="text_gift_voucher_link_text">Have questions? Read the FAQs</string>
+    <string name="text_gift_voucher_faqs">Gift Voucher FAQs</string>
+
+    <!--App Rating Strings-->
+    <string name="app_rating_experience_text">How has your Dineout experience been?</string>
+    <string name="app_rating_sorry_text">Really sorry to hear that!</string>
+    <string name="app_rating_what_went_wrong_text">Please tell us what went wrong, we\'ll make sure that we find a resolution.</string>
+    <string name="app_rating_thanks_for_feedback_text">Thanks for your feedback!</string>
+    <string name="app_rating_how_can_improve_app_text">Tell us what could be better, it helps us improve the experience further.</string>
+    <string name="app_rating_glad_text">Glad to hear that!</string>
+    <string name="app_rating_go_to_play_store_text">We\'ll love it you can take 5 minutes to reviews us on the Playstore</string>
+    <string name="app_rating_feedback_box_hint">Write your feedback here…</string>
+    <string name="app_rating_no_thanks_text">No, thanks! Don\'t show that again</string>
+
+    <string name="app_rating_1">Awful!</string>
+    <string name="app_rating_2">Poor!</string>
+    <string name="app_rating_3">Average!</string>
+    <string name="app_rating_4">Good!</string>
+    <string name="app_rating_5">Awesome!</string>
+    <string-array name="app_rating_array">
+        <item>@string/app_rating_1</item>
+        <item>@string/app_rating_2</item>
+        <item>@string/app_rating_3</item>
+        <item>@string/app_rating_4</item>
+        <item>@string/app_rating_5</item>
+    </string-array>
+
+    <string name="app_rating_submit_button_text">SUBMIT</string>
+    <string name="app_rating_later_button_text">LATER</string>
+    <string name="app_rating_rate_button_text">RATE</string>
+    <string name="app_rating_submit_toast">Thank you for your feedback!</string>
+    <string name="text_reset">Reset</string>
+    <string name="text_search_results">Search Results</string>
+    <string name="text_search">Search</string>
+    <string name="text_confirm_reset_action">Are you sure, you want to reset all filters?</string>
+
+    <string name="text_fetching">Fetching&#8230;</string>
+    <string name="accessibility_description">​Experience extended app functionality by allowing Dineout to interact with other applications​ and provide real-time assistance</string>
+
+    <!-- wallet -->
+    <string name="wallet_info_title">About Your earnings</string>
+    <string name="wallet_info_popup_one">Total Earnings – These are your total earnings via dineout till date</string>
+    <string name="wallet_info_popup_two">Redeemable Cash – This is your current balance in the dineout earning which can be redeemed at any of our partners</string>
+    <string name="wallet_info_popup_three">Waiting Amount – This is the welcomeMsg you have earned via referrals. This will be redeemable once you and your friends complete your first successful check-in after reservation</string>
+
+    <!--Accessibility Setting Screen-->
+    <string name="accessibility_setting_text">Enable Feature</string>
+
+
+
+    <!--Login flow-->
+    <string name="verify_text">Verify</string>
+    <string name="resend">Resend Code</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="sign_up_terms">By signing up you agree to the Terms &amp; Conditions</string>
+    <string name="phone_no_terms">Your Mobile will be verified in the next step</string>
+    <string name="password_terms">Password must contain at least 6 characters including an Uppercase and a Number.</string>
+    <string name="reset_code_terms">Enter the reset code sent to your Mobile / Email</string>
+    <string name="reset_code">Enter Reset Code</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="new_password">Enter New Password</string>
+    <string name="password_txt">Password</string>
+    <string name="reset_password_txt">Reset Password</string>
+    <string name="login_txt">Log In</string>
+    <string name="login_via_otp"><u>Log In via OTP</u></string>
+    <string name="send_code">Send Code</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="update_phone_number_verification_code">Send Verification Code</string>
+    <string name="login_signup_txt">Sign in/ Sign up</string>
+    <string name="login_via_txt">Or Login via</string>
+    <string name="continue_with_fb">Continue with Facebook</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="google_plus_error">Unable to login through Google Plus</string>
+    <string name="fb_error">Unable to login through Facebook</string>
+    <string name="submit_txt">Submit</string>
+    <string name="facebook_txt">Facebook</string>
+    <string name="or">or</string>
+    <string name="verify_mobile_resend_txt">One Time Password (OTP) has been sent to your mobile.Please enter it here to verify your mobile </string>
+    <string name="verify_email_resend_txt">One Time Password (OTP) has been sent to your email.Please enter it here to verify your email </string>
+
+    <string name="text_reset_and_apply">Reset &amp; Apply</string>
+    <string name="text_dismiss">Dismiss</string>
+    <string name="title_promotions_gift_vouchers">Promotions &amp; Gift Vouchers</string>
+    <string name="text_select_booking_time">Select Booking Time</string>
+
+    <string name="text_time_slot_error_title">Sorry !</string>
+    <string name="text_time_slot_error_message">This restaurant is not taking reservations for this day.\nPlease try another date.</string>
+    <string name="text_disabled_time_slot_error_message">This restaurant is not taking reservations for this slot.\nPlease try another slot.</string>
+    <string name="text_select_offer">Select Offer</string>
+    <string name="text_select_event">Select Event</string>
+    <string name="text_offer_error_message">No Offer available.\nPlease try another slot or date.</string>
+    <string name="text_sold_out">SOLD OUT</string>
+    <string name="button_pay_now">Pay Now</string>
+    <string name="text_total_amount_container">Total: \u20B9 %1$d</string>
+    <string name="terms_condition">By continuing, you agree to our Terms &amp; Conditions and Privacy Policy</string>
+
+
+    <string name="update_email_txt">We will send you a one time verification code on your email to verify your number</string>
+    <string name="update_phone_txt">We will send you a One Time Password (OTP) on your mobile to verify your mobile number. </string>
+
+    <string name="verified_update_txt">Verified/Update</string>
+    <string name="verify_update_txt">Verify/Update</string>
+    <string name="verify_send_button_text">Send Verification Code</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="enter_code">Enter Code</string>
+
+    <!--login art screen-->
+    <string name="login_art_screen_msg">Please log in to continue</string>
+
+    <!--login error messages-->
+    <string name="login_error_message">Something went wrong, please try again!</string>
+
+    <string name="otp_screen_enter_mobile_hint">Mobile number</string>
+    <string name="otp_screen_enter_email_hint">Email</string>
+
+    <string name="default_error_message">Something went wrong, please try again!</string>
+    <string name="otp_screen_hint">Enter OTP</string>
+
+    <string name="user_name_update_text">Enter Name</string>
+    <string name="user_edit_name_hint">Enter Name</string>
+
+    <string name="server_client_id">953585151264-gum99n1btc31gl72h68ijup5hfjonjl1.apps.googleusercontent.com</string>
+
+    <string name="field_validation_text">Please fill in the details</string>
+
+    <string name="my_account_name_hint">Enter name</string>
+    <string name="my_account_enter_email_hint">Enter email id</string>
+    <string name="my_account_enter_mobile_hint">Enter mobile number</string>
+    <string name="my_account_enter_date_hint">Enter date of birth</string>
+    <string name="my_account_enter_name_error">Name can not be blank</string>
+
+    <!--BookingSlotFragmentScreen-->
+    <string name="booking_slot_screen_error_title">Sorry</string>
+    <string name="booking_slot_screen_error_msg">This deal is sold out / not available for selected date</string>
+
+    <!--payments module text-->
+    <!--<string name="app_name">DineoutPayments</string>-->
+    <string name="rupee_symbol">\u20B9</string>
+    <string name="hint_bill_amt">Enter Bill Amount</string>
+    <string name="label_view_summary">Continue</string>
+    <string name="label_use_wallet">Use Dineout Wallet</string>
+    <string name="rupee_text_preconcat">\u20B9 %1$s</string>
+    <string name="label_select_payment">Select Payment</string>
+    <string name="wallet_amount">( \u20B9 %1$s )</string>
+    <string-array name="pg_option_label">
+        <item>Saved Cards</item>
+        <item>Debit/Credit Cards</item>
+        <item>Net Banking</item>
+    </string-array>
+    <string name="text_payment_successful">Payment Successful</string>
+    <string name="text_bill_payment_confirmation_message">We will send you SMS and Email\nfor the confirmation</string>
+    <string name="text_bill_payment_failure_message">Your payment couldn\'t be completed\ndue to an error.</string>
+    <string name="button_done">DONE</string>
+    <string name="text_bill_paid_success">Bill paid successfully</string>
+    <string name="text_bill_paid_failed">Bill payment unsuccessful</string>
+    <string name="number_hint">Enter number linked to your %1$s Wallet</string>
+    <string name="invalid_otp">Invalid OTP</string>
+    <string name="otp_hint">Enter OTP</string>
+    <string name="otp_request_hint">You may request OTP after %1$s</string>
+    <string name="wallet_name">%1$s</string>
+    <string name="card_hint">Credit/Debit Card Number</string>
+    <string name="kyc_info">Hi! Users of %1$s usually have a transaction limit of Rs 10,000. Please proceed ONLY if your transaction limit is higher.
+        Else click “Cancel” to choose another mode of payment.</string>
+
+    <string name="payment_progress_title">Your payment is being processed.</string>
+    <string name="payment_progress_message">This could take a few minutes, so we will send you an SMS and an Email when it’s confirmed.</string>
+
+    <string name="payment_success_title">Your payment was successful!</string>
+    <string name="payment_successs_message">Thanks so much! We will also send you an SMS and email confirmation as well.</string>
+
+
+    <string name="payment_failure_title">The payment was unsuccessful</string>
+    <string name="payment_failure_message">Unfortunately, the payment didn’t go through. Please try again. Sorry for the inconvenience.</string>
+
+    <string name="payment_failure_message_dineout">Unfortunately, the payment didn’t go through. Please try again. Your Dineout Wallet  amount will be refunded in 24 hours. Sorry for the inconvenience.</string>
+
+
+    <string name="pay_now_label">Pay \u20B9 %1$s now</string>
+    <string name="rating_info_header">Tell us how was your experience\nat \"%1$s\"</string>
+
+    <string name="no_result_found_notification">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;No Notification yet! \n\nCome back later and check again</string>
+
+
+</resources>

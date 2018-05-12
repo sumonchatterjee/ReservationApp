@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp">
+
+    <TextView
+        android:id="@+id/textView_deal_title_1"
+        style="@style/MyStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/grey_5E"
+        android:textSize="12sp"
+        tools:text="Total Savings" />
+
+    <TextView
+        android:id="@+id/textView_deal_title_2"
+        style="@style/MyStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_5E"
+        android:textSize="12sp"
+        tools:text="\u20B9 1950/-" />
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_grey_shade_seven"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout_bookings"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        app:tabBackground="@color/white"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabIndicatorHeight="4dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:tabTextColor="@color/grey_4D" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout_bookings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+</LinearLayout>
+
+    <!-- <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_grey_shade_seven">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar_rest_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:collapsedTitleGravity="left"
+            app:collapsedTitleTextAppearance="@style/CollapsedTextAppearance"
+            app:contentScrim="@color/toolbar_background"
+            app:expandedTitleGravity="left"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleTextAppearance="@style/ExpandedTextAppearance"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/toolbar_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View style="@style/DividerStyle" />
+
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout_bookings"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            app:tabBackground="@color/white"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            app:tabTextColor="@color/grey_4D" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_bookings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>-->

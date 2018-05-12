@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayoutRestList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar_layout_rest_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll|enterAlways">
+
+                    <RelativeLayout
+                        android:id="@+id/toolbarListing"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/abc_action_bar_default_height_material"
+                        android:background="@color/default_section_color">
+
+                        <ImageButton
+                            android:id="@+id/iv_toolbar_back_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/rectangle_transparent_shape"
+                            android:padding="@dimen/screen_padding"
+                            android:src="@drawable/ic_action_navigation_arrow_back" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonRestResultSearch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/screen_padding"
+                            android:background="@drawable/rectangle_transparent_shape"
+                            android:padding="@dimen/screen_padding_half"
+                            android:src="@drawable/ic_action_search" />
+
+
+                        <ImageView
+                            android:id="@+id/image_button_notification"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/notification_icon"
+                            android:layout_marginRight="@dimen/screen_padding_half"
+                            android:layout_toLeftOf="@id/imageButtonRestResultSearch"
+                            />
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/screen_padding_half"
+                            android:layout_marginRight="@dimen/screen_padding_half"
+                            android:layout_toLeftOf="@id/image_button_notification"
+                            android:layout_toRightOf="@id/iv_toolbar_back_icon"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView_main_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="@string/text_search_results"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_size_16"
+                                tools:text="Chinese, Italian, Happy Hours, North Indian" />
+
+                            <TextView
+                                android:id="@+id/textView_sub_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/screen_padding_half"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_size_12"
+                                android:visibility="gone"
+                                tools:text="1550 Results"
+                                tools:visibility="visible" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <include
+                        layout="@layout/filter_sort_toolbar_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/app_bar_layout_rest_list"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/restaurant_list_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey_E5" />
+
+                <LinearLayout
+                    android:id="@+id/ll_no_result_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="90dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_search_empty_state" />
+
+                    <TextView
+                        android:id="@+id/tv_no_result_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/screen_padding_double"
+                        android:text="@string/no_result_found_1"
+                        android:textColor="@color/app_grey_shade_six"
+                        android:textSize="@dimen/font_size_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_no_result_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/screen_padding"
+                        android:text="@string/no_result_found_2"
+                        android:textColor="@color/app_grey_shade_six"
+                        android:textSize="@dimen/font_size_16" />
+                </LinearLayout>
+            </FrameLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </FrameLayout>
+
+    <include
+        layout="@layout/dineout_loader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <include layout="@layout/network_error_layout" />
+
+</RelativeLayout>

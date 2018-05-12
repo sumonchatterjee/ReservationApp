@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/app_grey_shade_one"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_fu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/screen_padding_triple"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_20"
+                tools:text="Force Update Title" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/screen_padding_triple"
+                android:src="@drawable/logo_splash" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_fu_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/screen_padding_double"
+            android:textColor="@color/app_grey_shade_four"
+            android:textSize="@dimen/font_size_14"
+            tools:text="Force Update Sub Title" />
+
+        <Button
+            android:id="@+id/bt_force_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/round_rectangle_primary_button_selector"
+            android:padding="@dimen/screen_padding_plus_half"
+            android:text="Update now"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_skip_force_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gen_button_selector_grey"
+        android:gravity="center"
+        android:text="SKIP"
+        android:textColor="@color/app_grey_shade_seven"
+        android:textSize="@dimen/font_size_14" />
+</RelativeLayout>
